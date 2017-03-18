@@ -1,0 +1,1047 @@
+<style>
+/* fieldset {
+	background-color: #f3f3f3;
+} */
+
+.btn-success {
+	display: none;
+}
+
+.btnMR2 {
+	margin-right: 2px;
+}
+
+#center {
+	text-align: center;
+	margin-left: 5px;
+}
+
+#veh_label{
+  margin-left: 9px;
+}
+#veh_width {
+	
+	height: 19px;
+}
+
+#veh_dpdwnheight {
+	padding-top: 3px;
+	margin-left: 6px;
+}
+
+#veh_filterheight {
+	padding-top: 1px;
+	margin-left: 5px;
+	    margin-top: -8px;
+}
+
+#veh_collapsemargin {
+	margin-left: 5px;
+	height: 244px;
+	background-color: #d9edf7;
+}
+
+#veh_collapsible-accordian-margin {
+	margin-top: -1.2em;
+	margin-right: -6px;
+	margin-bottom: 1rem;
+	margin-left: -7.5px;
+}
+#veh_equal{
+    margin-left: -5px;
+}
+</style>
+<section id="content">
+	<!--start container-->
+	<div class="container">
+		<div id="breadcrumbs-wrapper">
+			<div class="row">
+				<div class="col s12 m12 l12" id="breadcrumbs">
+					<div class="col s6 m6 l6">
+						<ol class="breadcrumbs" style="margin-top: 10px;">
+							<li><a href="#/dashboard">Home</a></li>
+							<li><a href="#">Balaram</a></li>
+							<li class="active">Vehicle Information</li>
+						</ol>
+					</div>
+					<div class="col s6 m6 l6">
+						<div style="margin-top: 4px; float: right;">
+							<button class="btn  waves-light btnMR2" id="continuebutton"
+								type="submit" name="action">Continue</button>
+							<button class="btn  primary btnMR2" type="submit" name="action">Cancel</button>
+							<button class="btn-success" type="submit" name="action">Submit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="basic-form" class="section">
+			<div class="row">
+				<div class="col s12 m12 l3">
+					<div class="card-panel" id="c3_card_panel">
+						<div class="row">
+							<ul class="collapsible collapsible-accordion"
+								data-collapsible="accordion"
+								id="veh_collapsible-accordian-margin">
+								<li>
+									<div class="collapsible-header active" id="center" style="background-color: #f3f3f3;">Look-Up Information</div>
+									<div class="collapsible-body" id="veh_collapsemargin">
+										<div class="col s12" style="margin-top: 12px;" id="veh_equal">
+											<div class="col s6" id="veh_width">
+												<select class="browser-default" id="veh_dpdwnheight">
+													<option value="Choose">--All--</option>
+													<option value="Option1">Label1</option>
+													<option value="Option2">Label2</option>
+													<option value="Option3">Label3</option>
+												</select>
+											</div>
+											<div class="col s6" id="veh_width">
+												<select class="browser-default" id="veh_dpdwnheight">
+													<option value="Choose">--All--</option>
+													<option value="Option1">Label1</option>
+													<option value="Option2">Label2</option>
+													<option value="Option3">Label3</option>
+												</select> <br>
+											</div>
+										</div>
+										<div class="col s12" style="margin-top: 18px;"id="veh_equal">
+											<div class="col s6" id="veh_width">
+												<select class="browser-default" id="veh_dpdwnheight">
+													<option value="Choose">--All--</option>
+													<option value="Option1">Label1</option>
+													<option value="Option2">Label2</option>
+													<option value="Option3">Label3</option>
+												</select>
+											</div>
+											<div class="col s6" id="veh_width">
+												<select class="browser-default" id="veh_dpdwnheight">
+													<option value="Choose">--All--</option>
+													<option value="Option1">Label1</option>
+													<option value="Option2">Label2</option>
+													<option value="Option3">Label3</option>
+												</select> <br>
+											</div>
+										</div>
+
+										<div class="col s12" id="veh_equal">
+											<br>
+											<div class="col s4">
+												<b id="veh_label">Label</b>
+											</div>
+											<div class="col s8" id="veh_width">
+												<input type="text" list="label1" placeholder="Filter Dropdown" id="veh_filterheight">
+												<datalist id="label1">
+													<option value="Label1">
+													<option value="Label2">
+													<option value="Label3">
+													<option value="Label4">
+												</datalist>
+											</div>
+											<br>
+										</div>
+
+										<div class="col s12" style="margin-top: -5px;" id="veh_equal">
+											<br>
+											<div class="col s4">
+												<b id="veh_label">Label</b>
+											</div>
+											<div class="col s8" id="veh_width">
+												<input type="text" list="label2" placeholder="Filter Dropdown" id="veh_filterheight">
+												<datalist id="label2">
+													<option value="Label1">
+													<option value="Label2">
+													<option value="Label3">
+													<option value="Label4">
+												</datalist>
+											</div>
+											<br>
+										</div>
+										<div class="col s12" style="margin-top: -5px;" id="veh_equal">
+											<br>
+											<div class="col s4">
+												<b id="veh_label">Label</b>
+											</div>
+											<div class="col s8" id="veh_width">
+												<input type="text" list="label3" placeholder="Filter Dropdown" id="veh_filterheight">
+												<datalist id="label3">
+													<option value="Label1">
+													<option value="Label2">
+													<option value="Label3">
+													<option value="Label4">
+												</datalist>
+											</div>
+											<br>
+										</div>
+										<div class="col s12" style="margin-top: -5px;" id="veh_equal">
+											<br>
+											<div class="col s4">
+												<b id="veh_label">Label</b>
+											</div>
+											<div class="col s8" id="veh_width">
+												<input type="text" list="label4" placeholder="Filter Dropdown" id="veh_filterheight">
+												<datalist id="label4">
+													<option value="Label1">
+													<option value="Label2">
+													<option value="Label3">
+													<option value="Label4">
+												</datalist>
+											</div>
+										</div>
+										&nbsp; <br> <br />
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Form with placeholder -->
+				<div class="col s12 m12 l9">
+					<div class="tabs">
+						<div class="tab-box">
+							<div class="current col s3">
+								<a href="javascript:;" id="tab-1" class="tabLink activeLink"
+									data-ng-click="gettabpage('1')">Basic Info</a>
+							</div>
+							<div class="col s3">
+								<a href="javascript:;" id="tab-2" class="tabLink"
+									data-ng-click="gettabpage('1')">Vehicle Checklist</a>
+							</div>
+							<div class="col s3">
+								<a href="javascript:;" id="tab-3" class="tabLink"
+									data-ng-click="gettabpage('1')">Business Config.</a>
+							</div>
+							<div class="col s3">
+								<a href="javascript:;" id="tab-4" class="tabLink"
+									data-ng-click="gettabpage('4')">Preview</a>
+							</div>
+						</div>
+					</div>
+					<div class="card-panel" id="c9_vehiclecreation-card_panel">
+						<div class="row">
+							<form class="col s12">
+								<div id="tab-1-1" class="tabcontent paddingAll">
+									<div class="row">
+										<div class="col s12">
+											<fieldset class="field-vehicle_info">
+												<legend>Vehicle Information</legend>
+												<div class="row">
+													<div class="col s12"
+														style="height: 45px; margin-top: -14px;">
+														<div class="input-field col s3">
+															<select class="browser-default">
+																<option value="1">Permanent</option>
+																<option value="2">T/R</option>
+															</select>
+														</div>
+														<div class="input-field col s3 required">
+															<input type="text" name="name" id="reg"
+																style='text-transform: uppercase' /> <label for="reg">Registration
+																Number</label>
+														</div>
+														<div class="input-field col s3">
+															<select class="browser-default">
+																<option>Fuel Type</option>
+																<option value="1">Diesel</option>
+																<option value="2">Petrol</option>
+																<option value="3">CNG</option>
+															</select>
+														</div>
+														<div class="input-field col s2">
+															<select class="browser-default">
+																<option>Veh Brand</option>
+																<option value="1">Tata</option>
+																<option value="2">Mahindra</option>
+																<option value="3">Hyundai</option>
+																<option value="4">Honda</option>
+																<option value="5">Ford</option>
+																<option value="6">Fiat</option>
+																<option value="7">Toyota</option>
+																<option value="8">Maruthi</option>
+															</select>
+														</div>
+														<div class="input-field col s1">
+															<button class="btn btn-info active" type="button"
+																data-ng-click="getpopup5()" style="color: white;">
+																<span class="small mdi-content-add"></span>
+															</button>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col s12" style="height: 45px;">
+														<div class="input-field col s2">
+															<select class="browser-default">
+																<option>Veh Name</option>
+																<option value="1">Indica</option>
+																<option value="2">Vista</option>
+																<option value="3">Bolt</option>
+																<option value="4">Zest</option>
+																<option value="5">Indigo</option>
+																<option value="6">Indigo Marina</option>
+															</select>
+														</div>
+														<div class="input-field col s1">
+															<button class="btn btn-info active" type="button"
+																data-ng-click="getpopup6()" style="color: white;">
+																<span class="small mdi-content-add"></span>
+															</button>
+														</div>
+														<div class="input-field col s2">
+															<select class="browser-default">
+																<option>Veh Color</option>
+																<option value="1">White</option>
+																<option value="2">Black</option>
+																<option value="3">Silver</option>
+																<option value="4">Red</option>
+																<option value="5">Grey</option>
+															</select>
+														</div>
+														<div class="input-field col s1">
+															<button class="btn btn-info active" type="button"
+																data-ng-click="getpopup7()" style="color: white;">
+																<span class="small mdi-content-add"></span>
+															</button>
+														</div>
+														<div class="input-field col s3 required">
+															<input type="text" id="date7" readonly="readonly"/> <label for="date7">Mfg.Year</label>
+														</div>
+														<div class="input-field col s3 required">
+															<input type="text" id="date8" readonly="readonly"/> <label for="date8">Date
+																of Registration</label>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col s12" style="height: 45px;">
+														<div class="input-field col s3 required">
+															<input type="text" name="name" id="engine"
+																style='text-transform: uppercase' /> <label
+																for="engine">Engine Number</label>
+														</div>
+														<div class="input-field col s3 required">
+															<input type="text" name="name" id="Chassis"
+																style='text-transform: uppercase' /> <label
+																for="Chassis">Chassis Number</label>
+														</div>
+														<div class="input-field col s2">
+															<select class="browser-default">
+																<option>Hypothecated By</option>
+																<option value="1">HDFC</option>
+																<option value="2">SBI</option>
+																<option value="2">ICICI</option>
+																<option value="2">AXIS Bank</option>
+																<option value="2">YES Bank</option>
+															</select>
+														</div>
+														<div class="input-field col s1">
+															<button class="btn btn-info active" type="button"
+																data-ng-click="getpopup8()" style="color: white;">
+																<span class="small mdi-content-add"></span>
+															</button>
+														</div>
+														<div class="input-field col s2">
+															<select class="browser-default">
+																<option>RTA Name</option>
+																<option value="1">Abids</option>
+																<option value="2">Mushirabad</option>
+																<option value="3">Jubilee Hills</option>
+																<option value="4">Ranigunj</option>
+																<option value="5">Punjagutta</option>
+															</select>
+														</div>
+														<div class="input-field col s1">
+															<button class="btn btn-info active" type="button"
+																data-ng-click="getpopup9()" style="color: white;">
+																<span class="small mdi-content-add"></span>
+															</button>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col s12" style="height: 36px;;">
+														<div class="input-field col s3">
+															<input type="text" list="Location" placeholder="Home Location">
+															<datalist id="Location">
+																<option value="Abids">
+																<option value="Jubilee Hills">
+																<option value="Ranigunj">
+																<option value="Miyapur">
+																<option value="Jntu">
+																<option value="Nampally">
+																<option value="Hydernagar">
+															</datalist>
+														</div>
+														<div class="input-field col s3">
+															<input type="text" list="Login" placeholder="Login Location">
+															<datalist id="Login">
+																<option value="Abids">
+																<option value="Jubilee Hills">
+																<option value="Punjagutta">
+																<option value="Ranigunj">
+																<option value="Miyapur">
+																<option value="Jntu">
+																<option value="Nampally">
+																<option value="Hydernagar">
+															</datalist>
+														</div>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s9">
+											<fieldset class="field-rti_info">
+												<legend>Paper info &amp; Validity</legend>
+
+												<div class="form-group col-sm-18">
+													<table class="striped">
+														<thead>
+															<tr id="blackcolor">
+																<th style="width: 1%;">S.No</th>
+																<th style="width: 20%;">Paper Name</th>
+																<th style="width: 20%;">Expiry date</th>
+																<th style="width: 20%;">Responsibility</th>
+																<th style="width: 20%;">Modified date</th>
+																<th style="width: 17%;" id="center">Image</th>
+															</tr>
+														</thead>
+														<tbody id="t01">
+															<tr>
+																<td contenteditable="true" id="center">1</td>
+																<td contenteditable="true">Fitness Num</td>
+																<td contenteditable="true"><input type="text"
+																	id="currentdate1" style="margin: -1px;" readonly="readonly"></td>
+																<td contenteditable="true"><select
+																	class="browser-default" style="color: #000;">
+																		<option value="">Owner</option>
+																		<option>Company</option>
+																</select></td>
+																<td contenteditable="true"><input type="text"
+																	id="date1" style="margin: -1px;" readonly="readonly"></td>
+																<td contenteditable="false" id="center"><a href="#">View</a></td>
+
+
+															</tr>
+															<tr>
+																<td contenteditable="true" id="center">2</td>
+																<td contenteditable="true">Permit Num</td>
+																<td contenteditable="true"><input type="text"
+																	id="currentdate2" style="margin: -1px;" readonly="readonly"/></td>
+																<td contenteditable="true"><select
+																	class="browser-default" style="color: #000;">
+																		<option value="">Owner</option>
+																		<option>Company</option>
+																</select></td>
+																<td contenteditable="true"><input type="text"
+																	id="date2" style="margin: -1px;" readonly="readonly"></td>
+																<td contenteditable="false" id="center"><a href="">View</a></td>
+
+															</tr>
+
+															<tr>
+																<td contenteditable="true" id="center">3</td>
+																<td contenteditable="true">Tax Num</td>
+																<td contenteditable="true"><input type="text"
+																	id="currentdate3" style="margin: -1px;" readonly="readonly"/></td>
+																<td contenteditable="true"><select
+																	class="browser-default" style="color: #000;">
+																		<option value="">Owner</option>
+																		<option>Company</option>
+																</select></td>
+																<td contenteditable="true"><input type="text"
+																	id="date3" style="margin: -1px;" readonly="readonly"></td>
+																<td contenteditable="false" id="center"><a href="">View</a></td>
+
+															</tr>
+															<tr>
+																<td contenteditable="true" id="center">4</td>
+																<td contenteditable="true">Insurance Num</td>
+																<td contenteditable="true"><input type="text"
+																	id="currentdate4" style="margin: -1px;" readonly="readonly"/></td>
+																<td contenteditable="true"><select
+																	class="browser-default" style="color: #000;">
+																		<option value="">Owner</option>
+																		<option>Company</option>
+																</select></td>
+																<td contenteditable="true"><input type="text"
+																	id="date4" style="margin: -1px;" readonly="readonly"></td>
+																<td contenteditable="false" id="center"><a href="">View</a></td>
+
+															</tr>
+															<tr>
+																<td contenteditable="true" id="center">5</td>
+																<td contenteditable="true">Pollution Num</td>
+																<td contenteditable="true"><input type="text"
+																	id="currentdate5" style="margin: -1px;" readonly="readonly"/></td>
+																<td contenteditable="true"><select
+																	class="browser-default" style="color: #000;">
+																		<option value="">Owner</option>
+																		<option>Company</option>
+																</select></td>
+																<td contenteditable="true"><input type="text"
+																	id="date5" style="margin: -1px;" readonly="readonly"></td>
+																<td contenteditable="false" id="center"><a href="">View</a></td>
+
+															</tr>
+															<tr>
+																<td contenteditable="true" id="center">6</td>
+																<td contenteditable="true">Police Per.Num</td>
+																<td contenteditable="true"><input type="text"
+																	id="currentdate6" style="margin: -1px;" readonly="readonly"/></td>
+																<td contenteditable="true"><select
+																	class="browser-default" style="color: #000;">
+																		<option value="">Owner</option>
+																		<option>Company</option>
+																</select></td>
+																<td contenteditable="true"><input type="text"
+																	id="date6" style="margin: -1px;" readonly="readonly"></td>
+																<td contenteditable="false" id="center"><a href="">View</a></td>
+
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</fieldset>
+										</div>
+
+										<div class="col s3" style="width: 26.5%; margin-left: -16px;">
+											<fieldset class="field-rti_info" style="margin-left: 6px;">
+												<legend>Documents Upload</legend>
+												<div class="col s12 m12 l11">
+
+													<select class="browser-default" id="veh_dropdown1">
+														<option value="">--Doc.Type--</option>
+														<option>Fitness</option>
+														<option>Permit</option>
+														<option>Tax</option>
+														<option>Insurance</option>
+														<option>Pollution</option>
+														<option>Police Permission</option>
+													</select> <select class="browser-default" id="veh_dropdown2"
+														data-ng-model="vehiclecreation.select"
+														data-ng-click="getvaluedropdown(vehiclecreation)">
+														<option value="">--Upload File--</option>
+														<option value="choosefile">Choose File</option>
+														<option value="scan">Scan</option>
+														<option value="upload">Photo</option>
+													</select>
+
+													<div data-ng-if="choosefile">
+														<form action="#">
+															<div class="file-field input-field">
+																<div class="row">
+																	<button class="btn" name="action" id="calltrck_buttons"
+																		style="width: 75%; padding: 1px; margin-top: 8px; margin-left: 28px; height: 37px;">
+																		<span>Choose File</span> <input type="file">
+																	</button>
+																</div>
+
+																<div class="row"
+																	style="margin-top: 19px; margin-left: 4px;">
+																	<div class="file-path-wrapper">
+																		<input class="file-path validate valid" type="text"
+																			style="border-color: white">
+																	</div>
+																</div>
+															</div>
+														</form>
+													</div>
+													<div data-ng-if="scan">
+														<form action="#">
+															<div class="file-field input-field">
+																<div class="row">
+																	<button class="btn" name="action" id="calltrck_buttons"
+																		style="width: 75%; padding: 1px; margin-top: 8px; margin-left: 28px; height: 37px;">
+																		<span>Scan</span> <input type="file">
+																	</button>
+																</div>
+
+																<div class="row"
+																	style="margin-top: 19px; margin-left: 4px;">
+																	<div class="file-path-wrapper">
+																		<input class="file-path validate valid" type="text"
+																			style="border-color: white">
+																	</div>
+																</div>
+															</div>
+														</form>
+
+													</div>
+													<div data-ng-if="upload">
+														<form action="#">
+															<div class="file-field input-field">
+																<div class="row">
+																	<button class="btn" name="action" id="calltrck_buttons"
+																		style="width: 75%; padding: 1px; margin-top: 8px; margin-left: 28px; height: 37px;">
+																		<span>Upload</span> <input type="file">
+																	</button>
+																</div>
+
+																<div class="row"
+																	style="margin-top: 19px; margin-left: 4px;">
+																	<div class="file-path-wrapper">
+																		<input class="file-path validate valid" type="text"
+																			style="border-color: white">
+																	</div>
+																</div>
+															</div>
+														</form>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col s12">
+											<fieldset class="field-office_use">
+												<legend>Office Use</legend>
+												<div class="row">
+													<div class="col s12"
+														style="height: 45px; margin-top: -14px;">
+														<div class="input-field col s3 required">
+															<input type="text" id="date9" readonly="readonly"/> <label for="date9">Date
+																of Walkin</label>
+														</div>
+														<div class="input-field col s3">
+															<select class="browser-default">
+																<option>Intraction With</option>
+																<option value="1">E.Id101</option>
+																<option value="2">E.Id102</option>
+																<option value="3">E.Id103</option>
+															</select>
+														</div>
+														<div class="input-field col s3">
+															<select class="browser-default">
+																<option>Checked By</option>
+																<option value="1">E.Id101</option>
+																<option value="2">E.Id102</option>
+																<option value="3">E.Id103</option>
+															</select>
+														</div>
+														<div class="input-field col s3">
+															<select class="browser-default">
+																<option>Authorized By</option>
+																<option value="1">E.Id101</option>
+																<option value="2">E.Id102</option>
+																<option value="3">E.Id103</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col s12" style="height: 45px;">
+														<div class="input-field col s3 required">
+															<input type="text" name="name" id="Monthly" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/> <label
+																for="Monthly">Monthly Payment</label>
+														</div>
+														<div class="input-field col s3">
+															<select class="browser-default">
+																<option>EMI</option>
+																<option value="1">Owner</option>
+																<option value="2">Company</option>
+															</select>
+														</div>
+														<div class="input-field col s3">
+															<select class="browser-default">
+																<option>Agreement Status</option>
+																<option value="1">Pending</option>
+																<option value="2">Completed</option>
+															</select>
+														</div>
+														<div class="input-field col s3 required">
+															<input type="text" id="date10" readonly="readonly"/> <label for="date10">Login
+																Start Date</label>
+														</div>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+									</div>
+
+								</div>
+								<div id="tab-2-1" class="tabcontent paddingAll hide">
+									<p>Donec semper dictum sem, quis pretium sem malesuada non.
+										Proin venenatis orci vel nisl porta sollicitudin. Pellentesque
+										sit amet massa et orci malesuada facilisis vel vel lectus.
+										Etiam tristique volutpat auctor. Morbi nec massa eget sem
+										ultricies fermentum id ut ligula. Praesent aliquet adipiscing
+										dictum. Suspendisse dignissim dui tortor. Integer faucibus
+										interdum justo, mattis commodo elit tempor id. Quisque ut orci
+										orci, sit amet mattis nulla. Suspendisse quam diam, feugiat at
+										ullamcorper eget, sagittis sed eros. Proin tortor tellus,
+										pulvinar at imperdiet in, egestas sed nisl. Aenean tempor
+										neque ut felis dignissim ac congue felis viverra.</p>
+
+								</div>
+								<div id="tab-3-1" class="tabcontent paddingAll hide">
+									<p>Duis egestas fermentum ipsum et commodo. Proin bibendum
+										consectetur elit, hendrerit porta mi dictum eu. Vestibulum
+										adipiscing euismod laoreet. Vivamus lobortis tortor a odio
+										consectetur pulvinar. Proin blandit ornare eros dictum
+										fermentum. Class aptent taciti sociosqu ad litora torquent per
+										conubia nostra, per inceptos himenaeos. Curabitur laoreet,
+										ante aliquet molestie laoreet, lectus odio fringilla purus, id
+										porttitor erat velit vitae mi. Nullam posuere nunc ut justo
+										sollicitudin interdum. Donec suscipit eros nec leo condimentum
+										fermentum. Nunc quis libero massa. Integer tempus laoreet
+										lectus id interdum. Integer facilisis egestas dui at
+										convallis. Praesent elementum nisl et erat iaculis a blandit
+										ligula mollis. Vestibulum vitae risus dui, nec sagittis arcu.
+										Nullam tortor enim, placerat quis eleifend in, viverra ac
+										lacus. Ut aliquam sapien ut metus hendrerit auctor dapibus
+										justo porta.</p>
+								</div>
+								<div id="tab-4-1" class="tabcontent paddingAll hide">
+									<p>Proin sollicitudin tincidunt quam, in egestas dui
+										tincidunt non. Maecenas tempus condimentum mi, sed convallis
+										tortor iaculis eu. Cras dui dui, tempor quis tempor vitae,
+										ullamcorper in justo. Integer et lorem diam. Quisque consequat
+										lectus eget urna molestie pharetra. Cras risus lectus,
+										lobortis sit amet imperdiet sit amet, eleifend a erat.
+										Suspendisse vel luctus lectus. Sed ac arcu nisi, sit amet
+										ornare tellus. Pellentesque nec augue a nibh pharetra
+										scelerisque quis sit amet felis. Nullam at enim at lacus
+										pretium iaculis sit amet vel nunc. Praesent sapien felis,
+										tincidunt vitae blandit ut, mattis at diam. Suspendisse ac
+										sapien eget eros venenatis tempor quis id odio. Donec lacus
+										leo, tincidunt eget molestie at, pharetra cursus odio.</p>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end container-->
+</section>
+
+
+<div id="popup5" class="modal ng-scope"
+	style="width: 370px; z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height: 20%;">
+	<div class="modal-content">
+		<div class="col-md-offset-6">
+			<i class="mdi-content-clear" data-ng-click="cancelpopup5()"
+				style="margin-left: 320px; cursor: pointer;"></i>
+		</div>
+		<div class="row">
+			<div class="col s12">
+				<div class="input-field col s6 required">
+					<input type="text" name="name" id="Add" /> <label for="Add">Add
+						Vehicle Brand</label>
+				</div>
+				<div class="input-field col s4">
+					<button class="btn btn-info active" type="button"
+						style="color: white;">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="popup6" class="modal ng-scope"
+	style="width: 370px; z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height: 20%;">
+	<div class="modal-content">
+		<div class="col-md-offset-6">
+			<i class="mdi-content-clear" data-ng-click="cancelpopup6()"
+				style="margin-left: 320px; cursor: pointer;"></i>
+		</div>
+		<div class="row">
+			<div class="col s12">
+				<div class="input-field col s6 required">
+					<input type="text" name="name" id="Name" /> <label for="Name">Add
+						Vehicle Name</label>
+				</div>
+				<div class="input-field col s4">
+					<button class="btn btn-info active" type="button"
+						style="color: white;">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="popup7" class="modal ng-scope"
+	style="width: 370px; z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height: 20%;">
+	<div class="modal-content">
+		<div class="col-md-offset-6">
+			<i class="mdi-content-clear" data-ng-click="cancelpopup7()"
+				style="margin-left: 320px; cursor: pointer;"></i>
+		</div>
+		<div class="row">
+			<div class="col s12">
+				<div class="input-field col s6 required">
+					<input type="text" name="name" id="Color" /> <label for="Color">Add
+						Vehicle Color</label>
+				</div>
+				<div class="input-field col s4">
+					<button class="btn btn-info active" type="button"
+						style="color: white;">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="popup8" class="modal ng-scope"
+	style="width: 370px; z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height: 20%;">
+	<div class="modal-content">
+		<div class="col-md-offset-6">
+			<i class="mdi-content-clear" data-ng-click="cancelpopup8()"
+				style="margin-left: 320px; cursor: pointer;"></i>
+		</div>
+		<div class="row">
+			<div class="col s12">
+				<div class="input-field col s8 required">
+					<input type="text" name="name" id="Details" /> <label
+						for="Details">Add Hypothecation Details</label>
+				</div>
+				<div class="input-field col s4">
+					<button class="btn btn-info active" type="button"
+						style="color: white;">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="popup9" class="modal ng-scope"
+	style="width: 370px; z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height: 20%;">
+	<div class="modal-content">
+		<div class="col-md-offset-6">
+			<i class="mdi-content-clear" data-ng-click="cancelpopup9()"
+				style="margin-left: 320px; cursor: pointer;"></i>
+		</div>
+		<div class="row">
+			<div class="col s12">
+				<div class="input-field col s6 required">
+					<input type="text" name="name" id="Info" /> <label for="Info">Add
+						RTA Info</label>
+				</div>
+				<div class="input-field col s4">
+					<button class="btn btn-info active" type="button"
+						style="color: white;">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- END CONTENT -->
+<script>
+    tabFunction();
+
+    $(document).ready(
+        function() {
+            var curTabLength = 0;
+            var tabLength = 0;
+            $(".tab-box a")
+                .click(
+                    function(event) {
+                        event.preventDefault();
+                        $(this).parent().addClass("current");
+                        $(this).parent().siblings().removeClass(
+                            "current");
+                        var tab = $(this).attr("id");
+                        curTabLength = $(this).parent().addClass(
+                            "current").context.id.split('-')[1]
+                        $(".tabcontent").addClass("hide");
+                        $("#" + tabeId + "-1").removeClass("hide")
+                        $(tab).fadeIn();
+                        tabLength = $(".tabLink").length;
+                        if (tabLength - curTabLength === 0) {
+                            $("#continuebutton").css({
+                                "display": "none",
+                                "float": "left",
+                                "margin-right": "4px"
+                            })
+                            $(".btn-success").css({
+                                "display": "block",
+                                "float": "left",
+                                "margin-right": "25px"
+                            })
+                            console.log("TRUE")
+                        } else if (tabLength - curTabLength >= 1) {
+                            $("#continuebutton").css({
+                                "display": "block",
+                                "float": "left",
+                                "margin-right": "4px"
+                            })
+                            $(".btn-success").css({
+                                "display": "none",
+                                "float": "left",
+                                "margin-right": "25px"
+                            })
+                        }
+                    });
+            // when user clicks button it finds current tab then tries find and click the next tab, if it doesn't find it will show the first tab
+            $('#continuebutton').click(
+                function(event) {
+                    var nextLink = $('.tab-box').find('div.current')
+                        .next().find('a');
+                    nextLink.click();
+                    tabLength = $(".tabLink").length;
+                    if (tabLength - curTabLength === 0) {
+                        $("#continuebutton").css({
+                            "display": "none",
+                            "float": "left",
+                            "margin-right": "2px"
+                        })
+                        $(".btn-success").css({
+                            "display": "block",
+                            "float": "left",
+                            "margin-right": "25px"
+                        })
+                    }
+                });
+        });
+
+    $('#currentdate1').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        maxDate: false,
+        minDate: new Date(),
+        step: 01,
+        scrollInput: false,
+
+
+    });
+
+    $('#currentdate2').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        maxDate: false,
+        minDate: new Date(),
+        step: 01,
+        scrollInput: false,
+
+
+    });
+    $('#currentdate3').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        maxDate: false,
+        minDate: new Date(),
+        step: 01,
+        scrollInput: false,
+
+
+    });
+    $('#currentdate4').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        maxDate: false,
+        minDate: new Date(),
+        step: 01,
+        scrollInput: false,
+
+
+    });
+    $('#currentdate5').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        maxDate: false,
+        minDate: new Date(),
+        step: 01,
+        scrollInput: false,
+
+
+    });
+    $('#currentdate6').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        maxDate: false,
+        minDate: new Date(),
+        step: 01,
+        scrollInput: false,
+
+
+    });
+    $('#date1').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        step: 01,
+        scrollInput: false,
+
+    });
+    $('#date2').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        step: 01,
+        scrollInput: false,
+
+    });
+    $('#date3').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        step: 01,
+        scrollInput: false,
+
+    });
+    $('#date4').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        step: 01,
+        scrollInput: false,
+
+    });
+    $('#date5').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        step: 01,
+        scrollInput: false,
+
+    });
+    $('#date6').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        step: 01,
+        scrollInput: false,
+
+    });
+    $('#date7').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        step: 01,
+        scrollInput: false,
+
+    });
+    $('#date8').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        step: 01,
+        scrollInput: false,
+
+    });
+    $('#date9').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        step: 01,
+        scrollInput: false,
+
+    });
+    $('#date10').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        step: 01,
+        scrollInput: false,
+    });
+    $(document).ready(function() {
+        $('.collapsible').collapsible();
+    })
+</script>

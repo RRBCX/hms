@@ -1,0 +1,189 @@
+ #dispatcher_caller {
+	margin-left: -16px;
+    width: 111%;
+	min-height: 35vh;
+    margin-top: -21px;
+    font-size: 12px;
+}
+#dispatch_vehicle {
+	margin-left: -16px;
+    width: 111%;
+	min-height: 48.3vh;
+}
+ #satya_dispatcher_subpanel {
+    border-right: 1px solid #00bcd4;
+    height: 270px;
+    margin-top: -20px;
+    /* border-top: 1px solid #00bcd4; */
+    border-bottom: 1px solid #00bcd4;
+    margin-left: -33px;
+    padding-left: 9px;
+    width: 176%;
+}
+ #satya_dispatcher_subpanel_panel {
+    border-right: 1px solid #00bcd4;
+    height: 271px;
+    margin-top: -248px;
+    /* border-top: 1px solid #00bcd4; */
+    border-bottom: 1px solid #00bcd4;
+    margin-left: 422px;
+    padding-left: 0px;
+    width: 74%;
+}
+ #dispatcher-row {
+	 margin-top: -19px;
+}
+#dispatch-cnf-space {
+	margin-top: 10px;
+	margin-left: 43px;
+}
+#dispatch_label {
+	font-size: 0.9rem;
+    color: black;
+    font-weight: bold;
+}
+#dispatch-login-button {
+	margin-top: 2px;
+    height: 31px;
+    width: 12%;
+   	margin-left: 48px;
+    background-color: #366736;
+    text-transform: capitalize;
+}
+#satya_dispatcher_transfer {
+	margin-top: 4px;
+    font-size: 12px;
+    float: right;
+    width: 16.3%;
+    background: #5cb85c;
+    
+}
+#satya_dispatcher_endcall {
+	margin-top: -193px;
+    font-size: 12px;
+    float: right;
+    width: 16.3%;
+    background: #c79841;
+} 
+#satya_dispatcher_holdcall {
+	margin-top: -139px;
+    min-width: -16%;
+    font-size: 12px;
+    float: right;
+    width: 16.3%;
+    background: #c79841;
+}
+#satya_dispatcher_followup {
+	margin-top: -84px;
+    min-width: -16%;
+    font-size: 12px;
+    width: 16.3%;
+    float: right;
+    background: #e45353;
+}
+ .field-empty-set {
+	height: 18vh;
+    margin-left: -7px;
+    background-color: #d9edf7;
+    margin-top: 0px;
+    width: 102%
+}
+#empty_label {
+	font-size: 12px;
+	font-weight: bold;
+	color: black;
+}
+#empty_span {
+	font-size: 12px;
+}
+ .field-booking-set{
+	height: 30vh;
+    margin-left: -7px;
+    background-color: #f3f3f3;
+    margin-top: 1px;
+    width: 102%;
+}
+#dispatch-hr-cnf-button-cancel {
+	margin-top: 2px;
+    height: 31px;
+    width: 16%;
+    margin-left: 50px;
+    background-color: #e45353;
+    text-transform: capitalize;
+}
+#dispatch-hr-cnf-button-reject {
+	margin-top: 2px;
+    height: 31px;
+    width: 16%;
+    background-color: #e45353;
+    text-transform: capitalize;
+}
+#dispatch-hr-cnf-button-report {
+	margin-top: 2px;
+    height: 31px;
+    width: 19%;
+    background-color: #366736;
+    text-transform: capitalize;
+}
+#dispatch-hr-cnf-button-chnage {
+	margin-top: 2px;
+    height: 31px;
+    width: 20%;
+    background-color: #366736;
+    text-transform: capitalize;
+}
+#dispatch-hr-cnf-cpl {
+	margin-top: 2px;
+    height: 31px;
+    width: 10%;
+    background-color: #366736;
+    text-transform: capitalize;
+}
+#dispatch-drive-button {	
+	margin-top: 2px;
+    height: 31px;
+    width: 25%;
+    margin-left: 50px;
+    background-color: #366736;
+    text-transform: capitalize;
+}
+#dispatch-hr-button-accept {
+	margin-top: 1px;
+    margin-left: 41px;
+    height: 31px;
+    width: 16%;
+    background-color: #366736;
+    text-transform: capitalize;
+}
+#dispatch-hr-button-reject {
+	margin-top: 1px;
+    height: 31px;
+    width: 16%;
+    background-color: #e45353;
+    text-transform: capitalize;
+    margin-left: 17px;
+}
+#dispatcher_width {
+	width: 1%;
+	
+}
+#dispatcher_td_width {
+	text-align: center;
+    width: 2.7%;
+}
+#dispatcher_add_request {
+	background-color: #366736;
+    width: 130%;
+    text-transform: capitalize;
+    margin-left: 7px;
+}
+#dispatcher_feedback {
+	background-color: #366736;
+    text-transform: capitalize;
+}
+#dispacth-call-input {
+	margin-top: -7px;
+}
+#dispatch-caller-label {
+	margin-top: 6px;
+}

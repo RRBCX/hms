@@ -1,0 +1,165 @@
+<section id="content">
+    <!--start container-->
+    <div class="container">
+        <div id="breadcrumbs-wrapper">
+            <div class="row">
+                <div class="col s6 m12 l12" id="breadcrumbs">
+                    <ol class="breadcrumbs" style="margin-top: 10px;">
+                        <li><a href="#/dashboard">Home</a></li>
+                        <li><a href="#">Masters</a></li>
+                        <li class="active">Add Doctor</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="basic-form" class="section">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="card-panel">
+                        <fieldset class="field-docotor_info">
+                            <legend>Doctor Information</legend>
+                            <div class="row">
+                                <div class=" col s12">
+                                    <div class="input-field col s3 required">
+                                        <input type="text" name="firstName" data-ng-model="addDoctor.firstName" />
+                                        <label for="checknumberonly" class="active" id="chars">First Name</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text" name="middleName" data-ng-model="addDoctor.middleName" />
+                                        <label for="lastName">Middle Name</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text" style='text-transform: lowercase' data-ng-model="addDoctor.lastName" />
+                                        <label for="lastName">Last Name</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" col s12">
+                                    <div class="input-field col s1 required">
+                                    <select class="browser-default" style="width: auto;" data-ng-model="addDoctor.gender">
+										<option value="">- Gender -</option>
+										<option value="Male">Male</option>
+										<option value="Female">Female</option>
+									  </select>
+                                    </div>
+                                    <div class="input-field col s1 required">
+                                        <input type="text" style='text-transform: lowercase;margin-left: 4px;' data-ng-model="addDoctor.age" />
+                                        <label for="lastName">Age</label>
+                                    </div>
+                                    <div class="input-field col s3 required" style="margin-left: 90px;">
+                                        <input type="text" style='text-transform: lowercase;' data-ng-model="addDoctor.mobileNumber" />
+                                        <label for="lastName">Mobile Number</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text" style='text-transform: lowercase' data-ng-model="addDoctor.phoneNumber" />
+                                        <label for="lastName">Phone Number</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" col s12">
+                                    <div class="input-field col s3 required">
+                                        <input type="text" style='text-transform: lowercase' data-ng-model="addDoctor.emailId" />
+                                        <label for="lastName">EmailId</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text" style='text-transform: lowercase' data-ng-model="addDoctor.specializationType" />
+                                        <label for="lastName">Specialization Type</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text" style='text-transform: lowercase' data-ng-model="addDoctor.qualification" />
+                                        <label for="lastName">Qualification</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" col s12">
+                                    <div class="input-field col s3 required">
+                                        <input type="text" style='text-transform: lowercase' data-ng-model="addDoctor.designation" />
+                                        <label for="lastName">Designation</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text" style='text-transform: lowercase' data-ng-model="addDoctor.licenseNumber" />
+                                        <label for="lastName">License Number</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <textarea style='text-transform: lowercase' data-ng-model="addDoctor.address"></textarea>
+                                        <label for="lastName">Address</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s8">
+                                </div>
+                                <div class="col s8">
+                                    <button class="btn waves-light" data-ng-click="submitDoctorDetails(addDoctor)" style="float: right;">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+<!-- END CONTENT -->
+<script>
+    /* For All Names */
+    $('input[type=text]').keyup(function() {
+        $('').text($(this).val());
+    });
+
+    // textarea
+    $('input[type=text1]').keyup(function() {
+        $('').text1($(this).val());
+    });
+
+    document.getElementsByTagName('input')[0].onblur = function() {
+        this.value = this.value.replace(/^0+(?=\d)/, '');
+    }
+
+    $('#date').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        step: 01,
+    });
+    $('#currentdate').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        maxDate: false,
+        minDate: new Date(),
+        step: 01,
+
+    });
+
+
+    $('#time').datetimepicker({
+        step: 10,
+        datepicker: false,
+        closeOnTimeSelect: false,
+        format: 'H:i',
+        maxDate: new Date(),
+    });
+
+    $('#datentime').datetimepicker({
+        step: 10,
+        format: 'd-m-Y, H:i',
+        maxDate: false,
+        minDate: new Date(),
+    });
+
+    //Email Validation
+    function validateEmail(email) {
+        var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+        if (reg.test(email)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
+<!-- END CONTENT -->

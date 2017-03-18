@@ -1,0 +1,147 @@
+<!-- START CONTENT -->
+<section id="content">
+    <!--breadcrumbs start-->
+    <div id="breadcrumbs-wrapper">
+        <!-- Search for small screen -->
+        <div class="header-search-wrapper grey hide-on-large-only">
+            <i class="mdi-action-search active"></i>
+            <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s8 m9">
+                    <ol class="breadcrumbs">
+                        <li><a href="index.html">Dashboard</a>
+                        </li>
+                        <li><a href="#">Roles</a>
+                        </li>
+                        <li class="active">Object Registration</li>
+                    </ol>
+                </div>
+                <br>
+                <div class="col s12 m3">
+                    <button type="button" class="btn btn-primary">Previous</button>
+                    <button type="button" class="btn btn-default">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs end-->
+
+    <!--start container-->
+    <div class="container">
+        <div class="section">
+            <!--Input fields-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <form class="form-horizontal">
+                            <div class="card-block">
+                                <div class="row">
+                                    <div class="col s12 m12 l12">
+                                        <div class="row">
+                                            <div class="col s12 m12 l12">
+                                                <div class="input-field col s4">
+                                                    <input id="object-type" type="text" autocomplete="off" typeahead="c as c for c in arrayname | filter:$viewValue | limitTo:10" typeahead-min-length="1" typeahead-on-select="onSelectPart($item, $model, $label)">
+                                                    <label for="object-type" class="">Object Type</label>
+                                                </div>
+
+                                                <div class="input-field col s4">
+                                                    <input id="object_name" type="text">
+                                                    <label for="object_name">Object Name</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="checkbox" id="test5">
+                                                    <label for="test5" class="col-md-4">Enable/Disable</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col s12 m12 l12">
+                                                <div class="input-field col s4">
+                                                    <input id="attribute_1" type="text">
+                                                    <label for="attribute_1" class="">Attribute1</label>
+                                                </div>
+
+                                                <div class="input-field col s4">
+                                                    <input id="attribute_2" type="text">
+                                                    <label for="attribute_2">Attribute2</label>
+                                                </div>
+                                                <br><br>
+                                                <div class="input-field col s3">
+                                                    <button type="submit" class="btn btn-primary">Save</button>
+                                                    <button type="button" class="btn btn-default">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-actions" style="border-bottom: 1px solid gray; padding-bottom: 33px; width: 104%; margin-left: -26px;"> </div>
+                                        <br><br>
+                                        <table class="table table-striped">
+                                            <thead class="back">
+                                                <tr>
+                                                    <th><input type="text" placeholder="Object type" class="form-control"></th>
+                                                    <th><input type="text" placeholder="Object Name" class="form-control"></th>
+                                                    <th>Enable/Disable</th>
+                                                    <th><input type="text" placeholder="Attribute1" class="form-control"></th>
+                                                    <th><input type="text" placeholder="Attribute2" class="form-control"></th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>1702</td>
+                                                    <td><input type="checkbox" id="test6"> <label for="test6"></label></td>
+                                                    <td>16:00</td>
+                                                    <td>AC GUARDS</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>1702</td>
+                                                    <td><input type="checkbox" id="test7"><label for="test7"></label></td>
+                                                    <td>16:00</td>
+                                                    <td>AC GUARDS</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>1702</td>
+                                                    <td><input type="checkbox" id="test8"><label for="test8"></label></td>
+                                                    <td>16:00</td>
+                                                    <td>AC GUARDS</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>1702</td>
+                                                    <td><input type="checkbox" id="test9"><label for="test9"></label></td>
+                                                    <td>16:00</td>
+                                                    <td>AC GUARDS</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Floating Action Button -->
+        <!-- <div class="fixed-action-btn" style="bottom: 50px; right: 19px;">
+            <a class="btn-floating btn-large">
+                <i class="mdi-action-stars"></i>
+            </a>
+            <ul>
+                <li><a href="css-helpers.html" class="btn-floating red"><i class="large mdi-communication-live-help"></i></a></li>
+                <li><a href="app-widget.html" class="btn-floating yellow darken-1"><i class="large mdi-device-now-widgets"></i></a></li>
+                <li><a href="app-calendar.html" class="btn-floating green"><i class="large mdi-editor-insert-invitation"></i></a></li>
+                <li><a href="app-email.html" class="btn-floating blue"><i class="large mdi-communication-email"></i></a></li>
+            </ul>
+        </div> -->
+        <!-- Floating Action Button -->
+    </div>
+    <!--end container-->
+</section>
+<!-- END CONTENT -->

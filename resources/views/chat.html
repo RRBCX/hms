@@ -1,0 +1,268 @@
+<style>
+     ::-webkit-scrollbar {
+        width: 0.2rem;
+        height: 100%
+    }
+    
+    ::-webkit-scrollbar-button {
+        background: #00bcd4
+    }
+    
+    ::-webkit-scrollbar-track-piece {
+        background: #00bcd4
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #00bcd4
+    }
+    
+    ​
+</style>
+<section id="content">
+    <!--start container-->
+    <div class="container">
+        <div id="breadcrumbs-wrapper">
+            <div class="row">
+                <div class="col s6 m12 l12" id="breadcrumbs">
+                    <ol class="breadcrumbs" style="margin-top: 10px;">
+                        <li><a href="#/dashboard">Home</a>
+                        </li>
+                        <li><a href="#">Admin</a>
+                        </li>
+                        <li class="active">Admin Dashboard</li>
+                    </ol>
+                </div>
+                <div class="col s5 m3 l5" id="breadcrumb_buttons">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Send</button>
+                </div>
+            </div>
+        </div>
+        <div id="basic-form" class="section">
+            <div class="row">
+                <div class="col s12 m12 l3">
+                <div class="tabs">
+                            <div class="tab-box">
+                                <div class="col s6">
+                                    <a href="javascript:;" class="tabLink activeLink" id="cont-1">Tab 1</a>
+                                </div>
+                                <div class="col s6">
+                                    <a href="javascript:;" class="tabLink " id="cont-2">Tab 2</a>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="card-panel" id="c3_card_panel">
+                        <div class="tabcontent paddingAll" id="cont-1-1">
+                            <div class="col s12">
+                                <br>
+                                <label for="first_name">Select Type</label>
+                                <select class="browser-default">
+	                                <option value="">Select</option>
+	                                <option>option1</option>
+	                                <option>option2</option>
+	                                <option>option3</option>
+	                                <option>option4</option>
+	                            </select>
+                                <br>
+                            </div>
+                            <div class="col s12">
+                                <label for="first_name">Date format</label>
+                                <input type="text" id="date">
+                            </div>
+                            <br>
+                            <div class="col s12">
+                                <label for="first_name">Text Box</label>
+                                <input type="text">
+                            </div>
+                            <div class="col s12">
+                                <label for="first_name">Text Area</label>
+                                <textarea class="materialize-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="tabcontent paddingAll hide" id="cont-2-1">
+                            <br>
+                            <dl>
+                                <dt>Definition list</dt>
+                                <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form with placeholder -->
+                <div class="col s12 m12 l9">
+                 <div class="tabs">
+                            <div class="tab-box">
+                                <div class="col s4">
+                                    <a href="javascript:;" class="tabLink1 activeLink" id="chat5">Tab 1</a>
+                                </div>
+                                <div class="col s4">
+                                    <a href="javascript:;" class="tabLink1" id="chat6">Tab 2</a>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="card-panel" id="c9_card_panel">
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="tabcontents paddingAll" id="chat5-1">
+                                    <div class="input-field col s9">
+                                        <fieldset>
+                                            <legend> Pickup Hour Statistics </legend>
+                                            <table class="striped">
+                                                <thead>
+                                                    <tr id="blackcolor">
+                                                        <th >Type</th>
+                                                        <th >Small</th>
+                                                        <th >Medium</th>
+                                                        <th >Tavera</th>
+                                                        <th >Xylo/lnn...</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Available</td>
+                                                        <td>0</td>
+                                                        <td>2</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>While Driv...</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total</td>
+                                                        <td>0</td>
+                                                        <td>2</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bookings</td>
+                                                        <td>3</td>
+                                                        <td>3</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Color Code</td>
+                                                        <td id="redcolor"></td>
+                                                        <td id="redcolor"></td>
+                                                        <td id="orangecolor"></td>
+                                                        <td id="orangecolor"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <div class="col s7">
+                                                        <button role="button" class="btn btn-primary">Rush Hours</button>
+                                                    </div>
+                                                    <div class="col s4">
+                                                        <select class="browser-default">
+															<option value="">Select Hours</option>
+															<option>1 Hour</option>
+															<option>2 Hours</option>
+															<option>3 Hours</option>
+														</select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="tabcontents paddingAll hide" id="chat6-1">
+                                    <div class="input-field col s9">
+                                        <fieldset>
+                                            <legend> Chat </legend>
+                                            <div class="col s12">
+                                                <div class="col s4">
+                                                    <b>Process</b>
+                                                </div>
+                                                <div class="col s4">
+                                                    <select class="browser-default">
+														<option>Choose</option>
+														<option>Option1</option>
+														<option>Option2</option>
+														<option>Option3</option>
+													</select>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                            <div class="col s12">
+                                                <div class="col s4">
+                                                    <b>Name</b>
+                                                </div>
+                                                <div class="col s4">
+                                                    <select class="browser-default">
+														<option>Choose</option>
+														<option>Option1</option>
+														<option>Option2</option>
+														<option>Option3</option>
+													</select>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <fieldset style="height:90px;">
+                                            </fieldset>
+                                            <br>
+                                            <div class="row" style="border-top: 1px solid;">
+                                                <br>
+                                                <div class="col s12">
+                                                    <div class="col s4">
+                                                        <button type="button" class="btn btn-primary">Template</button>
+                                                    </div>
+                                                    <div class="col s7">
+                                                        <fieldset style="height:50px;">
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+<!-- END CONTENT -->
+<script>
+    $(document).ready(function() {
+        $(".tabLink").each(function() {
+            $(this).click(function() {
+                tabeId = $(this).attr('id');
+                $(".tabLink").removeClass("activeLink");
+                $(this).addClass("activeLink");
+                $(".tabcontent").addClass("hide");
+                $("#" + tabeId + "-1").removeClass("hide")
+                return false;
+            });
+        });
+    });
+    $(document).ready(function() {
+        $(".tabLink1").each(function() {
+            $(this).click(function() {
+                tabeId = $(this).attr('id');
+                $(".tabLink1").removeClass("activeLink");
+                $(this).addClass("activeLink");
+                $(".tabcontents").addClass("hide");
+                $("#" + tabeId + "-1").removeClass("hide")
+                return false;
+            });
+        });
+    });
+</script>

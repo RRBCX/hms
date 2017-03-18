@@ -1,0 +1,517 @@
+<style>
+    .c01 {
+        background-color: #e0e0e0;
+        line-height: 0.6
+    }
+    
+    .b01 {
+        line-height: 0.61
+    }
+     #example_filter {
+        width: 16%;
+        display: none;
+    }
+    #search_inpage {
+        margin-left: 709px;
+        margin-top: -40px;
+        width: 20%;
+    }
+    
+    #tabledatacentre {
+        text-align: center;
+    }
+</style>
+<section id="content">
+    <!--start container-->
+    <div class="container">
+        <div id="breadcrumbs-wrapper">
+            <div class="row">
+                <div class="col s6 m12 l12" id="breadcrumbs">
+                    <ol class="breadcrumbs" style="margin-top: 10px;">
+                        <li><a href="#/dashboard">Home</a></li>
+                        <li><a href="#">Masters</a></li>
+                        <li class="active">Lab Items Master</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="basic-form" class="section">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="card-panel">
+                        <fieldset class="field-lab_itemaster_info">
+                            <legend>Lab Items Master - Add New</legend>
+                            <div class="row">
+                                <div class=" col s12">
+                                    <div class="input-field col s3 required">
+                                        <select class="browser-default" data-ng-model="addpatient.selectCategoryName">
+											<option value="">-Select-</option>
+											<option value="Guntur">India</option>
+									    </select>
+                                        <label for="checknumberonly" class="active">Select Category Name</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text" style='text-transform: lowercase' data-ng-model="addpatient.newItem"/>
+                                        <label for="lastName">New Item/Service Code or ID</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" col s12">
+                                    
+
+                                    <div class="input-field col s6 required">
+                                        <input type="text" style='text-transform: lowercase' data-ng-model="addpatient.addNewItem" />
+                                        <label for="lastName">Add New Item/Service Name</label>
+                                    </div>
+                                </div>
+                             </div>
+                             
+                             <div class="row">
+                                <div class=" col s12">
+                                    <div class="input-field col s3 required">
+                                    <label for="lastName" class="active">Select Unit Name</label>
+                                        <select class="browser-default">
+										<option value="">-Select-</option>
+										<option value="Guntur">India</option>
+									</select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="row">
+                                <div class=" col s12">
+                                    <div class="input-field col s3 required">
+                                        <input type="text" style='text-transform: lowercase' data-ng-model="addpatient.ratePerUnit" />
+                                        <label for="lastName">Rate Per Unit</label>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col s8">
+                                </div>
+                                <div class="col s4">
+                                    <button class="btn waves-light" onclick="Materialize.toast('Details Submitted Successfully', 1000, 'rounded')" style="float: right;">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="card-panel">
+                        <div class="input-field col s2" id="search_inpage">
+                            <input type="text" id="searchone"> <label for="searchone" class="">Search</label>
+                        </div>
+                        <div id="table-datatables">
+                            <div class="row">
+                                <table id="example" class="display" cellspacing="0" width="100%">
+                                    <thead class="c01">
+                                        <tr>
+                                            <th class="checkbox1" style="width:68px;">ID / Code</th>
+                                            <th class="checkbox2">Category</th>
+                                            <th class="checkbox3">Service</th>
+                                            <th class="checkbox4">Unit</th>
+                                            <th class="checkbox5" id="tabledatacentre" style="width:75px;">Rate / unit</th>
+                                            <th class="checkbox6" id="tabledatacentre" style="width:1px;">Date</th>
+
+                                            <th class="checkbox8" id="tabledatacentre" style="width:2px;">Action</th>
+                                        </tr>
+                                    </thead>
+
+                                    <!-- <tfoot>
+				                        <tr>
+				                            <th></th>
+				                            <th></th>
+				                            <th></th>
+				                            <th></th>
+				                            <th></th>
+				                            <th></th>
+				                            <th></th>
+				                        </tr>
+				                    </tfoot> -->
+                                    <tbody class="b01">
+                                        <tr>
+                                            <td class="checkbox1" id="tabledatacentre">1</td>
+                                            <td class="checkbox2">Tiger Nixon</td>
+                                            <td class="checkbox3">System Architect</td>
+                                            <td class="checkbox4">Edinburgh</td>
+                                            <td class="checkbox5" id="tabledatacentre">61</td>
+                                            <td class="checkbox6" id="tabledatacentre">2011/04/25</td>
+
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkbox1" id="tabledatacentre">2</td>
+                                            <td class="checkbox2">Garrett</td>
+                                            <td class="checkbox3">Accountant</td>
+                                            <td class="checkbox4">Tokyo</td>
+                                            <td class="checkbox5" id="tabledatacentre">63</td>
+                                            <td class="checkbox6" id="tabledatacentre">2011/07/25</td>
+
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">54</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2010/07/14</td>
+
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">54</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2010/07/14</td>
+
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">54</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2010/07/14</td>
+
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">54</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2010/07/14</td>
+
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">54</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2010/07/14</td>
+
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">54</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2010/07/14</td>
+
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">54</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2010/07/14</td>
+
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">54</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2010/07/14</td>
+
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">54</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2010/07/14</td>
+
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">54</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2010/07/14</td>
+
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">54</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2010/07/14</td>
+
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">54</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2010/07/14</td>
+
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">54</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2010/07/14</td>
+
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">54</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2010/07/14</td>
+
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">54</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2010/07/14</td>
+
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">54</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2010/07/14</td>
+
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td id="tabledatacentre">57</td>
+                                            <td>Donna Snider</td>
+                                            <td>Customer Support</td>
+                                            <td>New York</td>
+                                            <td id="tabledatacentre">27</td>
+                                            <td id="tabledatacentre">2011/01/25</td>
+
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="row" id="tablePagination">
+                                    <div class="col s6 m12 l6" id="tableRowCount">
+                                        <h8>Total Rows: 57
+                                            <h8>&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <h9>Total Columns: 10
+                                                    <h9>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+<!-- END CONTENT -->
+<script>
+    /* For All Names */
+    $('input[type=text]').keyup(function() {
+        $('').text($(this).val());
+    });
+
+    // textarea
+    $('input[type=text1]').keyup(function() {
+        $('').text1($(this).val());
+    });
+
+    document.getElementsByTagName('input')[0].onblur = function() {
+        this.value = this.value.replace(/^0+(?=\d)/, '');
+    }
+
+    $('#date').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        step: 01,
+    });
+    $('#currentdate').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        maxDate: false,
+        minDate: new Date(),
+        step: 01,
+
+    });
+
+
+    $('#time').datetimepicker({
+        step: 10,
+        datepicker: false,
+        closeOnTimeSelect: false,
+        format: 'H:i',
+        maxDate: new Date(),
+    });
+
+    $('#datentime').datetimepicker({
+        step: 10,
+        format: 'd-m-Y, H:i',
+        maxDate: false,
+        minDate: new Date(),
+    });
+
+    //Email Validation
+    function validateEmail(email) {
+        var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+        if (reg.test(email)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    $(document).ready(function() {
+        // DataTable
+        var table = $('#example').DataTable({
+            /* "scrollX": true, */
+            /* "responsive": true,
+        	"bAutoWidth": false,
+            "liveDrag": true, */
+            "lengthMenu": [
+                [15, 50, -1],
+                [15, 50, "All"]
+            ]
+
+        });
+        $('#searchone').keyup(function() {
+            table.search($(this).val()).draw();
+        })
+
+    });
+</script>
+<!-- END CONTENT -->

@@ -1,0 +1,42 @@
+<div class="col s3 z-depth-4 card-panel" style="margin-top:70px;margin-left: 65px;width: 22%;">
+    <form class="login-form">
+        <div class="row">
+            <div class="input-field col s12 center">
+                <img src="resources/assets/images/Valour Cabs Round Logo.png" alt="" class="circle responsive-img valign profile-image-login">
+            </div>
+        </div>
+        <div class="row margin">
+            <div class="input-field col s12">
+                <i class="mdi-social-person-outline prefix" style="margin-top: -8px;"></i>
+                <input id="username" type="text" data-ng-model="login.userName" name="userName">
+                <label for="username" class="center-align">Username</label>
+            </div>
+        </div>
+        <div class="row margin">
+            <div class="input-field col s12">
+                <i class="mdi-action-lock-outline prefix" style="margin-top: -8px;"></i>
+                <input id="password" type="password" data-ng-model="login.password" name="password">
+                <label for="password">Password</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 m12 l12  login-text">
+                <input type="checkbox" id="remember-me" />
+                <label for="remember-me">Remember me testing</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input type="submit" class="btn waves-effect waves-light col s12" value="Login" data-ng-click="checkLoginFunction(login)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6 m6 l6">
+                <p class="margin medium-small"><a href="page-register.html">Register Now!</a></p>
+            </div>
+            <div class="input-field col s6 m6 l6" style="padding-left: 5px">
+                <p class="margin right-align medium-small"><a href="page-forgot-password.html">Forgot password ?</a></p>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,206 @@
+<style>
+    fieldset {
+       /* background: #F0F8FF; */
+    background: #f3f3f3;
+        /* border: 1px solid #B5B8C8;
+    padding: 0 5px!important; */
+    }
+    
+    label {
+        /* font-size: 0.8rem; */
+        /* color: black; */
+    }
+    
+    legend {
+        color: #15428B;
+    }
+</style>
+<section id="content">
+
+    <!--start container-->
+    <div class="container">
+        <div id="breadcrumbs-wrapper">
+            <div class="row">
+                <div class="col s6 m12 l12" id="breadcrumbs">
+                    <ol class="breadcrumbs" style="margin-top: 10px;">
+                        <li><a href="#/dashboard">Home</a>
+                        </li>
+                        <li><a href="#">Vijay</a>
+                        </li>
+                        <li class="active">Fieldset With Statistics</li>
+                    </ol>
+                </div>
+                <!-- <div class="col s5 m8 l6" id="breadcrumb_buttons">
+                 <button class="btn-success" type="submit" name="action">Save</button>
+                 <button class="btn" type="submit" name="action">Cancel</button>
+               </div> -->
+            </div>
+        </div>
+        <div id="basic-form" class="section">
+            <div class="row">
+                <div class="col s12 m12 l3">
+                    <div class="card-panel" id="c3_card_panel">
+                    </div>
+                </div>
+                <!-- Form with placeholder -->
+                <div class="col s12 m12 l9">
+                    <div class="tabs">
+                        <div class="tab-box">
+                            <div class="col s4">
+                                <a href="javascript:;" class="tabLink activeLink" id="cont-1">Tab 1</a>
+                            </div>
+                            <div class="col s4">
+                                <a href="javascript:;" class="tabLink " id="cont-2">Tab 2</a>
+                            </div>
+                            <div class="col s4">
+                                <a href="javascript:;" class="tabLink " id="cont-2">Tab 3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-panel" id="c9_card_panel">
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="tabcontent paddingAll" id="cont-1-1">
+                                    
+                                    <!-- second style -->
+                                    <div class="row">
+                                        <!-- main -->
+                                        <fieldset class="col s11">
+                                            <legend id="color"><b>Current Month History</b></legend>
+                                            <div class="row">
+                                                <div class="col s2">
+                                                    <label>LiT:</label>
+                                                    <span>17 -> 15:05</span>
+                                                </div>
+                                                <div class="col s2">
+                                                    <label>ELoT:</label>
+                                                    <span>17 -> 15</span>
+                                                </div>
+                                                <div class="col s2">
+                                                    <label>PL:</label>
+                                                    <span>17 -> 15:05</span>
+                                                </div>
+                                                <div class="col s2">
+                                                    <label>CL:</label>
+                                                    <span>17 -> 15:05</span>
+                                                </div>
+                                                 <div class="col s2">
+                                                    <label>Status:</label>
+                                                    <span>Inactive</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col s2">
+                                                    <label>T.Bookings:</label>
+                                                    <span>0</span>
+                                                </div>
+                                                <div class="col s2">
+                                                    <label>SB:</label>
+                                                    <span>0</span>
+                                                </div>
+                                                <div class="col s2">
+                                                    <label>RO.B:</label>
+                                                    <span>0</span>
+                                                </div>
+                                                <div class="col s2">
+                                                    <label>RB:</label>
+                                                    <span>0</span>
+                                                </div>
+                                                <div class="col s2">
+                                                    <label>CB:</label>
+                                                    <span>0</span>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="padding-top:15px;">
+                                                <div class="col s8">
+                                                    <div id="table-datatables">
+                                                            <table id="example" class="display" cellspacing="0">
+                                                                <thead class="c01">
+                                                                    <tr>
+                                                                        <th>B.No</th>
+                                                                        <th>V.T</th>
+                                                                        <th>D.ML</th>
+                                                                        <th>S.T</th>
+                                                                        <th>D.T</th>
+                                                                        <th>T.kms</th>
+                                                                        <th>Amount</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="b01" style="background: white">
+                                                                	<tr>
+											                            <td>1</td>
+											                            <td></td>
+											                            <td></td>
+											                            <td></td>
+											                            <td></td>
+											                            <td></td>
+											                            <td></td>
+										                            </tr>
+										                            <tr>
+											                            <td>2</td>
+											                            <td></td>
+											                            <td></td>
+											                            <td></td>
+											                            <td></td>
+											                            <td></td>
+											                            <td></td>
+										                            </tr>
+                                                                </tbody>
+                                                            </table>
+                                                    </div>
+                                                </div>
+                                                <div class="col s3">
+                                                    <!-- <div class="row"><label>Day Call: </label><span>0</span></div>
+                                                    <div class="row"><label>T.Login Hrs: </label><span>20:13</span></div>
+                                                    <div class="row"><label>T.Break Tm: </label><span>0</span></div>
+                                                    <div class="row"><label>Working Hrs: </label><span>20:13</span></div>
+                                                    <div class="row"><label>Performance: </label><span>0</span></div> -->
+                                                    <div class="row">
+	                                                    <div class="col s8"><label>Day Call: </label></div>
+	                                                    <div class="col s2"><span>0</span></div>
+                                                    </div>
+                                                    <div class="row">
+	                                                    <div class="col s8"><label>T.Login Hrs: </label></div>
+	                                                    <div class="col s2"><span>20:13</span></div>
+                                                    </div>
+                                                    <div class="row">
+	                                                    <div class="col s8"><label>T.Break Tm: </label></div>
+	                                                    <div class="col s2"><span>0</span></div>
+                                                    </div>
+                                                    <div class="row">
+	                                                    <div class="col s8"><label>Wrkng Hrs: </label></div>
+	                                                    <div class="col s2"><span>20:13</span></div>
+                                                    </div>
+                                                    <div class="row">
+	                                                    <div class="col s8"><label>Performance: </label></div>
+	                                                    <div class="col s2"><span>0</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <!-- Third Style -->
+                                    
+                                </div>
+                                <div class="tabcontent paddingAll hide" id="cont-2-1">
+                                    <br>
+                                    <dl>
+                                        <dt>Definition list</dt>
+                                        <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
+                                        <dt>Lorem ipsum dolor sit amet</dt>
+                                        <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
+                                    </dl>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+<!-- END CONTENT -->
+<script>
+    tabFunction();
+</script>

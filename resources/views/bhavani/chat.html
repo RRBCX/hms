@@ -1,0 +1,321 @@
+<section id="content">
+    <!--start container-->
+    <div class="container">
+        <div id="breadcrumbs-wrapper">
+            <div class="row">
+                <div class="col s6 m12 l12" id="breadcrumbs">
+                    <ol class="breadcrumbs" style="margin-top: 10px;">
+                        <li><a href="#/dashboard">Home</a>
+                        </li>
+                        <li><a href="#">Bhavani</a>
+                        </li>
+                        <li class="active">Chats</li>
+                    </ol>
+                </div>
+                <div class="col s5 m8 l6" id="breadcrumb_buttons">
+                    <button class="btn-success" type="button" name="action">Send</button>
+                </div>
+            </div>
+        </div>
+        <div id="basic-form" class="section">
+            <div class="row">
+                <div class="col s12 m12 l3">
+                    <div class="card-panel" id="c3_card_panel">
+                    </div>
+                </div>
+                <!-- Form with placeholder -->
+                <div class="col s12 m12 l9">
+                    <div class="tabs">
+                        <div class="tab-box">
+                            <div class="col s4">
+                                <a href="javascript:;" class="tabLink activeLink" id="cont-1">Tab 1</a>
+                            </div>
+                            <div class="col s4">
+                                <a href="javascript:;" class="tabLink " id="cont-2">Tab 2</a>
+                            </div>
+                            <div class="col s4">
+                                <a href="javascript:;" class="tabLink " id="cont-3">Tab 3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-panel" id="c9_card_panel">
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="tabcontent paddingAll" id="cont-1-1">
+                                    <div class="col s9">
+                                        <fieldset>
+                                            <legend> Pickup Hour Statistics </legend>
+                                            <table class="striped">
+                                                <thead>
+                                                    <tr id="blackcolor">
+                                                        <th>Type</th>
+                                                        <th>Small</th>
+                                                        <th>Medium</th>
+                                                        <th>Tavera</th>
+                                                        <th>Xylo/lnn...</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Available</td>
+                                                        <td>0</td>
+                                                        <td>2</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>While Driv...</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total</td>
+                                                        <td>0</td>
+                                                        <td>2</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bookings</td>
+                                                        <td>3</td>
+                                                        <td>3</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Color Code</td>
+                                                        <td id="redcolor"></td>
+                                                        <td id="redcolor"></td>
+                                                        <td id="orangecolor"></td>
+                                                        <td id="orangecolor"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <div class="col s7">
+                                                        <button role="button" class="btn btn-primary">Rush Hours</button>
+                                                    </div>
+                                                    <div class="col s4">
+                                                        <select class="browser-default">
+															<option value="">Select Hours</option>
+															<option>1 Hour</option>
+															<option>2 Hours</option>
+															<option>3 Hours</option>
+														</select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="tabcontent paddingAll hide" id="cont-2-1">
+                                    <div class="col s9">
+                                        <fieldset>
+                                            <legend> Chat </legend>
+                                            <div class="col s12">
+                                                <div class="col s4">
+                                                    <b>Process</b>
+                                                </div>
+                                                <div class="col s3">
+                                                    <select class="browser-default">
+														<option>Choose</option>
+														<option>Option1</option>
+														<option>Option2</option>
+														<option>Option3</option>
+													</select>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                            <div class="col s12">
+                                                <div class="col s4">
+                                                    <b>Name</b>
+                                                </div>
+                                                <div class="col s3">
+                                                    <select class="browser-default">
+														<option>Choose</option>
+														<option>Option1</option>
+														<option>Option2</option>
+														<option>Option3</option>
+													</select>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <textarea id="message2" class="materialize-textarea"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="border-top: 1px solid;">
+                                                <br>
+                                                <div class="col s12">
+                                                    <div class="col s9">
+                                                        <textarea id="message2" class="materialize-textarea"></textarea>
+                                                    </div>
+                                                    <div class="col s3">
+                                                        <button type="button" class="btn btn-primary">Templates</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="tabcontent paddingAll hide" id="cont-3-1">
+                                  <fieldset>
+                                    <div class="row">
+                                        <div class="col s3">
+                                            <button type="button" class="btn btn-info active" data-ng-click="getpopup()">Popup1</button>
+                                        </div>
+                                        <div class="col s3">
+                                            <button type="button" class="btn btn-info active" data-ng-click="getpopup2()">Popup2</button>
+                                        </div>
+                                    <div class="col s3">
+                                            <button type="button" class="btn btn-info active" data-ng-click="getpopup3()">Popup3</button>
+                                        </div>
+                                         <div class="col s3">
+                                            <button type="button" class="btn btn-info active" data-ng-click="getpopup4()">Popup4</button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col s6">
+                                            <div id="card-alert" class="card green lighten-5">
+                                                <div class="card-content green-text">
+                                                    <p>SUCCESS : Details Submitted Successfully.</p>
+                                                </div>
+                                                <button type="button" class="close green-text" data-dismiss="alert" aria-label="Close">
+				                        <span aria-hidden="true">×</span>
+				                      </button>
+                                            </div>
+                                        </div>
+                                        <div class="col s6">
+                                            <div id="card-alert" class="card red">
+                                                <div class="card-content white-text">
+                                                    <p>DANGER : The daily report has failed</p>
+                                                </div>
+                                                <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+				                        <span aria-hidden="true">×</span>
+				                      </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s6">
+                                            <div id="card-alert" class="card deep-purple">
+                                                <div class="card-content white-text">
+                                                    <span class="card-title white-text darken-1">Some Message</span>
+                                                    <p>Lorem ipsum Minim ad pariatur eiusmod ea ut nulla aliqua est quis id dolore minim voluptate.</p>
+                                                </div>
+                                                <div class="card-action deep-purple darken-2">
+                                                    <a class="waves-effect waves-light  btn white-text">Ok</a>
+                                                    <a class="waves-effect waves-light  btn white-text">Cancel</a>
+                                                </div>
+                                                <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+						                        <span aria-hidden="true">×</span>
+						                      </button>
+                                            </div>
+                                        </div>
+                                        <div class="col s6">
+                                            <div id="card-alert" class="card cyan lighten-5">
+                                                <div class="card-content cyan-text darken-1">
+                                                    <span class="card-title cyan-text darken-1">Some Message</span>
+                                                    <p>Lorem ipsum Minim ad pariatur eiusmod ea ut nulla aliqua est quis id dolore minim voluptate.</p>
+                                                </div>
+                                                <button type="button" class="close cyan-text" data-dismiss="alert" aria-label="Close">
+						                        <span aria-hidden="true">×</span>
+						                      </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </fieldset>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+
+<div id="popup" class="modal ng-scope" style="z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height:40%;">
+    <div class="modal-content">
+    <div class="col-md-offset-6">
+        <i class="mdi-content-clear" data-ng-click="cancelpopup()" style="margin-left: 666px;cursor: pointer;"></i>
+     </div>
+    </div>
+</div>
+<div id="popup2" class="modal ng-scope" style="z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height: 40%;">
+    <div class="modal-content">
+        <i class="mdi-content-clear" data-ng-click="cancelpopup2()" style="margin-left: 666px;cursor: pointer;"></i>
+        <div class="modal-content teal white-text">
+            <b>Popup Page</b>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        </div>
+    </div>
+</div>
+<div id="popup3" class="modal ng-scope" style="z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height: 40%;">
+    <div class="modal-content">
+        <!-- <i class="mdi-content-clear" data-ng-click="cancelpopup3()" style="margin-left: 685px;cursor: pointer;"></i> -->
+         <div class="modal-content green white-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="modal-footer  green lighten-4">
+            <button type="button" class="btn primary" data-ng-click="cancelpopup3()" style="margin-left:2px">Disagree</button>
+            <button type="button" class="btn" data-ng-click="cancelpopup3()" >Agree</button>
+          </div>
+    </div>
+</div>
+
+<div id="popup4" class="modal modal-fixed-footer"
+	style="z-index: 1003; display: none; opacity: 1; transform: scaleX(1); top: 10%;">
+	<div class="modal-content">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+			eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+			ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+			aliquip ex ea commodo consequat. Duis aute irure dolor in
+			reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+			pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+			culpa qui officia deserunt mollit anim id est laborum</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+			eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+			ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+			aliquip ex ea commodo consequat. Duis aute irure dolor in
+			reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+			pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+			culpa qui officia deserunt mollit anim id est laborum</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+			eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+			ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+			aliquip ex ea commodo consequat. Duis aute irure dolor in
+			reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+			pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+			culpa qui officia deserunt mollit anim id est laborum</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+			eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+			ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+			aliquip ex ea commodo consequat. Duis aute irure dolor in
+			reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+			pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+			culpa qui officia deserunt mollit anim id est laborum</p>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn primary"
+			data-ng-click="cancelpopup4()" style="margin-left:2px">Disagree</button>
+		<button type="button" class="btn btn-info"
+			data-ng-click="cancelpopup4()">Agree</button>
+	</div>
+</div>
+
+
+<!-- END CONTENT -->
+<script>
+    tabFunction();
+</script>

@@ -1,0 +1,1639 @@
+<style>
+.c01 {
+    background-color: #ddd;
+    line-height: 0.8;
+}
+.b01 {
+    line-height: 0.5;
+}
+#c02 {
+background-color: #ddd;
+
+}
+#example {
+    margin-left: 1px;
+    width: 100%;
+    margin-top: 6px;
+    font-size: 12px;
+}
+.secondtable {
+    margin-top: -19px;
+    margin-left: -6px;
+    margin-right: -8px;
+}
+#example_filter {
+    width: 16 %;
+    display: none;
+}
+#c3_table_card_panel {
+    height: 40.1rem;
+    overflow: hidden;
+}
+#tablePagination{
+width: 102%;
+}
+.tabs {
+    text-transform: initial;
+}
+.tab - box a.activeLink {
+    background-color: rgb(243, 243, 243);
+    color: #00bcd4;
+    border-bottom: none;
+}
+.tab-box a:hover {
+    color: #00bcd4;
+}
+#pad1 {
+    font-size: 12px
+}
+#width1 {
+    font-size: 10px;
+    height: 22px;
+}
+#selectheight {
+    height: 22px;
+    padding-top: 1px;
+    margin-left: 18px;
+}
+#buttonheight {
+    height: 21px;
+    font-size: 10px;
+    margin-left: 75px;
+    margin-top: 12px;
+}
+#buttonheighttwo {
+    height: 19px;
+    font-size: 11px;
+    margin-left: 12px;
+    margin-top: 12px;
+    width: 94%;
+}
+#tab-2-1 {
+    font-size: 11px;
+    line-height: 2em;
+}
+#headerwidth {
+    width: 8px;
+}
+#tdataheight {
+    height: 14px;
+    width: 94%;
+    margin-bottom: -6px;
+    margin-top: -8px
+}
+#secondtable{
+    font-size: 12px;
+    margin-top: -20px;
+    margin-left: -9px;
+    margin-right: -9px;
+}
+#date {
+    height: 18px;
+    margin-left: 18px;
+    font-size: 11px;
+}
+#date2 {
+    height: 18px;
+    margin-left: 18px;
+    font-size: 11px;
+}
+#searchfilter {
+    margin-top: -40px;
+    margin-left: 74em;
+    width: 9%;
+} 
+.panel {
+    margin-bottom: 23px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.panel-body {
+    padding: 15px;
+}
+.panel-body:before,
+.panel-body:after {
+    content: " ";
+    display: table;
+}
+.panel-body:after {
+    clear: both;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.panel-heading>.dropdown .dropdown-toggle {
+    color: inherit;
+}
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: inherit;
+}
+.panel-title>a {
+    color: inherit;
+}
+.panel-success {
+    border-color: #d6e9c6;
+}
+.panel-success>.panel-heading {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.panel-success>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #d6e9c6;
+}
+.panel-success>.panel-heading .badge {
+    color: #dff0d8;
+    background-color: #3c763d;
+}
+.panel-success>.panel-footer+.panel-collapse>.panel-body {
+    border-bottom-color: #d6e9c6;
+}
+#panelpadding {
+    margin-top: 160px;
+    margin-left: -8px;
+    margin-right: -4px;
+}
+#pbodyfontsize {
+    font-size: 10px;
+    line-height: 2em;
+}
+#collapsemargin {
+    font-size: 3px;
+    margin-left: -16px;
+}
+#collapsible-accordian-margin {
+    margin-top: -1.2em;
+    margin-right: -6px;
+    margin-bottom: 1rem;
+    margin-left: -7.5px;
+}
+#breadone{
+    margin-top: -41px;
+    margin-left: 15.5rem;
+    width: 9%;
+}
+#breadtwo{
+    margin-top: -35px !important;
+    font-size: 12px !important;
+    margin-left: 24.5rem;
+}
+#breadthree{
+    margin-top: -35px !important;
+    font-size: 12px !important;
+    margin-left: 32rem;
+}
+#breadfour{
+    margin-top: -35px !important;
+    font-size: 12px !important;
+    margin-left: 51em !important;
+}
+#breadfive{
+    margin-top: -35px !important;
+    font-size: 12px !important;
+    margin-left: 61em !important;
+}
+</style>
+<section id="content">
+    <!--start container-->
+    <div class="container">
+        <div id="breadcrumbs-wrapper">
+            <div class="row">
+                <div class="col s6 m12 l12" id="breadcrumbs">
+                    <ol class="breadcrumbs" style="margin-top: 10px;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Anil</a></li>
+                        <li class="active">Control View</li>
+                    </ol>
+                    <div class="input-field col s2" id="breadone">
+                        <input type="text" id="searchone" placeholder="Search">
+                    </div>
+                     <div class="col s6 m12 l2" id="breadtwo">
+						<h8>Bookings: 500<h8>
+					</div>
+					<div class="col s6 m12 l2" id="breadthree">
+						 <h8>Active Vehicles: 450<h8>
+					</div>
+					<div class="col s6 m12 l2" id="breadfour">
+						 <h8>Shed Vehicles: 150<h8>
+					</div>
+					<div class="col s6 m12 l3" id="breadfive">
+						 <h8>Collection: 999999<h8>
+					</div>
+                     <div class="input-field col s2" id="searchfilter">
+                        <input type="text" id="searc" placeholder="Search">
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div id="basic-form" class="section">
+            <div class="row">
+                <div class="col s12 m12 l2">
+                    <div class="card-panel" id="c2_controlview_card_panel">
+                        <div class="row">
+                            <ul class="collapsible collapsible-accordion" data-collapsible="accordion" id="collapsible-accordian-margin">
+                                <li>
+                                    <div class="collapsible-header active">Booking Managemnet</div>
+                                    <div class="collapsible-body" id="collapsemargin">
+
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>Atmt.Type</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <select class="browser-default" id="selectheight">
+													<option value="Choose">--All--</option>
+													<option value="Option1">C.Operated</option>
+													<option value="Option2">Attached</option>
+													<option value="Option3">Sublease</option>
+												</select> <br>
+                                            </div>
+                                        </div>
+
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>Vehicle</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <select class="browser-default" id="selectheight">
+													<option value="Choose">--All--</option>
+													<option value="Option1">Tavera</option>
+													<option value="Option2">Vista</option>
+													<option value="Option3">Innova</option>
+												</select> <br>
+                                            </div>
+                                        </div>
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>V Time</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <select class="browser-default" id="selectheight">
+													<option value="Choose">--All--</option>
+													<option value="Option1">30 Min</option>
+													<option value="Option2">45 Min</option>
+													<option value="Option3">1 Hr</option>
+													<option value="Option3">2 Hr</option>
+												</select> <br>
+                                            </div>
+                                        </div>
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>Hours</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <select class="browser-default" id="selectheight">
+													<option value="Choose">--All--</option>
+													<option value="Option1">Next 1 Hour</option>
+													<option value="Option2">Next 2 Hours</option>
+													<option value="Option3">Next 3 Hours</option>
+												</select> <br>
+                                            </div>
+                                        </div>
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>Col.</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <select class="browser-default" id="selectheight">
+													<option value="Choose">--All--</option>
+													<option value="Option1">0</option>
+													<option value="Option2">500</option>
+													<option value="Option3">1000</option>
+													<option value="Option4">2000</option>
+												</select> <br>
+                                            </div>
+                                        </div>
+
+                                        <br />
+
+                                        <div class="col s12" id="button1">
+                                            <button type="button" class="btn" id="buttonheight">Search</button>
+                                        </div>
+                                        <div class="col s12" id="button2">
+                                            <button type="button" id="buttonheighttwo" class="btn primary" style="background-color: #dddddd;">Show All (500)</button>
+                                        </div>
+                                        <div class="col s12" id="button2">
+                                            <button type="button" id="buttonheighttwo" class="btn success" style="background-color: #d9534f;">Yet To Dispatch(200)</button>
+                                        </div>
+                                        <div class="col s12" id="button2">
+                                            <button type="button" id="buttonheighttwo" class="btn info" style="background-color: #3c763d; ">Booking Allotted(200)</button>
+                                        </div>
+                                        <div class="col s12" id="button2">
+                                            <button type="button" id="buttonheighttwo" class="btn danger" style="background-color: #f0b490; ">Trip Confirmed(25)</button>
+                                        </div>
+                                        <div class="col s12" id="button2">
+                                            <button type="button" id="buttonheighttwo" class="btn danger" style="background-color: #3c763d;">While Driving(75)</button>
+                                        </div>
+
+                                        &nbsp;
+
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="collapsible-header ">Vehicle Info</div>
+                                    <div class="collapsible-body" id="collapsemargin">
+
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>V.Status</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <select class="browser-default" id="selectheight">
+													<option value="Choose">--All--</option>
+													<option value="Option1">Break</option>
+													<option value="Option2">Alloted</option>
+													<option value="Option3">Inactive</option>
+												</select> <br>
+                                            </div>
+                                        </div>
+
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>Atmt.Type</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <select class="browser-default" id="selectheight">
+													<option value="Choose">--All--</option>
+													<option value="Option1">C.Operated</option>
+													<option value="Option2">Option2</option>
+													<option value="Option3">Option3</option>
+												</select> <br>
+                                            </div>
+                                        </div>
+
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>Vehicle</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <select class="browser-default" id="selectheight">
+													<option value="Choose">--All--</option>
+													<option value="Option1">Tavera</option>
+													<option value="Option2">Vista</option>
+													<option value="Option3">Innova</option>
+												</select> <br>
+                                            </div>
+                                        </div>
+
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>Col.</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <select class="browser-default" id="selectheight">
+													<option value="Choose">--All--</option>
+													<option value="Option1">0</option>
+													<option value="Option2">500</option>
+													<option value="Option3">1000</option>
+												</select> <br>
+                                            </div>
+                                        </div>
+
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>Exp.Vacant Vehicle</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <select class="browser-default" id="selectheight">
+													<option value="Choose">--All--</option>
+													<option value="Option1">1 hr</option>
+													<option value="Option2">2 hr</option>
+													<option value="Option3">4 hr</option>
+												</select> <br>
+                                            </div>
+                                        </div>
+
+                                        <br />
+
+                                        <div class="col s12" id="button1">
+                                            <button type="button" class="btn" id="buttonheight">Search</button>
+                                        </div>
+                                        &nbsp;
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header ">Booking Info</div>
+                                    <div class="collapsible-body" id="collapsemargin">
+
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>Date</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <input type="text" id="date" placeholder="Search Date">
+                                                <br>
+                                            </div>
+                                        </div>
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>Time</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <select class="browser-default" id="selectheight">
+													<option>Hrs</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+													<option value="13">13</option>
+													<option value="14">14</option>
+													<option value="15">15</option>
+													<option value="16">16</option>
+													<option value="17">17</option>
+													<option value="18">18</option>
+													<option value="19">19</option>
+													<option value="20">20</option>
+													<option value="21">21</option>
+													<option value="22">22</option>
+													<option value="23">23</option>
+													<option value="24">24</option>
+												</select> <br>
+                                            </div>
+                                        </div>
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>Vehicle</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <select class="browser-default" id="selectheight">
+													<option value="Choose">--All--</option>
+													<option value="Option1">Tavera</option>
+													<option value="Option2">Vista</option>
+													<option value="Option3">Innova</option>
+												</select> <br>
+                                            </div>
+                                        </div>
+
+                                        <br />
+
+                                        <div class="col s12" id="button1">
+                                            <button type="button" class="btn" id="buttonheight">Search</button>
+                                        </div>
+                                        &nbsp;
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header ">Auto-Login Vehicles</div>
+                                    <div class="collapsible-body" id="collapsemargin">
+
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>Date</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <input type="text" id="date2" placeholder="Search Date">
+                                                <br>
+                                            </div>
+                                        </div>
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>From Time</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <select class="browser-default" id="selectheight">
+													<option>Hrs</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+													<option value="13">13</option>
+													<option value="14">14</option>
+													<option value="15">15</option>
+													<option value="16">16</option>
+													<option value="17">17</option>
+													<option value="18">18</option>
+													<option value="19">19</option>
+													<option value="20">20</option>
+													<option value="21">21</option>
+													<option value="22">22</option>
+													<option value="23">23</option>
+													<option value="24">24</option>
+												</select> <br>
+                                            </div>
+                                        </div>
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>To Time</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <select class="browser-default" id="selectheight">
+													<option>Hrs</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+													<option value="13">13</option>
+													<option value="14">14</option>
+													<option value="15">15</option>
+													<option value="16">16</option>
+													<option value="17">17</option>
+													<option value="18">18</option>
+													<option value="19">19</option>
+													<option value="20">20</option>
+													<option value="21">21</option>
+													<option value="22">22</option>
+													<option value="23">23</option>
+													<option value="24">24</option>
+												</select> <br>
+                                            </div>
+                                        </div>
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>Area</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <select class="browser-default" id="selectheight">
+													<option value="Choose">--All--</option>
+													<option value="Option1">Ammerpet</option>
+													<option value="Option2">Koti</option>
+													<option value="Option3">Miyapur</option>
+												</select> <br>
+                                            </div>
+                                        </div>
+                                        <div class="col s12">
+                                            <br>
+                                            <div class="col s4" id="pad1">
+                                                <b>Vehicle</b>
+                                            </div>
+                                            <div class="col s8" id="width1">
+                                                <select class="browser-default" id="selectheight">
+													<option value="Choose">--All--</option>
+													<option value="Option1">Tavera</option>
+													<option value="Option2">Vista</option>
+													<option value="Option3">Innova</option>
+												</select> <br>
+                                            </div>
+                                        </div>
+
+                                        <br />
+
+                                        <div class="col s12" id="button1">
+                                            <button type="button" class="btn" id="buttonheight">Search</button>
+                                        </div>
+                                        &nbsp;
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form with placeholder -->
+                <div class="col s12 m12 l7">
+                    <div class="card-panel" id="c7_controlview_card_panel">
+                        <div id="table-datatables">
+                            <div class="row">
+                                <table id="example" class="display">
+                                    <thead class="c01">
+                                        <tr>
+                                            <th>B.No</th>
+                                            <th>V.Name</th>
+                                            <th>P.Time</th>
+                                            <th>P.Place</th>
+                                            <th>D.Place</th>
+                                            <th>Package</th>
+                                            <th>Origin</th>
+                                            <th>Status</th>
+                                            <th id="headerwidth">VID</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody class="b01">
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>LAN</td>
+                                            <td>A</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>APP</td>
+                                            <td>B</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>WEB</td>
+                                            <td>C</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>LAN</td>
+                                            <td>A</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>APP</td>
+                                            <td>C</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>WEB</td>
+                                            <td>B</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>LAN</td>
+                                            <td>A</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>APP</td>
+                                            <td>C</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>WEB</td>
+                                            <td>A</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>LAN</td>
+                                            <td>C</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>APP</td>
+                                            <td>B</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>LAN</td>
+                                            <td>C</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>LAN</td>
+                                            <td>B</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>APP</td>
+                                            <td>C</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>LAN</td>
+                                            <td>A</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>APP</td>
+                                            <td>C</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>LAN</td>
+                                            <td>B</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>WEB</td>
+                                            <td>C</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>19</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>APP</td>
+                                            <td>C</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>20</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>WEB</td>
+                                            <td>C</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>21</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>LAN</td>
+                                            <td>A</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>22</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>APP</td>
+                                            <td>C</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>LAN</td>
+                                            <td>A</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>24</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>LAN</td>
+                                            <td>C</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>25</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>APP</td>
+                                            <td>A</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>26</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>WEB</td>
+                                            <td>C</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>27</td>
+                                            <td>Innova</td>
+                                            <td>20:00</td>
+                                            <td>Jntu</td>
+                                            <td>Koti</td>
+                                            <td>2 Hr</td>
+                                            <td>LAN</td>
+                                            <td>B</td>
+                                            <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            <tr>
+                                                <td>28</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>APP</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>29</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>WEB</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>30</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>LAN</td>
+                                                <td>B</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>31</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>APP</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>32</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>WEB</td>
+                                                <td>A</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>33</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>LAN</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>34</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>APP</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>35</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>WEB</td>
+                                                <td>A</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>36</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>LAN</td>
+                                                <td>B</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>37</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>APP</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>38</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>WEB</td>
+                                                <td>B</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>39</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>LAN</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>40</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>APP</td>
+                                                <td>A</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>41</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>WEB</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>42</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>LAN</td>
+                                                <td>B</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>43</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>APP</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>44</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>WEB</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>45</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>LAN</td>
+                                                <td>A</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>46</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>APP</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>47</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>WEB</td>
+                                                <td>B</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>48</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>LAN</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>49</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>APP</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>50</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>WEB</td>
+                                                <td>A</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>51</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>LAN</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>52</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>APP</td>
+                                                <td>B</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>53</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>WEB</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>54</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>LAN</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>55</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>APP</td>
+                                                <td>A</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>56</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>WEB</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>57</td>
+                                                <td>Innova</td>
+                                                <td>20:00</td>
+                                                <td>Jntu</td>
+                                                <td>Koti</td>
+                                                <td>2 Hr</td>
+                                                <td>LAN</td>
+                                                <td>C</td>
+                                                <td><input type="text" id="tdataheight" maxlength="4"></td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                                <div class="row" id="tablePagination">
+                                  <div class="col s6 m12 l3" id="tableRowCount">
+							            <h8>Total Rows: 57<h8>
+							       </div>
+							       <div class="col s6 m12 l3" id="tableColumnCount">
+							            <h9>Total Columns: 10<h9>
+							       </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col s12 m12 l3">
+                    <div class="tabs">
+                        <div class="tab-box">
+                            <div class="current col s5">
+                                <a href="javascript:;" id="tab-1" class="tabLink activeLink" data-ng-click="gettabpage('1')">Vehicles</a>
+                            </div>
+                            <div class="verticalLine"></div>
+                            <div class="col s5">
+                                <a href="javascript:;" id="tab-2" class="tabLink" data-ng-click="gettabpage('1')">Booking Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-panel" id="c3_table_card_panel">
+
+                        <div class="row">
+                            <form class="col s12">
+                                <div id="tab-1-1" class="tabcontent paddingAll">
+                                    <!-- <div class="row"><input type="text" id="sear"></div> -->
+
+                                    <div class="row">
+                                        <div class="table-responsive" id="secondtable">
+                                            <table id="table">
+                                                <thead id="c02">
+                                                    <tr>
+                                                        <th>VID</th>
+                                                        <th>Vac.T</th>
+                                                        <th>V.Name</th>
+                                                        <th>Location</th>
+                                                        <th>Coll.</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <td>005</td>
+                                                        <td>00:37</td>
+                                                        <td>Innova</td>
+                                                        <td>Jntu</td>
+                                                        <td>440</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>002</td>
+                                                        <td>4:47</td>
+                                                        <td>Indica</td>
+                                                        <td>Koti</td>
+                                                        <td>900</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>008</td>
+                                                        <td>3:08</td>
+                                                        <td>Hyundai</td>
+                                                        <td>Jntu</td>
+                                                        <td>320</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>005</td>
+                                                        <td>2:00</td>
+                                                        <td>Innova</td>
+                                                        <td>Koti</td>
+                                                        <td>650</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <section class="panel panel-success" id="panelpadding">
+                                            <header class="panel-heading">
+                                                <h5 class="panel-title">Vehicle Details</h5>
+                                            </header>
+                                            <div class="panel-body" id="pbodyfontsize">
+                                                <div style="border-bottom: 1px solid #CCCCCC;">
+                                                    <div class="row">
+                                                        <div class="col s4">
+                                                            <label>Veh.Id </label><span> 002</span>
+                                                        </div>
+                                                        <div class="col s4">
+                                                            <label>Dr. Id </label><span>9170</span>
+                                                        </div>
+                                                        <div class="col s3">
+                                                            <select class="browser-default" id="selectheight">
+																<option value="Choose"></option>
+																<option value="Option1">Dri.No</option>
+																<option value="Option2" selected="selected">Reg.No</option>
+															</select>
+                                                        </div>
+                                                        <div class="col s1" title="Call Now">
+                                                            <i class="mdi-maps-local-phone"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col s4">Owner Name</div>
+                                                        <div class="col s4">Ramavath</div>
+                                                        <div class="col s4">PATAN CHERVU</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col s4"><label>LiT: </label><span>0</span></div>
+                                                        <div class="col s4"><label>ELoT: </label><span>0</span></div>
+                                                        <div class="col s4"><label>T.Br.Tm: </label><span>0</span></div>
+                                                    </div>
+                                                </div>
+                                                <div style="border-bottom: 1px solid #CCCCCC;">
+                                                    <div class="row">
+                                                        <div class="col s3"><label>T.Bkngs: </label><span>6</span></div>
+                                                        <div class="col s2"><label>SB: </label><span>0</span></div>
+                                                        <div class="col s3"><label>RoB: </label><span></span></div>
+                                                        <div class="col s2"><label>RB: </label><span>0</span></div>
+                                                        <div class="col s2"><label>CB: </label><span>0</span></div>
+                                                    </div>
+                                                </div>
+                                                <div style="border-bottom: 1px solid #CCCCCC;">
+                                                    <div class="row">
+                                                        <div class="col s6"><label>T.Days: </label><span>6</span></div>
+                                                        <div class="col s5"><label>W.Days </label><span>0</span></div>
+
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col s6"><label>W.Hrs: </label><span>0</span></div>
+                                                        <div class="col s5"><label>Day Coll: </label><span>0</span></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col s6"><label>D.Rating 
+														   </label>
+                                                            <i class="mdi-action-star-rate tiny"></i>
+                                                            <i class="mdi-action-star-rate tiny"></i>
+                                                            <i class="mdi-action-star-rate tiny"></i>
+                                                            <i class="mdi-action-star-rate tiny"></i>
+                                                        </div>
+                                                        <div class="col s6"><label>V.Rating 
+														   </label>
+                                                            <i class="mdi-action-star-rate tiny"></i>
+                                                            <i class="mdi-action-star-rate tiny"></i>
+                                                            <i class="mdi-action-star-rate tiny"></i>
+                                                            <i class="mdi-action-star-rate tiny"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Border Ended -->
+
+                                                <div class="row">
+                                                    <div class="col s4">AP09BP0737</div>
+                                                    <div class="col s4">0 - 0</div>
+                                                    <div class="col s4">Performance</div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col s4"><label>Daily: </label><span> 00:00 Hrs</span></div>
+                                                    <div class="col s4"><label>Avg </label><span> 02:00 Hrs</span></div>
+                                                    <div class="col s4"><span style="height:15px;display:inline-block;width:80px;border-radius:5px;background-color:green"></span></div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col s8"><label>Paper.Val </label><span> All Papers Active</span></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col s12"><label>Facilities </label><span> All Papers Active</span></div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div id="tab-2-1" class="tabcontent paddingAll hide">
+
+                                    <div style="border-bottom: 1px solid #CCCCCC;">
+                                        <div class="row">
+                                            <div class="col s4">
+                                                <b>Day Avg.</b>
+                                            </div>
+                                            <div class="col s3">462518</div>
+                                            <div class="col s3">Kiran</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col s4">Trip Count</div>
+                                            <div class="col s3">0</div>
+                                            <div class="col s4">Gold/Family</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col s4">Discount</div>
+                                            <div class="col s2">0</div>
+                                            <div class="col s4">
+                                                <select class="browser-default" id="selectheight">
+													<option value="Choose"></option>
+													<option value="Option1" selected="selected">Primary No</option>
+													<option value="Option2">Alternative.No</option>
+												</select>
+                                            </div>
+                                            <div class="col s1" title="Call Now"> <i class="mdi-maps-local-phone"></i></div>
+                                        </div>
+                                    </div>
+
+                                    <div style="border-bottom: 1px solid #CCCCCC;">
+                                        <div class="row">
+                                            <div class="col s4">B.Id</div>
+                                            <div class="col s3">30</div>
+                                            <div class="col s4">07->12:30</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col s5">JNTU->Shamshabad</div>
+                                            <div class="col s3">Airport</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col s3">Package</div>
+                                            <div class="col s6">2hrs - 35kms - Rs550</div>
+                                            <div class="col s1">JT</div>
+                                            <div class="col s2">Airport</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col s3">P.Amt</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col s6"><label>Landmark1 </label><span>Ammerpet</span></div>
+                                            <div class="col s6"><label>Landmark2 </label><span>MGBS</span></div>
+                                        </div>
+                                    </div>
+
+                                    <div style="border-bottom: 1px solid #CCCCCC;">
+                                        <div class="row">
+                                            <div class="col s6">CSE</div>
+                                            <div class="col s5">DISP</div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col s6">S.Rep. By</div>
+                                            <div class="col s5">C.Rep. By</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col s6">Mod. By</div>
+                                            <div class="col s5">Cancel By</div>
+                                        </div>
+                                    </div>
+                                    <div style="border-bottom: 1px solid #CCCCCC;">
+                                        <div class="row">
+                                            <div class="col s4"><label>Veh.Id </label><span> 002</span></div>
+                                            <div class="col s4"><label>Dr. Id </label><span>9170</span></div>
+                                            <div class="col s3">
+                                                <select class="browser-default" id="selectheight">
+													<option value="Choose"></option>
+													<option value="Option1">Dri.No</option>
+													<option value="Option2" selected="selected">Reg.No</option>
+												</select>
+                                            </div>
+                                            <div class="col s1" title="Call Now"> <i class="mdi-maps-local-phone"></i></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col s4">Owner Name</div>
+                                            <div class="col s4">Ramavath</div>
+                                            <div class="col s4">PATAN CHERVU</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col s4">TS08UA6891</div>
+                                            <div class="col s4">HYUNDAI</div>
+                                        </div>
+                                    </div>
+                                    <!-- border end -->
+
+                                    <div class="row">
+                                        <div class="col s5">
+                                            <b>Comments By --</b>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s5">
+                                            <b>Special Request:</b>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <textarea class="materialize-textarea"></textarea>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+<!-- END CONTENT -->
+<script>
+$(document).ready(function() {
+    // DataTable
+    var table = $('#example').DataTable({
+        "responsive": true,
+        "bAutoWidth": true, 
+        "lengthMenu": [
+            [24, 50, -1],
+            [24, 50, "All"]
+        ],
+    initComplete: function(settings) {
+        $('#example').colResizable({liveDrag:true});
+    }
+    });
+    $('#searchone').keyup(function() {
+        table.search($(this).val()).draw();
+    })
+});
+
+    /* 2nd Table Power Search Start*/
+
+    var $rows = $('#table tbody tr');
+    $('#searc').keyup(function() {
+        var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+
+        $rows.show().filter(function() {
+            var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+            return !~text.indexOf(val);
+        }).hide();
+    });
+
+    /* 2nd Table Power Search Ended */
+
+    $('#date').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        step: 01,
+    });
+
+    $('#date2').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        step: 01,
+    });
+
+    $('#todate').datetimepicker({
+        timepicker: true,
+        closeOnTimeSelect: false,
+        format: 'Y-m-d, H:i',
+        step: 10,
+    });
+
+    $(document).ready(function() {
+        $('.collapsible').collapsible();
+    })
+</script>

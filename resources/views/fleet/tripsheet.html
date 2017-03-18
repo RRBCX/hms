@@ -1,0 +1,393 @@
+<!-- START CONTENT -->
+<section id="content">
+    <!--breadcrumbs start-->
+    <div id="breadcrumbs-wrapper">
+        <!-- Search for small screen -->
+        <div class="header-search-wrapper grey hide-on-large-only">
+            <i class="mdi-action-search active"></i>
+            <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <ol class="breadcrumbs">
+                        <li><a href="index.html">Dashboard</a>
+                        </li>
+                        <li><a href="#">Forms</a>
+                        </li>
+                        <li class="active">Trip Sheet</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs end-->
+    <!--start container-->
+    <div class="container">
+        <div class="section">
+
+            <fieldset>
+                <!-- <legend>Title</legend> -->
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <fieldset>
+                            <!-- <legend>Current Status</legend> -->
+                            <h5>Trip Sheet No:</h5>
+                            <hr>
+                            <div class="input-field col s7">
+                                <div class="row margin">
+                                    <div class="input-field col s3">
+                                        <input type="text" class="form-control" id="vehicleid">
+                                        <label for="vehicleid" class="center-align">Vehicle ID</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input type="text" class="form-control" id="tstplace">
+                                        <label for="tstplace"  class="center-align">T.St.Place</label>
+                                    </div>
+                                    <div class="input-field col s3" id="input-date-picker" class="section">
+                                        <input type="text" class="datepicker"> <label>T.St.Date</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input type="text" class="form-control" id="tsttime">
+                                        <label for="tsttime" class="center-align">T.St.Time</label>
+                                    </div>
+                                </div>
+                                <div class="row margin">
+                                    <div class="input-field col s3">
+                                        <input type="text" class="form-control" id="tstkms">
+                                        <label for="tstkms" class="center-align">T.St.Kms</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input type="text" class="form-control" id="regno">
+                                        <label for="regno" class="center-align">Reg.No.</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input type="text" class="form-control" id="tclplace">
+                                        <label for="tclplace" class="center-align">T.Cl.Place</label>
+                                    </div>
+                                    <div class="input-field col s3" id="input-date-picker" class="section">
+                                        <input type="text" class="datepicker"> <label>T.Cl.Date</label>
+                                    </div>
+                                </div>
+
+                                <div class="row margin">
+                                    <div class="input-field col s3">
+                                        <input type="text" class="form-control" id="tcltime">
+                                        <label for="tcltime" class="center-align">T.Cl.Time</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input type="text" class="form-control" id="tclkms">
+                                        <label for="tclkms" class="center-align">T.Cl.Kms</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input type="text" class="form-control" id="driverid">
+                                        <label for="driverid" class="center-align">Driver Id</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input type="text" class="form-control" id="drivername">
+                                        <label for="drivername" class="center-align">Driver Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="row margin">
+                                    <div class="input-field col s3">
+                                        <input type="text" class="form-control" id="assignername">
+                                        <label for="assignername" class="center-align">Assigner Name</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input type="text" class="form-control" id="inchargename">
+                                        <label for="inchargename" class="center-align">Incharge Name</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input type="text" class="form-control" id="totalkms">
+                                        <label for="totalkms" class="center-align">Total Kms</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input type="text" class="form-control" id="cugno">
+                                        <label for="cugno" class="center-align">CUG No.</label>
+                                    </div>
+                                </div>
+
+                                <div class="row margin">
+                                    <div class="input-field col s3">
+                                        <input type="text" class="form-control" id="driverno">
+                                        <label for="driverno" class="center-align">Driver No.</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input type="text" class="form-control" id="assignerno">
+                                        <label for="assignerno" class="center-align">Assigner No.</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input type="text" class="form-control" id="inchageno">
+                                        <label for="inchageno" class="center-align">Incharge No.</label>
+                                    </div>
+                                    <div class="input-field col s1">
+                                        <h6 id="color">Insp</h6>
+                                         </div>
+                                       <div class="input-field col s1">
+                                            <input name="group1" type="radio" id="test1"><label for="test1">Yes</label>
+                                        </div>
+                                         <div class="input-field col s1">
+                                            <input name="group1" type="radio" id="test2"><label for="test2">No</label>
+                                        </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="input-field col s2">
+                            </div>
+                            <div class="input-field col s3">
+                                <div class="row">
+                                    <input type="file" id="color" accept="image/*" onchange="loadFile(event)">
+                                    <img style="width: 143px; height: 145px; color: white;" value="" id="output" />
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    </div>
+                    <hr>
+                    
+                <div class="form-group col-sm-12">
+                    <table class="table table-hover nowrap">
+                        <thead class="back">
+                            <tr>
+                                <th>S.No</th>
+                                <th>Bkg.ID</th>
+                                <th>Pickup Time</th>
+                                <th>St.Kms</th>
+                                <th>Drop Time</th>
+                                <th>CL.Kms</th>
+                                <th>Total Hrs</th>
+                                <th>Total Kms</th>
+                                <th>Trip Amount</th>
+                                <th>Dead Millage</th>
+                                <th>Remarks</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="t01">
+                            <tr>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+
+                            </tr>
+                            <tr>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+
+
+                            </tr>
+
+                            <tr>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+
+                            </tr>
+                            <tr>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+
+                            </tr>
+                            <tr>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+
+                            </tr>
+                            <tr>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+
+                            </tr>
+                            <tr>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+
+                            </tr>
+                            <tr>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+ 		
+                <div class="row">
+                    <div class="input-field col s12">
+                        <fieldset>
+                            <!-- 	<legend>Current Status</legend> -->
+                            <div class="row margin">
+                                <div class="input-field col s3">
+                                    <input type="text" class="form-control" id="totalamount">
+                                    <label for="totalamount" class="center-align">Total Amount</label>
+                                </div>
+                                <div class="input-field col s3">
+                                    <input type="text" class="form-control" id="cbamount">
+                                    <label for="cbamount" class="center-align">CB Amount</label>
+                                </div>
+                                <div class="input-field col s3">
+                                    <input type="text" class="form-control" id="dieselamount">
+                                    <label for="dieselamount" class="center-align">Diesel Amount</label>
+                                </div>
+                                <div class="input-field col s3">
+                                    <input type="text" class="form-control" id="dieselwage">
+                                    <label for="dieselwage" class="center-align">Diesel Wage</label>
+                                </div>
+
+                            </div>
+
+                            <div class="row margin">
+                                <div class="input-field col s3">
+                                    <input type="text" class="form-control" id="balance">
+                                    <label for="balance" class="center-align">Balance</label>
+                                </div>
+                                <div class="input-field col s3">
+                                    <input type="text" class="form-control" id="nooflts">
+                                    <label for="nooflts" class="center-align">No.of.Lts</label>
+                                </div>
+                                <div class="input-field col s3">
+                                    <input type="text" class="form-control" id="lastfillingkms">
+                                    <label for="lastfillingkms" class="center-align">Last Filling Kms</label>
+                                </div>
+
+                                <div class="input-field col s3">
+                                    <input type="text" class="form-control" id="currentkms">
+                                    <label for="currentkms" class="center-align">Current Kms</label>
+                                </div>
+                            </div>
+
+                            <div class="row margin">
+                                <div class="input-field col s3">
+                                    <input type="text" class="form-control" id="millage">
+                                    <label for="millage" class="center-align">Millage</label>
+                                </div>
+                                <div class="input-field col s3">
+                                    <input type="text" class="form-control" id="expense/km">
+                                    <label for="expense/km"class="center-align">Expense/Km</label>
+                                </div>
+                                <div class="input-field col s3">
+                                    <input type="text" class="form-control" id="noofduties">
+                                    <label for="noofduties" class="center-align">No.of Duties</label>
+                                </div>
+
+                                <div class="input-field col s3">
+                                    <input type="text" class="form-control" id="workinghrs">
+                                    <label for="workinghrs" class="center-align">Working Hours</label>
+                                </div>
+                            </div>
+
+                            <div class="row margin">
+                                <div class="input-field col s3">
+                                    <input type="text" class="form-control" id="norephrs">
+                                    <label for="norephrs" class="center-align">No.Reps.Hour</label>
+                                </div>
+                                <div class="input-field col s3">
+                                    <input type="text" class="form-control" id="deduction">
+                                    <label for="deduction" class="center-align">Deduction</label>
+                                </div>
+                                <div class="input-field col s3">
+                                    <input type="text" class="form-control" id="deposit">
+                                    <label for="deposit" class="center-align">Sec.Deposit</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                
+            </fieldset>
+
+        </div>
+        <!-- Floating Action Button -->
+
+        <!-- Floating Action Button -->
+    </div>
+    <!--end container-->
+</section>
+
+<script>
+    var loadFile = function(event) {
+        var output = document.getElementById('output');
+        output.src = URL.createObjectURL(event.target.files[0]);
+    };
+
+    $('#dob').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'Y-m-d',
+        step: 01,
+    });
+</script>

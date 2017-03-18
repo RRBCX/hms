@@ -1,0 +1,885 @@
+<style>
+.btn-success {
+	display: none;
+}
+td {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+ 
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0 0.75em;
+  border-radius: 4px;
+  background-color: #d9edf7;
+}
+[type="checkbox"] + label {
+  position: relative;
+  padding-left: 22px;
+}
+.file-field .btn, .file-field .btn-large {
+  float: left;
+  height: 2rem;
+  line-height: 2rem;
+}
+select {
+    padding: 0 1px;
+}
+.input-field {
+    position: relative;
+    margin-top: 0rem;
+}
+input[type=text] {
+	text-transform: capitalize;
+}
+</style>
+<section id="content">
+	<!--start container-->
+	<div class="container">
+		<div id="breadcrumbs-wrapper">
+			<div class="row">
+				<div class="col s12 m12 l12" id="breadcrumbs">
+					<div class="col s6 m6 l6">
+						<ol class="breadcrumbs" style="margin-top: 10px;">
+							<li><a href="#/dashboard">Home</a></li>
+							<li><a href="#">Rohit</a></li>
+							<li class="active">User Master Frame</li>
+						</ol>
+					</div>
+					<div class="col s6 m6 l6">
+						<div style="margin-top: 4px; float: right;">
+							<button class="btn  waves-light btnMR2" id="continuebutton"
+								type="submit" name="action">Continue</button>
+							<button class="btn  primary btnMR2" type="submit" name="action">Cancel</button>
+							<button class="btn-success" type="submit" name="action">Submit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="basic-form" class="section">
+			<div class="row">
+				<div class="col s12 m12 l3">
+					<div class="card-panel" id="c3_card_panel"></div>
+				</div>
+				<!-- Form with placeholder -->
+				<div class="col s12 m12 l9">
+					<div class="tabs">
+						<div class="tab-box">
+							<div class="current col s3">
+								<a href="javascript:;" id="tab-1" class="tabLink activeLink"
+									data-ng-click="gettabpage('1')">Personal Info</a>
+							</div>
+							<div class="col s3">
+								<a href="javascript:;" id="tab-2" class="tabLink"
+									data-ng-click="gettabpage('1')">Tab 2</a>
+							</div>
+							<div class="col s3">
+								<a href="javascript:;" id="tab-3" class="tabLink"
+									data-ng-click="gettabpage('1')">Tab 3</a>
+							</div>
+							<div class="col s3">
+								<a href="javascript:;" id="tab-4" class="tabLink"
+									data-ng-click="gettabpage('4')">Preview</a>
+							</div>
+						</div>
+					</div>
+					<div class="card-panel" id="c9_card_panel" style="padding-bottom: 10px;">
+						<div class="row">
+							<form class="col s12">
+								<div id="tab-1-1" class="tabcontent paddingAll">
+									<div class="row">
+										<div class="col s6 "style="padding-left: 0px; padding-right: 0px;">
+											<fieldset class="field-userA-personalinfo">
+												<legend>Personal Info </legend>
+												<div class="row" style="height: 38px;">
+														<div class="input-field col s3 required" style="padding-left:9px;padding-right:9px;">
+															<select class="browser-default ">
+																<option>Title</option>
+																<option value="Mr.">Mr.</option>
+																<option value="Mrs.">Mrs.</option>
+																<option value="Miss.">Miss.</option>
+															</select>
+														</div>
+														<div class="input-field col s5 required" style="padding-left:0px;padding-right:9px;">
+															<input type="text" name="name" id="PIFName1"
+																onkeypress="return onlyAlphabets(event,this);" /> <label
+																for="PIFName1">First Name</label>
+														</div>
+														<div class="input-field col s4 required" style="padding-left:0px;padding-right:12px;">
+															<input type="text" name="name" id="PILName1"
+																onkeypress="return onlyAlphabets(event,this);" /> <label
+																for="PILName1">Last Name</label>
+														</div>
+												</div>
+												<div class="row" style="height: 38px;">
+														<div class="input-field col s3 required" style="padding-left:9px;padding-right:9px;">
+															<select class="browser-default ">
+																<option>Title</option>
+																<option value="S/o">S/o</option>
+																<option value="D/o">D/o</option>
+																<option value="W/o">W/o</option>
+															</select>
+														</div>
+														<div class="input-field col s5 required" style="padding-left:0px;padding-right:9px;">
+															<input type="text" name="name" id="PIFName2"
+																onkeypress="return onlyAlphabets(event,this);" /> <label
+																for="PIFName2">First Name</label>
+														</div>
+														<div class="input-field col s4 required" style="padding-left:0px;padding-right:12px;">
+															<input type="text" name="name" id="PILName2"
+																onkeypress="return onlyAlphabets(event,this);" /> <label
+																for="PILName2">Last Name</label>
+														</div>
+												</div>
+												<div class="row" style="height: 38px;">
+														<div class="input-field col s3 required" style="padding-left:9px;padding-right:9px;">
+															<input type="text" id="PIdob" readonly="readonly" /> <label
+																for="PIdob">DOB</label>
+														</div>
+														<div class="input-field col s3 required" style="padding-left:0px;padding-right:9px;">
+															<input type="text" id="PIWeddingDate" readonly="readonly" />
+															<label for="PIWeddingDate">Wedding</label>
+														</div>
+														<div class="input-field col s3 required" style="padding-left:0px;padding-right:9px;">
+															<select class="browser-default">
+																<option>Gender</option>
+																<option value="Male">Male</option>
+																<option value="Female">Female</option>
+															</select>
+														</div>
+														<div class="input-field col s3 required" style="padding-left:0px;padding-right:12px;">
+															<select class="browser-default">
+																<option>Blood Group</option>
+																<option value="Male">O+ve</option>
+																<option value="Female">O-ve</option>
+															</select>
+														</div>
+												</div>
+											</fieldset>
+										</div>
+										<div class="col s6 " style="padding-right: 0px;">
+											<fieldset class="field-userA-contactinfo">
+												<legend>Contact Info</legend>
+												<div class="row" style="height: 38px;">
+														<div class="input-field col s4 required" style="padding-left:9px;padding-right:9px;">
+															<input type="text" value="+91 " class="phnumber"
+																id="checknumberonly1" maxlength="14" name="phnumber1"
+																required="required" /> <label for="checknumberonly1"
+																class="active" id="chars1">Mobile Number 1</label>
+														</div>
+														<div class="input-field col s4 required" style="padding-left:0px;padding-right:9px;width:115px;">
+															<select class="browser-default">
+																<option value="Male">Personal</option>
+																<option value="Female">Alternative</option>
+															</select>
+														</div>
+														<div class="input-field col s2" style="padding-left:6px;padding-right:9px;width: 14%;margin-left: -20px;">
+															<input type="checkbox" id="CIWhatsapp"> <label for="CIWhatsapp">
+														<img src="resources/assets/images/whatsapp-icons/w2.png" alt="Smiley face"  style="margin-left: 4px;margin-top: -2px;"></label>
+														</div>
+
+														<div class="input-field col s2" style="padding-left:6px;padding-right:9px;">
+															<input type="checkbox" id="CIUpdates1" checked = "checked"> <label
+																for="CIUpdates1">Updates</label>
+														</div>
+												</div>
+												<div class="row" style="height: 38px;">
+														<div class="input-field col s4 m4 required" style="padding-left:9px;padding-right:9px;">
+															<input type="text" value="+91 " class="phnumber"
+																id="checknumberonly2" maxlength="14" name="phnumber2"
+																required="required" /> <label for="checknumberonly2"
+																class="active" id="chars2">Mobile Number 2</label>
+														</div>
+														<div class="input-field col s4 m4 required" style="padding-left:0px;padding-right:9px;width:115px;">
+															<select class="browser-default">
+																<option value="Male">Alternative</option>
+																<option value="Female">Personal</option>
+															</select>
+														</div>
+														<div class="input-field col s2" style="padding-left:6px;padding-right:9px;width: 14%;margin-left: -20px;">
+															<input type="checkbox" id="CIWhatsapp2"> <label
+																for="CIWhatsapp2"><img
+																src="resources/assets/images/whatsapp-icons/w2.png"
+																alt="Smiley face"  style="margin-left: 4px;margin-top: -2px;"></label>
+														</div>
+
+														<div class="input-field col s2" style="padding-left:6px;padding-right:9px;">
+															<input type="checkbox" id="CIUpdates2"> <label
+																for="CIUpdates2">Updates</label>
+														</div>
+												</div>
+												<div class="row" style="height: 38px;">
+														<div class="input-field col s12 required" style="padding-left:9px;padding-right:12px;">
+															<input type="email" id="CIEmail"
+																style='text-transform: lowercase' id="email" /> <label
+																for="CIEmail">Email Id</label>
+														</div>
+												</div>
+											</fieldset>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s6" style="padding-left: 0px; padding-right: 0px;">
+											<fieldset class="field-userA-prese-add">
+												<legend>Present Address</legend>
+												<div class="row" style="height: 38px;">
+														<div class="input-field col s4 m4 required" style="padding-left:9px;padding-right:9px;">
+															<input type="text" id="PrAhouse"
+																name="housenumber" required="required" /> <label
+																for="PrAhouse">House / Flat No.</label>
+														</div>
+														<div class="input-field col s4 m4 required" style="padding-left:0px;padding-right:9px;">
+															<input type="text" name="" id="PrABuilding" required="required" /> <label
+																for="PrABuilding">Building
+																Name</label>
+														</div>
+														<div class="input-field col s4 m4 required" style="padding-left:0px;padding-right:12px;">
+															<input type="text" class="" id="PrAStreet"
+																name="StreetName" required="required" /> <label
+																for="PrAStreet" id="chars">Street
+																Name</label>
+														</div>
+												</div>
+												<div class="row" style="height: 38px;">
+													<div class="input-field col s4 m4 required" style="padding-left:9px;padding-right:9px;">
+															<input type="text" maxlength="6" id="checknumberonly" name="" required="required" /> 
+															<label for="checknumberonly" id="">Pin code</label>
+														</div>
+														<div class="input-field col s4 required" style="padding-left:0px;padding-right:9px;">
+															<select class="browser-default ">
+																<option value="">--City--</option>
+																<option>HYD</option>
+																<option>VSP</option>
+																<option>BZD</option>
+															</select>
+														</div>
+														<div class="input-field col s4" style="padding-left:0px;padding-right:12px;">
+															<select class="browser-default">
+																<option value="">--State--</option>
+																<option>AP</option>
+																<option>TS</option>
+																<option>KS</option>
+															</select>
+														</div>
+												</div>
+												<div class="row" style="height: 38px;">
+														<div class="input-field col s4" style="padding-left:9px;padding-right:9px;">
+															<input type="text" list="land" placeholder="Land Mark">
+															<datalist id="land">
+																<option value="Dominos Pizza">
+																<option value="Ground">
+																<option value="Metro Station">
+																<option value="Koti Busstand">
+																<option value="Stadium">
+															</datalist>
+
+														</div>
+														<div class="input-field col s4" style="padding-left:0px;padding-right:9px;">
+															<input type="text" list="land" style="color: #00bcd4"
+																placeholder="Area Name">
+															<datalist id="land">
+																<option value="HItex">
+																<option value="JNTU">
+																<option value="Ameerpet">
+																<option value="Secendrabad">
+																<option value="Gachhibowli">
+															</datalist>
+
+														</div>
+												</div>
+											</fieldset>
+										</div>
+										<div class="col s6" style="padding-right: 0px;">
+											<fieldset class="field-userA-permenent-add">
+												<legend>Permanent Address</legend>
+												<div class="row" style="height: 38px;">
+														<div class="input-field col s4 required" style="padding-left:9px;padding-right:9px;">
+															<input type="text" class="" name="phnumber" required="required" id="PeAFNumber" />
+															<label for="PeAFNumber">Flat No./ H.No</label>
+														</div>
+														<div class="input-field col s4 required" style="padding-left:0px;padding-right:9px;">
+															<input type="text" name="name" id="PeABName" onkeypress="return onlyAlphabets(event,this);" />
+															<label for="PeABName"> Building Name</label>
+														</div>
+														<div class="input-field col s4 required" style="padding-left:0px;padding-right:12px;">
+															<input type="email" id="PeASName" style='text-transform: lowercase' id="email" />
+															<label for="PeASName">Street Name</label>
+														</div>
+												</div>
+												<div class="row" style="height: 38px;">
+													<div class="input-field col s4 " style="padding-left:9px;padding-right:9px;">
+															<input type="text" maxlength="6" id="checknumberonly" name="" required="required" /> 
+															<label for="checknumberonly" id="">Pin code</label>
+														</div>
+														<div class="input-field col s4" style="padding-left:0px;padding-right:9px;">
+															<select class="browser-default">
+																<option value="">-City-</option>
+																<option>HYD</option>
+																<option>VSP</option>
+																<option>BZD</option>
+															</select>
+														</div>
+														<div class="input-field col s4" style="padding-left:0px;padding-right:12px;">
+															<select class="browser-default">
+																<option value="">-State-</option>
+																<option>AP</option>
+																<option>TS</option>
+																<option>KS</option>
+															</select>
+														</div>
+												</div>
+												<div class="row" style="height: 38px;">
+														<div class="input-field col s4" style="padding-left:9px;padding-right:9px;">
+															<input type="text" list="land" 
+																placeholder="Land Mark">
+															<datalist id="land">
+																<option value="Dominos Pizza">
+																<option value="Ground">
+																<option value="Metro Station">
+																<option value="Koti Busstand">
+																<option value="Stadium">
+															</datalist>
+
+														</div>
+														<div class="input-field col s4" style="padding-left:0px;padding-right:12px;">
+															<input type="text" list="land"
+																placeholder="Area Name">
+															<datalist id="land">
+																<option value="HItex">
+																<option value="JNTU">
+																<option value="Ameerpet">
+																<option value="Secendrabad">
+																<option value="Gachhibowli">
+															</datalist>
+
+														</div>
+												</div>
+											</fieldset>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s6" style="padding-left: 0px; padding-right: 0px;">
+											<div class="col s12" style="padding-left: 0px; padding-right: 0px;">
+												<fieldset class="field-userA-emerg-contact">
+													<legend>Emergency Contact </legend>
+													<div class="row" style="height: 38px;">
+														<div class="input-field col s3 required" style="padding-left:9px;padding-right:9px;">
+															<select class="browser-default ">
+																<option>Title</option>
+																<option value="Mr.">Mr.</option>
+																<option value="Mrs.">Mrs.</option>
+																<option value="Miss.">Miss.</option>
+															</select>
+														</div>
+														<div class="input-field col s5 required" style="padding-left:0px;padding-right:9px;">
+															<input type="text" name="name" id="ECFName"
+																onkeypress="return onlyAlphabets(event,this);" /> <label
+																for="ECFName">First Name</label>
+														</div>
+														<div class="input-field col s4 required" style="padding-left:0px;padding-right:12px;">
+															<input type="text" name="name" id="ECLName"
+																onkeypress="return onlyAlphabets(event,this);" /> <label
+																for="ECLName">Last Name</label>
+														</div>
+												</div>
+													<div class="row" style="height: 38px;">
+															<div class="input-field col s3" style="padding-left:9px;padding-right:9px;">
+																<select class="browser-default">
+																	<option value="">-Type-</option>
+																	<option>Personal</option>
+																	<option>Alternative</option>
+																</select>
+															</div>
+															<div class="input-field col s5 " style="padding-left:0px;padding-right:9px;">
+																<input type="email" id="ECRelation"
+																	style='text-transform: lowercase' id="email" /> <label
+																	for="ECRelation">Relation</label>
+															</div>
+															<div class="input-field col s4 required" style="padding-left:0px;padding-right:12px;">
+																<input type="text" value="+91 " class="phnumber3"
+																id="checknumberonly3" maxlength="14" name="phnumber3"
+																required="required" /> <label for="checknumberonly3"
+																class="active" id="chars3">Mobile Number 1</label>
+															</div>
+													</div>
+													
+													<div class="row" style="height: 38px;">
+														<div class="input-field col s3" style="padding-left:9px;padding-right:9px;margin-left: -20px;">
+															<input type="checkbox" id="ECUpdates"> <label
+															for="ECUpdates">Updates</label>
+														</div>
+														<div class="input-field col s3" style="padding-left:0px;padding-right:9px;width: 14%;">
+														<input type="checkbox" id="ECWhatsapp"> <label for="ECWhatsapp">
+														<img src="resources/assets/images/whatsapp-icons/w2.png" alt="Smiley face"  style="margin-left: 4px;margin-top: -2px;"></label>
+														</div>
+													</div>
+												</fieldset>
+											</div>
+											<div class="col s12"
+												style="padding-left: 0px; padding-right: 0px;">
+												<fieldset class="field-userA-prrofs">
+													<legend>Referred By </legend>
+
+													<div class="row" style="height: 38px;">
+														<div class="input-field col s3 required" style="padding-left:9px;padding-right:9px;">
+															<select class="browser-default ">
+																<option>Title</option>
+																<option value="Mr.">Mr.</option>
+																<option value="Mrs.">Mrs.</option>
+																<option value="Miss.">Miss.</option>
+															</select>
+														</div>
+														<div class="input-field col s5 required" style="padding-left:0px;padding-right:9px;">
+															<input type="text" name="" id="RBFirstname"
+																onkeypress="return onlyAlphabets(event,this);" /> <label
+																for="RBFirstname">First Name</label>
+														</div>
+														<div class="input-field col s4 required" style="padding-left:0px;padding-right:12px;">
+															<input type="text" name="name" id="RBLastname"
+																onkeypress="return onlyAlphabets(event,this);" /> <label
+																for="RBLastname">Last Name</label>
+														</div>
+												</div>
+													<div class="row" style="height: 38px;">
+															<div class="input-field col s3" style="padding-left:9px;padding-right:9px;">
+																<select class="browser-default">
+																	<option value="">-Type-</option>
+																	<option>Personal</option>
+																	<option>Alternative</option>
+																</select>
+															</div>
+															<div class="input-field col s5 " style="padding-left:0px;padding-right:9px;">
+																<input type="email" id="email"
+																	style='text-transform: lowercase' id="RBRelation" /> <label
+																	for="RBRelation">Relation</label>
+															</div>
+															<div class="input-field col s4 required" style="padding-left:0px;padding-right:12px;">
+																<input type="text" value="+91 " class="phnumber4"
+																id="checknumberonly4" maxlength="14" name="phnumber4"
+																required="required" /> <label for="checknumberonly4"
+																class="active" id="chars4">Mobile Number 2</label>
+															</div>
+													</div>
+													
+													<div class="row" style="height: 38px;">
+														<div class="input-field col s3" style="padding-left:9px;padding-right:9px;margin-left: -20px;">
+															<input type="checkbox" id="RBupdates"> <label
+															for="RBupdates">Updates</label>
+														</div>
+														<div class="input-field col s3" style="padding-left:0px;padding-right:9px;width: 14%;">
+														<input type="checkbox" id="reffwhatsapp"> <label
+															for="reffwhatsapp"><img
+															src="resources/assets/images/whatsapp-icons/w2.png"
+															alt="Smiley face"  style="margin-left: 4px;margin-top: -2px;"></label>
+														</div>
+													</div>
+
+												</fieldset>
+											</div>
+										</div>
+										<div class="col s6" style="padding-right: 0px;">
+											<fieldset class="field-userA-referredby">
+												<legend>Proofs</legend>
+												<div class="row" style="height: 38px;">
+													<div class="col s3" style="padding-left:9px;padding-right:9px;">
+														<select class="browser-default">
+															<option value="">-Type-</option>
+															<option>PAN Card</option>
+															<option>Aadhar</option>
+															<option>Photo</option>
+															<option>Voter Id</option>
+														</select>
+													</div>
+													<div class="col s3" style="padding-left:0px;padding-right:9px;">
+														<select class="browser-default" data-ng-model="vehiclecreation.select" data-ng-click="getvaluedropdown(vehiclecreation)">
+															<option value="">-Select-</option>
+															<option value="choosefile">Choose File</option>
+															<option value="scan">Scan</option>
+															<option value="upload">Photo</option>
+														</select>
+														</div>
+														<div class="col s6" style="padding-left:0px;padding-right:9px;">
+															
+														<div data-ng-if="choosefile">
+														<form action="#">
+																<div class="file-field input-field">
+																	<div class="btn">
+																		<span>Choose File</span> <input type="file">
+																	</div>
+																	
+																	<!-- <div class="file-path-wrapper">
+																		<input class="file-path validate valid" type="text"
+																			style="border-color: white">
+																	</div> -->
+																</div>
+															</form>
+														</div>
+
+														<div data-ng-if="scan">
+															<!-- <button class="btn  waves-light " id="veh_dropdown3"type="submit" name="action" data-ng-click="" style="color: white;">Scan</button> -->
+															<form action="#">
+																<div class="file-field input-field">
+																	<div class="btn">
+																		<span> Scan </span> <input type="file">
+																	</div>
+																	<!-- <div class="file-path-wrapper">
+																		<input class="file-path validate valid" type="text"
+																			style="border-color: white">
+																	</div> -->
+																</div>
+															</form>
+														</div>
+
+														<div data-ng-if="upload">
+															<form action="#">
+																<div class="file-field input-field">
+																		<div class="btn">
+																			<span>Upload</span> <input type="file">
+																		</div>
+																		<!-- <div class="file-path-wrapper">
+																			<input class="file-path validate valid" type="text"
+																				style="border-color: white">
+																		</div> -->
+																</div>
+															</form>
+														</div>
+														</div>
+												</div>
+												<!-- <div class="row" style="height: 38px;">
+														
+													<div class="col s4" style="padding-left:0px;padding-right:12px;">
+														<button class="btn" name="action">Upload</button>
+													</div>
+												</div> -->
+												
+												
+												<div class="row" style="overflow: auto;height: 226px;">
+													<div class="form-group">
+													<div style="margin-left:9px;margin-right:9px; margin-bottom: 9px;">
+                                                <table class="striped" >
+                                                    <thead>
+                                                        <tr id="blackcolor">
+                                                            <th style=" text-align: center;">S.No</th>
+                                                            <th style="text-align: center;">Doc Name</th>
+                                                            <th style=" text-align: center;">Upload Date</th>
+                                                            <th style="text-align: center;">View</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="t01">
+                                                        <tr>
+                                                            <td contenteditable="true" style="text-align: center;">1</td>
+                                                            <td contenteditable="true"><input type="text" id="currentdate1" style="margin: -1px;"></td>
+                                                            <td contenteditable="true"><input type="text" id="currentdate1" style="margin: -1px;"></td>
+                                                            <td><img class="imagecenter"  src="resources/assets/images/aprvd/24/view.png" alt="Smiley face"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td contenteditable="true" style="text-align: center;">2</td>
+                                                            <td contenteditable="true"><input type="text" id="currentdate1" style="margin: -1px;"></td>
+                                                            <td contenteditable="true"><input type="text" id="currentdate1" style="margin: -1px;"></td>
+                                                           <td><img class="imagecenter"  src="resources/assets/images/aprvd/24/view.png" alt="Smiley face"></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td contenteditable="true" style="text-align: center;">3</td>
+                                                            <td contenteditable="true"><input type="text" id="currentdate1" style="margin: -1px;"></td>
+                                                            <td contenteditable="true"><input type="text" id="currentdate1" style="margin: -1px;"></td>
+                                                           <td><img class="imagecenter"  src="resources/assets/images/aprvd/24/view.png" alt="Smiley face"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td contenteditable="true" style="text-align: center;">4</td>
+                                                            <td contenteditable="true"><input type="text" id="currentdate1" style="margin: -1px;"></td>
+                                                            <td contenteditable="true"><input type="text" id="currentdate1" style="margin: -1px;"></td>
+                                                           <td><img class="imagecenter"  src="resources/assets/images/aprvd/24/view.png" alt="Smiley face"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td contenteditable="true" style="text-align: center;">5</td>
+                                                            <td contenteditable="true"><input type="text" id="currentdate1" style="margin: -1px;"></td>
+                                                            <td contenteditable="true"><input type="text" id="currentdate1" style="margin: -1px;"></td>
+                                                           <td><img class="imagecenter"  src="resources/assets/images/aprvd/24/view.png" alt="Smiley face"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td contenteditable="true" style="text-align: center;">6</td>
+                                                            <td contenteditable="true"><input type="text" id="currentdate1" style="margin: -1px;"></td>
+                                                            <td contenteditable="true"><input type="text" id="currentdate1" style="margin: -1px;"></td>
+                                                           <td><img class="imagecenter"  src="resources/assets/images/aprvd/24/view.png" alt="Smiley face"></td>
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                                </table>
+                                                </div>
+                                            </div> 
+												</div>
+											</fieldset>
+										</div>
+									</div>
+
+								</div>
+								<div id="tab-2-1" class="tabcontent paddingAll hide">
+									<p>Donec semper dictum sem, quis pretium sem malesuada non.
+										Proin venenatis orci vel nisl porta sollicitudin. Pellentesque
+										sit amet massa et orci malesuada facilisis vel vel lectus.
+										Etiam tristique volutpat auctor. Morbi nec massa eget sem
+										ultricies fermentum id ut ligula. Praesent aliquet adipiscing
+										dictum. Suspendisse dignissim dui tortor. Integer faucibus
+										interdum justo, mattis commodo elit tempor id. Quisque ut orci
+										orci, sit amet mattis nulla. Suspendisse quam diam, feugiat at
+										ullamcorper eget, sagittis sed eros. Proin tortor tellus,
+										pulvinar at imperdiet in, egestas sed nisl. Aenean tempor
+										neque ut felis dignissim ac congue felis viverra.</p>
+
+								</div>
+								<div id="tab-3-1" class="tabcontent paddingAll hide">
+									<p>Duis egestas fermentum ipsum et commodo. Proin bibendum
+										consectetur elit, hendrerit porta mi dictum eu. Vestibulum
+										adipiscing euismod laoreet. Vivamus lobortis tortor a odio
+										consectetur pulvinar. Proin blandit ornare eros dictum
+										fermentum. Class aptent taciti sociosqu ad litora torquent per
+										conubia nostra, per inceptos himenaeos. Curabitur laoreet,
+										ante aliquet molestie laoreet, lectus odio fringilla purus, id
+										porttitor erat velit vitae mi. Nullam posuere nunc ut justo
+										sollicitudin interdum. Donec suscipit eros nec leo condimentum
+										fermentum. Nunc quis libero massa. Integer tempus laoreet
+										lectus id interdum. Integer facilisis egestas dui at
+										convallis. Praesent elementum nisl et erat iaculis a blandit
+										ligula mollis. Vestibulum vitae risus dui, nec sagittis arcu.
+										Nullam tortor enim, placerat quis eleifend in, viverra ac
+										lacus. Ut aliquam sapien ut metus hendrerit auctor dapibus
+										justo porta.</p>
+								</div>
+								<div id="tab-4-1" class="tabcontent paddingAll hide" style="width: 99%;">
+									<div class="row">
+										<div class="col s10 a4box">
+											<!-- <div class="input-field col s4 required">
+												<input type="email" id="email"
+													style='text-transform: lowercase' id="email" /> <label
+													for="email">Email</label>
+											</div>
+											<div class="input-field col s4 required">
+												<input type="email" id="email"
+													style='text-transform: lowercase' id="email" /> <label
+													for="email">Email</label>
+											</div>
+											<div class="input-field col s4 required">
+												<input type="email" id="email"
+													style='text-transform: lowercase' id="email" /> <label
+													for="email">Email</label>
+											</div>
+											<div class="input-field col s4 required">
+												<input type="email" id="email"
+													style='text-transform: lowercase' id="email" /> <label
+													for="email">Email</label>
+											</div>
+											<div class="input-field col s4 required">
+												<input type="email" id="email"
+													style='text-transform: lowercase' id="email" /> <label
+													for="email">Email</label>
+											</div>
+											<div class="input-field col s4 required">
+												<input type="email" id="email"
+													style='text-transform: lowercase' id="email" /> <label
+													for="email">Email</label>
+											</div> -->
+											A4 Size Screen resulution in 595 pixels x 842 pixels
+											<p>Proin sollicitudin tincidunt quam, in egestas dui
+												tincidunt non. Maecenas tempus condimentum mi, sed convallis
+												tortor iaculis eu. Cras dui dui, tempor quis tempor vitae,
+												ullamcorper in justo. Integer et lorem diam. Quisque
+												consequat lectus eget urna molestie pharetra. Cras risus
+												lectus, lobortis sit amet imperdiet sit amet, eleifend a
+												erat. Suspendisse vel luctus lectus. Sed ac arcu nisi, sit
+												amet ornare tellus. Pellentesque nec augue a nibh pharetra
+												scelerisque quis sit amet felis. Nullam at enim at lacus
+												pretium iaculis sit amet vel nunc. Praesent sapien felis,
+												tincidunt vitae blandit ut, mattis at diam. Suspendisse ac
+												sapien eget eros venenatis tempor quis id odio. Donec lacus
+												leo, tincidunt eget molestie at, pharetra cursus odio.</p>
+
+											A4 Size Screen resulution in 595 pixels x 842 pixels
+											<p>Proin sollicitudin tincidunt quam, in egestas dui
+												tincidunt non. Maecenas tempus condimentum mi, sed convallis
+												tortor iaculis eu. Cras dui dui, tempor quis tempor vitae,
+												ullamcorper in justo. Integer et lorem diam. Quisque
+												consequat lectus eget urna molestie pharetra. Cras risus
+												lectus, lobortis sit amet imperdiet sit amet, eleifend a
+												erat. Suspendisse vel luctus lectus. Sed ac arcu nisi, sit
+												amet ornare tellus. Pellentesque nec augue a nibh pharetra
+												scelerisque quis sit amet felis. Nullam at enim at lacus
+												pretium iaculis sit amet vel nunc. Praesent sapien felis,
+												tincidunt vitae blandit ut, mattis at diam. Suspendisse ac
+												sapien eget eros venenatis tempor quis id odio. Donec lacus
+												leo, tincidunt eget molestie at, pharetra cursus odio.</p>
+
+											A4 Size Screen resulution in 595 pixels x 842 pixels
+											<p>Proin sollicitudin tincidunt quam, in egestas dui
+												tincidunt non. Maecenas tempus condimentum mi, sed convallis
+												tortor iaculis eu. Cras dui dui, tempor quis tempor vitae,
+												ullamcorper in justo. Integer et lorem diam. Quisque
+												consequat lectus eget urna molestie pharetra. Cras risus
+												lectus, lobortis sit amet imperdiet sit amet, eleifend a
+												erat. Suspendisse vel luctus lectus. Sed ac arcu nisi, sit
+												amet ornare tellus. Pellentesque nec augue a nibh pharetra
+												scelerisque quis sit amet felis. Nullam at enim at lacus
+												pretium iaculis sit amet vel nunc. Praesent sapien felis,
+												tincidunt vitae blandit ut, mattis at diam. Suspendisse ac
+												sapien eget eros venenatis tempor quis id odio. Donec lacus
+												leo, tincidunt eget molestie at, pharetra cursus odio.</p>
+
+											A4 Size Screen resulution in 595 pixels x 842 pixels
+										</div>
+
+										<div class="col s2">
+											<button class="btn  waves-light " onclick="window.print()"
+												type="button" name="action">Print</button>
+										</div>
+									</div>
+
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end container-->
+</section>
+
+
+<!-- END CONTENT -->
+<script>
+	tabFunction();
+
+	$(document).ready(
+			function() {
+				var curTabLength = 0;
+				var tabLength = 0;
+				$(".tab-box a")
+						.click(
+								function(event) {
+									event.preventDefault();
+									$(this).parent().addClass("current");
+									$(this).parent().siblings().removeClass(
+											"current");
+									var tab = $(this).attr("id");
+									curTabLength = $(this).parent().addClass(
+											"current").context.id.split('-')[1]
+									$(".tabcontent").addClass("hide");
+									$("#" + tabeId + "-1").removeClass("hide")
+									$(tab).fadeIn();
+									tabLength = $(".tabLink").length;
+									if (tabLength - curTabLength === 0) {
+										$("#continuebutton").css({
+											"display" : "none",
+											"float" : "left",
+											"margin-right" : "4px"
+										})
+										$(".btn-success").css({
+											"display" : "block",
+											"float" : "left",
+											"margin-right" : "25px"
+										})
+										console.log("TRUE")
+									} else if (tabLength - curTabLength >= 1) {
+										$("#continuebutton").css({
+											"display" : "block",
+											"float" : "left",
+											"margin-right" : "4px"
+										})
+										$(".btn-success").css({
+											"display" : "none",
+											"float" : "left",
+											"margin-right" : "25px"
+										})
+									}
+								});
+				// when user clicks button it finds current tab then tries find and click the next tab, if it doesn't find it will show the first tab
+				$('#continuebutton').click(
+						function(event) {
+							var nextLink = $('.tab-box').find('div.current')
+									.next().find('a');
+							nextLink.click();
+							tabLength = $(".tabLink").length;
+							if (tabLength - curTabLength === 0) {
+								$("#continuebutton").css({
+									"display" : "none",
+									"float" : "left",
+									"margin-right" : "2px"
+								})
+								$(".btn-success").css({
+									"display" : "block",
+									"float" : "left",
+									"margin-right" : "25px"
+								})
+							}
+						});
+				
+				$('#PIdob').datetimepicker({
+					timepicker : false,
+					closeOnTimeSelect : false,
+					format : 'd-m-Y',
+					step : 01,
+				});
+				$('#PIWeddingDate').datetimepicker({
+					timepicker : false,
+					closeOnTimeSelect : false,
+					format : 'd-m-Y',
+					step : 01,
+				});
+				
+				//mobile
+				$(".phnumber").keydown(function(e) {
+					var oldvalue = $(this).val();
+					var field = this;
+					setTimeout(function() {
+						if (field.value.indexOf('+91 ') !== 0) {
+							$(field).val(oldvalue);
+						}
+
+					}, 1);
+
+				});
+			});
+
+	var inp = document.getElementById('checknumberonly');
+	var chars = document.getElementById('chars');
+	inp.onkeyup = function() {
+		/* chars.innerHTML = inp.value.length; */
+		if (inp.value.length === 5 && inp.value.toString().substring(4, 5) == 0) {
+			this.value = this.value.slice(0, 4);
+		}
+	}
+	var inp1 = document.getElementById('checknumberonly1');
+	var chars1 = document.getElementById('chars1');
+	inp1.onkeyup = function() {
+		/* chars.innerHTML = inp.value.length; */
+		if (inp1.value.length === 5 && inp1.value.toString().substring(4, 5) == 0) {
+			this.value = this.value.slice(0, 4);
+		}
+	}
+	var inp2 = document.getElementById('checknumberonly2');
+	var chars2 = document.getElementById('chars2');
+	inp2.onkeyup = function() {
+		/* chars.innerHTML = inp.value.length; */
+		if (inp2.value.length === 5 && inp2.value.toString().substring(4, 5) == 0) {
+			this.value = this.value.slice(0, 4);
+		}
+	}
+	var inp3 = document.getElementById('checknumberonly3');
+	var chars3 = document.getElementById('chars3');
+	inp3.onkeyup = function() {
+		/* chars.innerHTML = inp.value.length; */
+		if (inp3.value.length === 5 && inp3.value.toString().substring(4, 5) == 0) {
+			this.value = this.value.slice(0, 4);
+		}
+	}
+	var inp4 = document.getElementById('checknumberonly4');
+	var chars4 = document.getElementById('chars4');
+	inp4.onkeyup = function() {
+		/* chars.innerHTML = inp.value.length; */
+		if (inp4.value.length === 5 && inp4.value.toString().substring(4, 5) == 0) {
+			this.value = this.value.slice(0, 4);
+		}
+	}
+</script>

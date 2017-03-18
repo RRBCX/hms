@@ -1,0 +1,359 @@
+<style>
+    .tree {
+        margin: 1em;
+    }
+    
+    .tree input {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+    }
+    
+    .tree input~ul {
+        display: none;
+    }
+    
+    .tree input:checked~ul {
+        display: block;
+    }
+    /* ————————————————————–
+  Tree rows
+*/
+    
+    .tree li {
+        line-height: 1.2;
+        position: relative;
+        padding: 0 0 1em 1em;
+    }
+    
+    .tree ul li {
+        padding: 1em 0 0 1em;
+    }
+    
+    .tree>li:last-child {
+        padding-bottom: 0;
+    }
+    /* ————————————————————–
+  Tree labels
+*/
+    
+    .tree_label {
+        position: relative;
+        display: inline-block;
+        background: #fff;
+    }
+    
+    label.tree_label {
+        cursor: pointer;
+    }
+    
+    label.tree_label:hover {
+        color: #666;
+    }
+    /* ————————————————————–
+  Tree expanded icon
+*/
+    
+    label.tree_label:before {
+        background: #000;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        float: left;
+        margin: 0 1em 0 -2em;
+        width: 1em;
+        height: 1em;
+        border-radius: 1em;
+        content: '+';
+        text-align: center;
+        line-height: .9em;
+    }
+    
+    :checked~label.tree_label:before {
+        content: '–';
+    }
+    /* ————————————————————–
+  Tree branches
+*/
+    
+    .tree li:before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -.5em;
+        display: block;
+        width: 0;
+        border-left: 1px solid #777;
+        content: "";
+    }
+    
+    .tree_label:after {
+        position: absolute;
+        top: 0;
+        left: -1.5em;
+        display: block;
+        height: 0.5em;
+        width: 1em;
+        border-bottom: 1px solid #777;
+        border-left: 1px solid #777;
+        border-radius: 0 0 0 .3em;
+        content: '';
+    }
+    
+    label.tree_label:after {
+        border-bottom: 0;
+    }
+    
+    :checked~label.tree_label:after {
+        border-radius: 0 .3em 0 0;
+        border-top: 1px solid #777;
+        border-right: 1px solid #777;
+        border-bottom: 0;
+        border-left: 0;
+        bottom: 0;
+        top: 0.5em;
+        height: auto;
+    }
+    
+    .tree li:last-child:before {
+        height: 1em;
+        bottom: auto;
+    }
+    
+    .tree>li:last-child:before {
+        display: none;
+    }
+    
+    .tree_custom {
+        display: block;
+        background: #eee;
+        padding: 1em;
+        border-radius: 0.3em;
+    }
+</style>
+
+<!-- START CONTENT -->
+<section id="content">
+    <!--breadcrumbs start-->
+    <div id="breadcrumbs-wrapper">
+        <!-- Search for small screen -->
+        <div class="header-search-wrapper grey hide-on-large-only">
+            <i class="mdi-action-search active"></i>
+            <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <ol class="breadcrumbs">
+                        <li><a href="index.html">Dashboard</a>
+                        </li>
+                        <li><a href="#">Roles</a>
+                        </li>
+                        <li class="active">Create Role</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs end-->
+
+
+    <!--start container-->
+    <div class="container">
+        <div class="section">
+            <!--  <div class="form-actions">
+              <div class="col-offset-4">
+                  <button type="button" class="btn btn-primary" >Save</button>
+                  <button type="button" class="btn btn-default">Cancel</button>
+              </div>
+          </div> -->
+            <!--Input fields-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <form class="form-horizontal">
+                            <div class="card-block">
+                                <div class="row">
+                                    <div class="form-group col-sm-12">
+                                        <div class="col s10 m10 l12">
+                                            <div class="col s8 m3" style="border-right: 1px solid;height: 570px;">
+                                                <br>
+                                                <div class="col s5 m4 l8">
+                                                    <a role="button" class="btn btn-default"><i class="fa fa-plus"></i> 
+                                                <h6><b>Create&nbsp;New&nbsp;Role</b></h6></a>
+                                                </div>
+                                                <br><br><br><br>
+                                                <h6><b>Roles</b></h6>
+                                                <div class="row">
+                                                    <div class="col s8 m4 l8">
+                                                        <h7><b>List1</b></h7>
+                                                    </div>
+                                                    <div class="col s8 m4 l8">
+                                                        <h7><b>List2</b></h7>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col s8 m3">
+                                                <h7><b>Menu Tree</b></h7>
+                                                <ul class="tree">
+                                                    <li>
+                                                        <input type="checkbox" id="c1" />
+                                                        <label class="tree_label" for="c1">Menu1</label>
+                                                        <ul>
+                                                            <li>
+                                                                <input type="checkbox" id="c2" />
+                                                                <label for="c2" class="tree_label">Sub Menu1.1</label>
+                                                                <ul>
+                                                                    <li><span class="tree_label">Sub Menu1.1.1</span></li>
+                                                                    <li><span class="tree_label">Sub Menu1.1.2</span></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <input type="checkbox" id="c3" />
+                                                                <label for="c3" class="tree_label">Sub Menu1.2</label>
+                                                                <ul>
+                                                                    <li><span class="tree_label">Sub Menu1.2.1</span></li>
+                                                                    <li><span class="tree_label">Sub Menu1.2.2</span></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="c4" />
+                                                        <label class="tree_label" for="c4">Menu2</label>
+                                                        <ul>
+                                                            <li>
+                                                                <input type="checkbox" id="c5" />
+                                                                <label for="c5" class="tree_label">Sub Menu2.1</label>
+                                                                <ul>
+                                                                    <li><span class="tree_label">Sub Menu2.1.1</span></li>
+                                                                    <li><span class="tree_label">Sub Menu2.1.2</span></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <input type="checkbox" id="c6" />
+                                                                <label for="c6" class="tree_label">Sub Menu2.2</label>
+                                                                <ul>
+                                                                    <li><span class="tree_label">Sub Menu2.2.1</span></li>
+                                                                    <li><span class="tree_label">Sub Menu2.2.2</span></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="c7" />
+                                                        <label class="tree_label" for="c7">Menu 3</label>
+                                                        <ul>
+                                                            <li>
+                                                                <input type="checkbox" id="c8" />
+                                                                <label for="c8" class="tree_label">Sub Menu3.1</label>
+                                                                <ul>
+                                                                    <li><span class="tree_label">Sub Menu3.1.1</span></li>
+                                                                    <li><span class="tree_label">Sub Menu3.1.2</span></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <input type="checkbox" id="c9" />
+                                                                <label for="c9" class="tree_label">Sub Menu3.2</label>
+                                                                <ul>
+                                                                    <li><span class="tree_label">Sub Menu3.2.1</span></li>
+                                                                    <li><span class="tree_label">Sub Menu3.2.2</span></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                            <div class="col s12 m5" style="border-left: 1px solid;height:570px;">
+                                                <div class="col s12 m12" style="border-bottom: 1px solid; width: 637px;margin-left: -11px;">
+                                                    <br>
+                                                    <table class="table table-striped">
+                                                        <thead class="back">
+                                                            <tr>
+                                                                <th>Objects in the Menu</th>
+                                                                <th>In Role</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Object1</th>
+                                                                <td><input type="checkbox" id="o1"><label for="o1"></label></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Object2</th>
+                                                                <td><input type="checkbox" id="o2"><label for="o2"></label></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Object3</th>
+                                                                <td><input type="checkbox" id="o3"><label for="o3"></label></td>
+                                                            </tr>
+                                                        </thead>
+                                                    </table>
+                                                </div>
+                                                <br><br>
+                                                <div class="row">
+                                                    <table class="table table-striped">
+                                                        <thead class="back">
+                                                            <tr>
+                                                                <th>Object Type</th>
+                                                                <th>Object Name</th>
+                                                                <th>Selected to Add</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th><input type="text" placeholder="Search" class="form-control"></th>
+                                                                <th><input type="text" placeholder="Search" class="form-control"></th>
+                                                                <th><input type="text" placeholder="Search" class="form-control"></th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>1702</td>
+                                                                <td><input type="checkbox" id="test8"><label for="test8"></label></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>1702</td>
+                                                                <td><input type="checkbox" id="test9"><label for="test9"></label></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>1702</td>
+                                                                <td><input type="checkbox" id="test10"><label for="test10"></label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Floating Action Button -->
+       <!--  <div class="fixed-action-btn" style="bottom: 50px; right: 19px;">
+            <a class="btn-floating btn-large">
+                <i class="mdi-action-stars"></i>
+            </a>
+            <ul>
+                <li><a href="css-helpers.html" class="btn-floating red"><i class="large mdi-communication-live-help"></i></a></li>
+                <li><a href="app-widget.html" class="btn-floating yellow darken-1"><i class="large mdi-device-now-widgets"></i></a></li>
+                <li><a href="app-calendar.html" class="btn-floating green"><i class="large mdi-editor-insert-invitation"></i></a></li>
+                <li><a href="app-email.html" class="btn-floating blue"><i class="large mdi-communication-email"></i></a></li>
+            </ul>
+        </div> -->
+        <!-- Floating Action Button -->
+    </div>
+    <!--end container-->
+</section>
+<!-- END CONTENT -->

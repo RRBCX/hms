@@ -1,0 +1,283 @@
+<section id="content">
+    <!--start container-->
+    <div class="container">
+        <div id="breadcrumbs-wrapper">
+            <div class="row">
+                <div class="col s6 m12 l12" id="breadcrumbs">
+                    <ol class="breadcrumbs" style="margin-top: 10px;">
+                        <li><a href="#/dashboard">Home</a></li>
+                        <li><a href="#">Invoice</a></li>
+                        <li class="active">Hospital Invoice</li>
+                        <a data-ng-click="getPatientDetails()" style="float: right;cursor: pointer;">Patient Dashboard</a>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="basic-form" class="section">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="card-panel">
+                        <fieldset class="field-patient_info">
+                            <legend>Hospital Invoice Creation page</legend>
+                            <div class="row">
+                                <div class=" col s12">
+                                    <div class="input-field col s4 required">
+                                        <input type="text" name="searchPatientName" data-ng-model="addpatient.searchPatientName" />
+                                        <label for="checknumberonly" class="active" id="chars">Search Patient Name</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text" name="searchPatientCode" data-ng-model="addpatient.patientCode" />
+                                        <label for="lastName">Patient Code</label>
+                                    </div>
+                                <div class="input-field col s3">
+                                    <button class="btn waves-light" data-ng-click="submitpatientDetails(addpatient)" style="float: right;">Search</button>
+                                </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <div id="basic-form" class="section">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="card-panel">
+                        <fieldset class="field-patient_info">
+                            <legend>Hospital Invoice Creation page</legend>
+                            <div class="row">
+                                <div class=" col s12">
+                                 <div class="input-field col s3 required">
+                                        <input type="text" name="searchPatientCode" data-ng-model="addpatient.invoiceprefix" />
+                                        <label for="lastName">Invoice prefix</label>
+                                    </div>
+                                    <div class="input-field col s2 required">
+                                        <input type="text" id="date" readonly="readonly" data-ng-model="addpatient.invoiceNo"/> 
+                                        <label for="date">Invoice No</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text" id="date" readonly="readonly" data-ng-model="addpatient.invoiceDate"/> 
+                                        <label for="date">Invoice Date</label>
+                                    </div>
+                                    
+                                    <div class="input-field col s3 required">
+                                        <input type="text" name="searchPatientCode" data-ng-model="addpatient.patientName" />
+                                        <label for="lastName">Patient name</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text" name="searchPatientCode" data-ng-model="addpatient.patientCode" />
+                                        <label for="lastName">Patient Code</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text" name="searchPatientCode" data-ng-model="addpatient.address" />
+                                        <label for="lastName">Address</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text" name="searchPatientCode" data-ng-model="addpatient.location" />
+                                        <label for="lastName">Location</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text" name="searchPatientCode" data-ng-model="addpatient.city" />
+                                        <label for="lastName">City</label>
+                                    </div>
+                                     <div class="input-field col s3 required">
+                                        <input type="text" name="searchPatientCode" data-ng-model="addpatient.state" />
+                                        <label for="lastName">State</label>
+                                    </div>
+                                    <div class="input-field col s2 required">
+                                        <input type="text" name="searchPatientCode" data-ng-model="addpatient.pinCode" />
+                                        <label for="lastName">pin Code</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text" id="date" readonly="readonly" data-ng-model="addpatient.doa"/> 
+                                        <label for="date">DOA</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text" id="date" readonly="readonly" data-ng-model="addpatient.date"/> 
+                                        <label for="date">Date</label>
+                                    </div>
+                               </div>
+                            </div>
+                       </div>
+                  </div>
+                </div>
+                            
+           <div id="basic-form" class="section">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="card-panel">
+                        <fieldset class="field-patient_info">
+                            <legend>Hospital Invoice Creation page</legend>
+                            <div class="row">
+                                <div class=" col s12">
+                                    <div class="input-field col s6 required">
+                                        <input type="text" name="searchPatientName" data-ng-model="addpatient.searchName" />
+                                        <label for="checknumberonly" class="active" id="chars">Search Name</label>
+                                    </div>
+                                    
+                                <div class="input-field col s6">
+                                    <button class="btn waves-light" data-ng-click="submitpatientDetails(addpatient)" style="float: left;">Search</button>
+                                </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" col s12">
+                                    <div class="input-field col s1 required">
+                                        <input type="text" name="no" data-ng-model="addpatient.no" />
+                                        <label for="lastName">No</label>
+                                    </div>
+                                    <div class="input-field col s2 required">
+                                        <input type="text" name="itemCode" data-ng-model="addpatient.itemCode" />
+                                        <label for="lastName">Item Code</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text" name="itemName" data-ng-model="addpatient.itemName" />
+                                        <label for="lastName">Item Name</label>
+                                    </div>
+                                    <div class="input-field col s1 required">
+                                        <input type="text" name="unit" data-ng-model="addpatient.unit" />
+                                        <label for="lastName">Unit</label>
+                                    </div>
+                                    <div class="input-field col s2 required">
+                                        <input type="text" name="rate" data-ng-model="addpatient.rate" />
+                                        <label for="lastName">Rate</label>
+                                    </div>
+                                    <div class="input-field col s1 required">
+                                        <input type="text" name="qty" data-ng-model="addpatient.qtu" />
+                                        <label for="lastName">Qty</label>
+                                    </div>
+                                    <div class="input-field col s2 required">
+                                        <input type="text" name="subTotal" data-ng-model="addpatient.subTotal" />
+                                        <label for="lastName">Sub Total</label>
+                                    </div>
+                                    <div class="input-field col s2 required">
+                                        <input type="text" name="total" data-ng-model="addpatient.total" />
+                                        <label for="lastName">Total</label>
+                                    </div>
+                                    <div id="table-datatables">
+                            <div class="row">
+                                <table id="example" class="display" cellspacing="0" width="100%">
+                                    <thead class="c01">
+                                        <tr>
+                                            <th class="checkbox1" style="width:10px;">No</th>
+                                            <th class="checkbox2" id="tabledatacentre" style="width:10px;">Item Code</th>
+                                            <th class="checkbox3" id="tabledatacentre" style="width:35px;">Item Name</th>
+                                            <th class="checkbox4" id="tabledatacentre" style="width:20px;">Unit</th>
+                                            <th class="checkbox5" id="tabledatacentre" style="width:20px;">Rate</th>
+                                            <th class="checkbox6" id="tabledatacentre" style="width:1px;">Qty</th>
+                                            <th class="checkbox6" id="tabledatacentre" style="width:1px;">Sub Total</th>
+                                            <th class="checkbox6" id="tabledatacentre" style="width:1px;">Total</th>
+
+                                            <th class="checkbox8" id="tabledatacentre" style="width:2px;">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="b01">
+                                        <tr>
+                                            <td class="checkbox1" id="tabledatacentre">1</td>
+                                            <td class="checkbox2">Tiger Nixon</td>
+                                            <td class="checkbox3">System Architect</td>
+                                            <td class="checkbox4">Edinburgh</td>
+                                            <td class="checkbox5" id="tabledatacentre">61</td>
+                                            <td class="checkbox6" id="tabledatacentre">2011/04/25</td>
+                                             <td class="checkbox6" id="tabledatacentre">80.00</td>
+                                              <td class="checkbox6" id="tabledatacentre">1000.00</td>
+                                            
+
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                        </table>
+                                        </div>
+                                        </div>
+                                        
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+                            <div class="row">
+                                <div class="col s8">
+                                </div>
+                                <div class="col s8">
+                                    <button class="btn waves-light" data-ng-click="submitpatientDetails(addpatient)" style="float: right;">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+<!-- END CONTENT -->
+<script>
+    /* For All Names */
+    $('input[type=text]').keyup(function() {
+        $('').text($(this).val());
+    });
+
+    // textarea
+    $('input[type=text1]').keyup(function() {
+        $('').text1($(this).val());
+    });
+
+    document.getElementsByTagName('input')[0].onblur = function() {
+        this.value = this.value.replace(/^0+(?=\d)/, '');
+    }
+
+    $('#date').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        step: 01,
+    });
+    $('#currentdate').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        maxDate: false,
+        minDate: new Date(),
+        step: 01,
+
+    });
+
+
+    $('#time').datetimepicker({
+        step: 10,
+        datepicker: false,
+        closeOnTimeSelect: false,
+        format: 'H:i',
+        maxDate: new Date(),
+    });
+
+    $('#datentime').datetimepicker({
+        step: 10,
+        format: 'd-m-Y, H:i',
+        maxDate: false,
+        minDate: new Date(),
+    });
+
+    //Email Validation
+    function validateEmail(email) {
+        var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+        if (reg.test(email)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
+<!-- END CONTENT -->

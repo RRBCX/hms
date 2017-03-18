@@ -1,0 +1,471 @@
+<style type="text/css">
+
+input[type=text] {
+	text-transform: capitalize;
+}
+
+</style>
+
+<style>
+  .verticalLine {
+    border-left: thick solid #ff0000;
+  }
+  
+  .c01 {
+	background-color: rgba(32, 139, 129, 0.69);
+	line-height: 0.5
+}
+.b01
+{
+  line-height: 0.5
+}
+
+ tr:nth-child(odd) {
+  background-color: #dfe7f2;
+  color: #000000;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+  /* color: blue; */
+}
+th {
+	background: #99bbe8;
+}
+
+</style>
+<section id="content">
+    <!--start container-->
+    <div class="container">
+        <div id="breadcrumbs-wrapper">
+            <div class="row">
+                <div class="col s6 m12 l12" id="breadcrumbs">
+                    <ol class="breadcrumbs" style="margin-top: 10px;">
+                        <li><a href="#/dashboard">Home</a>
+                        </li>
+                        <li><a href="#">Meera</a>
+                        </li>
+                        <li class="active">Call Taker2</li>
+                    </ol>
+                    <div class="input-field col s1" id="calltaker-breadcrumb">
+					<input type="text" id="sysdate" name="sysdate"
+						required="required" readonly="readonly" />
+					</div>
+					<div class="input-field col s1" id="calltaker-time">
+							<div id="times"></div>
+						</div>
+					</div>
+                </div>
+            </div>
+        <div id="basic-form" class="section">
+            <div class="row">
+                <div class="col s12 m12 l3">
+                    <div class="card-panel" id="calltacker_c3_card_panel">
+                    </div>
+                </div>
+                <div class="col s12 m12 l9">
+                    <div class="card-panel">
+                        <div class="row">
+                            <form class="col s12 ng-pristine ng-valid">
+                            	<div class="col s12 m12 l6">
+					                    <div class="card-panel" id="mms_calltack2_firsthalf">
+					                    	
+					                    		<div class="row" style="margin-top: -17px; margin-left: 65px;">
+							                		<div class="input-field col s3">
+							                			<a href="" style="color:#3f7a91;"><img class="circle responsive-img valign profile-image" src="resources/assets/images/bookings/ws2.png" style="width: 70px;"><label id="booking_icon" style="margin-left: 14px;"><b>Point to Point</b></label></a>
+							                		</div>
+							                		<div class="input-field col s3">
+							                			<a href="" style="color:#3f7a91;"><img class="circle responsive-img valign profile-image" src="resources/assets/images/bookings/ws5.png" style="width: 70px;"><label id="booking_icon" style="margin-left: 34px;"><b>Airport</b></label></a>
+							                		</div>
+							                		<div class="input-field col s3">
+							                			<a href="" style="color:#3f7a91;"><img class="circle responsive-img valign profile-image" src="resources/assets/images/bookings/ws7.png" style="width: 70px;"><label id="booking_icon" style="margin-left: 7px;"><b>Ramoji Film City</b></label></a>
+							                		</div>
+							                		<div class="input-field col s3">
+							                			<a href="" style="color:#3f7a91;"><img class="circle responsive-img valign profile-image" src="resources/assets/images/bookings/ws4.png" style="width: 70px;"><label id="booking_icon" style="margin-left: 28px;"><b>Outstation</b></label></a>
+							                		</div>
+							                	</div>
+							                	<div class="row" style="margin-top: 43px; margin-left: 65px;">
+							                		<div class="input-field col s3">
+							                			<a href="" style="color:#3f7a91;"><img class="circle responsive-img valign profile-image" src="resources/assets/images/bookings/ws8.png" style="width: 70px;"><label id="booking_icon" style="margin-left: 14px;"><b>Railway Station</b></label></a>
+							                		</div>
+							                		<div class="input-field col s3">
+							                			<a href="" style="color:#3f7a91;"><img class="circle responsive-img valign profile-image" src="resources/assets/images/bookings/ws1.png" style="width: 70px;"><label id="booking_icon" style="margin-left: 24px;"><b>Bus Stand</b></label></a>
+							                		</div>
+							                		<div class="input-field col s3">
+							                			<a href="" style="color:#3f7a91;"><img class="circle responsive-img valign profile-image" src="resources/assets/images/bookings/ws3.png" style="width: 70px;"><label id="booking_icon" style="margin-left: 26px;"><b>Corporate</b></label></a>
+							                		</div>
+							                		<div class="input-field col s3">
+							                			<a href="" style="color:#3f7a91;"><img class="circle responsive-img valign profile-image" src="resources/assets/images/bookings/ws6.png" style="width: 70px;"><label id="booking_icon" style="margin-left: 18px;"><b>Spl. Package</b></label></a>
+							                		</div>
+							                	</div>
+					                    	
+											
+					                    	</div>
+					                    	
+					                    	
+					                    	</div>
+					                	<div class="row">
+					                		<button class="btn" type="submit" name="action" id="mms_calltrck2_transfer" data-ng-click="gettransfer()" >Transfer Call</button>
+					                	</div>
+					                	<div class="row">
+					                		<button class="btn" type="submit" name="action" id="mms_calltrck2_endcall" data-ng-click="getholdcall()">Hold Call</button>
+					                	</div>
+					                   	<div class="row">
+					                   		<button class="btn" type="submit" name="action" id="mms_calltrck2_holdcall" data-ng-click="getfollwup()">Set Follow Up</button>
+					                   	</div>
+					                   	<div class="row">
+					                   		<button class="btn" type="submit" name="action" id="mms_calltrck2_followup" data-ng-click="getendcall()">End Call</button>
+					                   	</div>
+					                <div class="row">
+                                    <div class="col s12">
+                                        <fieldset class="field-empty-set">
+                                            <legend>Empty FieldSet</legend>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <fieldset class="field-booking-set">
+                                            <legend>Booking History</legend>
+                                            <div id="box-fieldset">
+							                	<div class="col s6 m12 l2">
+							                	</div>
+							                	<div class="col s6 m12 l2">
+							                		<h9>Grade:</h9>
+							                	</div>
+							                	<div class="col s6 m12 l2">
+							                		<h9>Category:</h9>
+							                	</div>
+							                	<div class="col s6 m12 l2">
+							                		<h9>Discount:</h9>
+							                	</div>
+							                	<div class="col s6 m12 l2">
+							                		<h9>Trip Count:</h9>
+							                	</div>
+							                	<div class="col s6 m12 l2" style="float: right">
+							                		<h9 style="color:blue">View History</h9>
+							                	</div>
+							                </div>
+                                            
+                                            <div class="row" >
+		                                       <div class="col s12 m12 l12" id="fieldset-links">
+								                  <a href="" id="calltrack_calls" data-ng-click="getrecentcalldata()">Recent Calls : </a><span id="span-fieldset"> 05 </span>
+			                                      <a href="" id="calltrack_calls" data-ng-click="getpendingdata(id)">&nbsp;Pending Bkgs : </a><span id="span-fieldset"> 05 </span>
+			                                      <a href="" id="calltrack_calls" data-ng-click="getcompletedata(id)">&nbsp;Completed Bkgs : </a><span id="span-fieldset"> 05 </span>
+			                                      <a href="" id="calltrack_calls" data-ng-click="getcanceldata(id)">&nbsp;Cancel Bkgs : </a><span id="span-fieldset"> 05 </span>
+			                                      <a href="" id="viewall" style="float: right">View All </a>
+								                </div>
+		                                    </div>
+		                                    <div data-ng-if="recent">
+						                    <div class="col s12 m8 l12" >
+                                            <table class="calltrack_table" id="example">
+                                                <thead class="c01">
+                                                    <tr>
+                                                        <th data-field="id" id="calltrTableWidth">S.No</th>
+                                                        <th data-field="name">V.Name</th>
+                                                        <th data-field="price">Package</th>
+                                                        <th data-field="price">Amount</th>
+                                                        <th data-field="price">Grace Time</th>
+                                                        <th id="calltrTableWidth">View</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody class="b01" id="table-color">
+                                                    <tr>
+                                                        <td>Alvin</td>
+                                                        <td>Medium</td>
+                                                        <td>100</td>
+                                                        <td>Lap</td>
+                                                        <td>10 min</td>
+                                                        <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Alan</td>
+                                                        <td>100</td>
+                                                        <td>$3.76</td>
+                                                        <td>Mobile</td>
+                                                        <td>10 min</td>
+                                                        <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                         <td>Tab</td>
+                                                         <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                         <td>Tab</td>
+                                                         <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                        <td>Cars</td>
+                                                        <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        </div>
+                                        <div data-ng-if="pending">
+						                    <div class="col s12 m8 l12" >
+                                            <table class="calltrack_table" id="example">
+                                                <thead class="c01">
+                                                    <tr>
+                                                        <th data-field="id">S.No</th>
+                                                        <th data-field="name">Vehicle</th>
+                                                        <th data-field="price">Data</th>
+                                                        <th data-field="price">Amount</th>
+                                                        <th data-field="price">Grace Time</th>
+                                                        <th>View</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody class="b01" id="t01">
+                                                    <tr>
+                                                        <td>Alvin</td>
+                                                        <td>Medium</td>
+                                                        <td>100</td>
+                                                        <td>Lap</td>
+                                                        <td>10 min</td>
+                                                        <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Alan</td>
+                                                        <td>100</td>
+                                                        <td>$3.76</td>
+                                                        <td>Mobile</td>
+                                                        <td>10 min</td>
+                                                        <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                         <td>Tab</td>
+                                                         <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                         <td>Tab</td>
+                                                         <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                        <td>Cars</td>
+                                                        <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        </div>
+                                        <div data-ng-if="complete">
+						                    <div class="col s12 m8 l12" >
+                                            <table class="calltrack_table" id="example">
+                                                <thead class="c01">
+                                                    <tr>
+                                                        <th data-field="id">Order</th>
+                                                        <th data-field="name">Name</th>
+                                                        <th data-field="price">Packages</th>
+                                                        <th data-field="price">Toatl</th>
+                                                        <th data-field="price">Grace Time</th>
+                                                        <th>View</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody class="b01">
+                                                    <tr>
+                                                        <td>Alvin</td>
+                                                        <td>Medium</td>
+                                                        <td>100</td>
+                                                        <td>Lap</td>
+                                                        <td>10 min</td>
+                                                        <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Alan</td>
+                                                        <td>100</td>
+                                                        <td>$3.76</td>
+                                                        <td>Mobile</td>
+                                                        <td>10 min</td>
+                                                        <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                         <td>Tab</td>
+                                                         <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                         <td>Tab</td>
+                                                         <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                        <td>Cars</td>
+                                                        <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        </div>
+                                        <div data-ng-if="cancel">
+						                    <div class="col s12 m8 l12" >
+                                            <table class="calltrack_table" id="example">
+                                                <thead class="c01">
+                                                    <tr>
+                                                        <th data-field="id">S.No</th>
+                                                        <th data-field="name">Vehicle</th>
+                                                        <th data-field="price">Package</th>
+                                                        <th data-field="price">Total</th>
+                                                        <th data-field="price">Time</th>
+                                                        <th>View</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody class="b01">
+                                                    <tr>
+                                                        <td>Alvin</td>
+                                                        <td>Medium</td>
+                                                        <td>100</td>
+                                                        <td>Lap</td>
+                                                        <td>10 min</td>
+                                                        <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Alan</td>
+                                                        <td>100</td>
+                                                        <td>$3.76</td>
+                                                        <td>Mobile</td>
+                                                        <td>10 min</td>
+                                                        <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                         <td>Tab</td>
+                                                         <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                         <td>Tab</td>
+                                                         <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                        <td>Cars</td>
+                                                        <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+<div id="transfer" class="modal ng-scope" style="z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height:40%;">
+    <div class="modal-content">
+        <div class="col-md-offset-6">
+            <i class="mdi-content-clear" data-ng-click="canceltransfer()" style="margin-left: 666px;cursor: pointer;"></i>
+        </div>
+        <div class="row">
+        	<div class="col s12 m12 l12">
+        		<button class="btn"  name="action">Submit</button>
+        	</div>
+        </div>
+    </div>
+</div>
+<div id="endcall" class="modal ng-scope" style="z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height:40%;">
+    <div class="modal-content">
+        <div class="col-md-offset-6">
+            <i class="mdi-content-clear" data-ng-click="cancelendcall()" style="margin-left: 666px;cursor: pointer;"></i>
+        </div>
+        <div class="row">
+        	<div class="col s12 m12 l12">
+        		<button class="btn"  name="action">Submit</button>
+        	</div>
+        </div>
+    </div>
+</div>
+<div id="holdcall" class="modal ng-scope" style="z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height:40%;">
+    <div class="modal-content">
+        <div class="col-md-offset-6">
+            <i class="mdi-content-clear" data-ng-click="cancelholdcall()" style="margin-left: 666px;cursor: pointer;"></i>
+        </div>
+        <div class="row">
+        	<div class="col s12 m12 l12">
+        		<button class="btn"  name="action">Submit</button>
+        	</div>
+        </div>
+    </div>
+</div>
+<div id="followup" class="modal ng-scope" style="z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height:40%;">
+    <div class="modal-content">
+        <div class="col-md-offset-6">
+            <i class="mdi-content-clear" data-ng-click="cancelfollowup()" style="margin-left: 666px;cursor: pointer;"></i>
+        </div>
+        <div class="row">
+        	<div class="col s12 m12 l12">
+        		<button class="btn"  name="action">Submit</button>
+        	</div>
+        </div>
+    </div>
+</div>
+<!-- END CONTENT -->
+
+<script>
+    tabFunction();
+    
+ 	// dynamic time display
+	function date() {
+		var now = new Date(), now = now.getHours() + ':' + now.getMinutes()
+				+ ':' + now.getSeconds();
+		$('#times').html(now);
+	}
+ 	
+	//system date display
+	document.getElementById('sysdate').value = (new Date().toLocaleDateString());
+	
+</script>
+

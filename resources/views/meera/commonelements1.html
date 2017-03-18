@@ -1,0 +1,392 @@
+<style type="text/css">
+input[type=text] {
+	text-transform: capitalize;
+}
+
+textarea[type=text1] {
+	text-transform: capitalize;
+}
+
+.required label:after {
+	color: #e32;
+	content: ' *';
+	display: inline;
+}
+
+button#two:focus {
+	background: #ff4081;
+}
+</style>
+<section id="content">
+	<!--start container-->
+	<div class="container">
+		<div id="breadcrumbs-wrapper">
+			<div class="row">
+				<div class="col s6 m12 l12" id="breadcrumbs">
+					<ol class="breadcrumbs" style="margin-top: 10px;">
+						<li><a href="#/dashboard">Home</a></li>
+						<li><a href="#">Rohit</a></li>
+						<li class="active">Part 1</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<div id="basic-form" class="section">
+			<div class="row">
+				<div class="col s12 m12 l3">
+					<div class="card-panel" id="c12_card_panel">
+						<!-- First Row -->
+
+
+						<div class="row">
+							<div class=" col s6">
+								<div class="input-field col s4 required">
+									<input type="text" value="+91 " class="phnumber"
+										id="checknumberonly" maxlength="14" name="phnumber"
+										required="required" /> <label for="checknumberonly"
+										class="active" id="chars">Phone Number</label>
+								</div>
+								<div class="input-field col s4 required">
+									<input type="text" name="name" id="name"
+										onkeypress="return onlyAlphabets(event,this);" /> <label
+										for="name"> Name</label>
+								</div>
+								<div class="input-field col s4 required">
+									<input type="email" id="email"
+										style='text-transform: lowercase' id="email" /> <label
+										for="email">Email</label>
+								</div>
+
+							</div>
+							<div class=" col s6">
+								<div class="input-field col s3 required">
+									<input type="text" id="date" readonly="readonly" /> <label
+										for="date">Date</label>
+								</div>
+
+								<div class="input-field col s3 required">
+									<input type="text" id="currentdate" readonly="readonly" /> <label
+										for="currentdate">Start Date</label>
+								</div>
+
+								<div class="input-field col s2">
+									<select class="browser-default">
+										<option>Hrs</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+									</select>
+								</div>
+								<div class="input-field 	col s2">
+									<select class="browser-default">
+										<option>Min</option>
+										<option value="00">00</option>
+										<option value="10">10</option>
+										<option value="20">20</option>
+										<option value="30">30</option>
+										<option value="40">40</option>
+										<option value="50">50</option>
+									</select>
+								</div>
+
+							</div>
+
+						</div>
+
+						<br>
+						<div class="row">
+							<div class=" col s6">
+								<div class="input-field col s4 required">
+									<input type="text" id="datentime" readonly="readonly" /> <label
+										for="datentime">Date &amp; Time</label>
+								</div>
+
+								<div class="col s4">
+									<select class="browser-default">
+										<option>- Title -</option>
+										<option value="Mr.">Mr.</option>
+										<option value="Miss.">Miss.</option>
+									</select>
+								</div>
+								<div class="col s4">
+									<select class="browser-default">
+										<option>- Gender -</option>
+										<option value="Male">Male</option>
+										<option value="Female">Female</option>
+									</select>
+								</div>
+
+
+							</div>
+
+							<div class=" col s6">
+
+								<div class="input-field col s4">
+									<input type="radio" id="test5" name="group1"> <label
+										for="test5">Check</label>
+								</div>
+								<div class="input-field col s4">
+									<input type="radio" id="test6" name="group1"> <label
+										for="test6">Cash</label>
+								</div>
+								<div class="input-field col s4">
+									<input type="radio" id="test7" name="group1"> <label
+										for="test7">Draft</label>
+								</div>
+								<div class="input-field col s4">
+									<input type="checkbox" id="test11"> <label for="test11">Average</label>
+								</div>
+								<div class="input-field col s4">
+									<input type="checkbox" id="test22"> <label for="test22">Average</label>
+								</div>
+								<div class="input-field col s4">
+									<input type="checkbox" id="test33"> <label for="test33">Average</label>
+								</div>
+
+
+							</div>
+						</div>
+
+						<br>
+						<!-- Second Row -->
+
+						<div class="row">
+							<div class=" col s12">
+								<div class="col s3">
+									<input type="text" list="languages" style="color: #00bcd4"
+										placeholder="Selection Dropdown">
+									<datalist id="languages">
+										<option value="HTML">
+										<option value="CSS">
+										<option value="JavaScript">
+										<option value="Java">
+										<option value="Ruby">
+										<option value="PHP">
+										<option value="Go">
+										<option value="Erlang">
+										<option value="Python">
+										<option value="C">
+										<option value="C#">
+										<option value="C++">
+									</datalist>
+
+								</div>
+								<div class="col s3">
+									<select class="browser-default">
+										<option value="">--Vehicles--</option>
+										<option>Hatch Back</option>
+										<option>Sedan</option>
+										<option>MUV</option>
+									</select>
+								</div>
+
+
+								<div class="input-field col s3">
+									<div id="autodate">
+										System Date: <input type="text" id="sysdate" name="sysdate"
+											required="required" readonly="readonly" />
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<br>
+
+						<div class="row">
+
+
+							<div class="col s4 required">
+								<label for="textarea">Text Area</label>
+								<textarea style='text-transform: lowercase'
+									class="materialize-textarea"></textarea>
+							</div>
+
+							<div class="input-field col s1">
+								<div id="timer">
+									System Time:
+									<div id="times"></div>
+								</div>
+							</div>
+							<div class="input-field col s2">
+								Current Date n Time
+								<div id="para1"></div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col s6">
+								<form action="#">
+									<div class="file-field input-field">
+										<div class="btn">
+											<span>Choose File</span> <input type="file">
+										</div>
+										<div class="file-path-wrapper">
+											<input class="file-path validate" type="text" style="border-color: white">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<!-- six Row -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end container-->
+</section>
+<!-- END CONTENT -->
+<script>
+	/* For All Names */
+	$('input[type=text]').keyup(function() {
+		$('').text($(this).val());
+	});
+
+	// textarea
+	$('input[type=text1]').keyup(function() {
+		$('').text1($(this).val());
+	});
+
+	document.getElementsByTagName('input')[0].onblur = function() {
+		this.value = this.value.replace(/^0+(?=\d)/, '');
+	}
+
+	$('#date').datetimepicker({
+		timepicker : false,
+		closeOnTimeSelect : false,
+		format : 'd-m-Y',
+		step : 01,
+	});
+	$('#currentdate').datetimepicker({
+		timepicker : false,
+		closeOnTimeSelect : false,
+		format : 'd-m-Y',
+		maxDate : false,
+		minDate : new Date(),
+		step : 01,
+
+	});
+
+	$('#time').datetimepicker({
+		step : 10,
+		datepicker : false,
+		closeOnTimeSelect : false,
+		format : 'H:i',
+		maxDate : new Date(),
+	});
+
+	$('#datentime').datetimepicker({
+        step: 10,
+        format: 'd-m-Y,  H : 00',
+        maxDate: false,
+        minDate: new Date(),
+    }); 
+
+	/* Date n Time */
+
+	document.getElementById("para1").innerHTML = formatAMPM();
+
+	function formatAMPM() {
+		var d = new Date(), minutes = d.getMinutes().toString().length == 1 ? '0'
+				+ d.getMinutes()
+				: d.getMinutes(), hours = d.getHours().toString().length == 1 ? '0'
+				+ d.getHours()
+				: d.getHours(), ampm = d.getHours() >= 12 ? 'pm' : 'am', months = [
+				'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep',
+				'Oct', 'Nov', 'Dec' ], days = [ 'Sun', 'Mon', 'Tue', 'Wed',
+				'Thu', 'Fri', 'Sat' ];
+		return days[d.getDay()] + ' ' + months[d.getMonth()] + ' '
+				+ d.getDate() + ' ' + d.getFullYear() + ' ' + hours + ':'
+				+ minutes + ampm;
+	}
+
+	//Email Validation
+	function validateEmail(email) {
+		var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+		if (reg.test(email)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	window.onload = function() {
+		date()
+	}, setInterval(function() {
+		date()
+	}, 1000);
+
+	function date() {
+		var now = new Date(), now = now.getHours() + ':' + now.getMinutes()
+				+ ':' + now.getSeconds();
+		$('#times').html(now);
+	}
+
+	$(".phnumber").keydown(function(e) {
+		var oldvalue = $(this).val();
+		var field = this;
+		setTimeout(function() {
+			if (field.value.indexOf('+91 ') !== 0) {
+				$(field).val(oldvalue);
+			}
+
+		}, 1);
+
+	});
+
+	var inp = document.getElementById('checknumberonly');
+	var chars = document.getElementById('chars');
+	inp.onkeyup = function() {
+		/* chars.innerHTML = inp.value.length; */
+		if (inp.value.length === 5 && inp.value.toString().substring(4, 5) == 0) {
+			this.value = this.value.slice(0, 4);
+		}
+	}
+
+	function onlyAlphabets(e, t) {
+		try {
+			if (window.event) {
+				var charCode = window.event.keyCode;
+			} else if (e) {
+				var charCode = e.which;
+			} else {
+				return true;
+			}
+			if ((charCode > 64 && charCode < 91)
+					|| (charCode > 96 && charCode < 123) || (charCode == 32))
+				return true;
+			else
+				return false;
+		} catch (err) {
+			alert(err.Description);
+		}
+	}
+
+	/* document.getElementById('systime').value = (new Date().toLocaleTimeString()); */
+	document.getElementById('sysdate').value = (new Date().toLocaleDateString());
+	/* $("#sysdate").val($.datepicker.formatDate("dd/mm/yy", new Date())); */
+
+	tabFunction();
+</script>
+<!-- END CONTENT -->

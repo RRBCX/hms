@@ -1,0 +1,104 @@
+<section id="content">
+    <!--start container-->
+    <div class="container">
+        <div id="breadcrumbs-wrapper">
+            <div class="row">
+                <div class="col s6 m12 l12" id="breadcrumbs">
+                    <ol class="breadcrumbs" style="margin-top: 10px;">
+                        <li><a href="#/dashboard">Home</a></li>
+                        <li><a href="#">Masters</a></li>
+                        <li class="active">Lab Items Master</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="basic-form" class="section">
+            <div class="row">
+                <div class="col s12 m12 l3">
+                    <div class="card-panel" id="c12_card_panel">
+                        <fieldset class="field-vehicle_info">
+                            <legend>Category Master - Add New</legend>
+                            <div class="row">
+                                <div class=" col s12">
+                                    <div class="input-field col s3 required">
+                                        <input type="text" name="firstName" data-ng-model="addcategory.serviceCategory" />
+                                        <label class="active">Add New Item/Service Category</label>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col s8">
+                                </div>
+                                <div class="col s2">
+                                    <button class="btn waves-light" data-ng-click="submitServiceCategorytDetails(addcategory)" style="float: right;">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+<!-- END CONTENT -->
+<script>
+    /* For All Names */
+    $('input[type=text]').keyup(function() {
+        $('').text($(this).val());
+    });
+
+    // textarea
+    $('input[type=text1]').keyup(function() {
+        $('').text1($(this).val());
+    });
+
+    document.getElementsByTagName('input')[0].onblur = function() {
+        this.value = this.value.replace(/^0+(?=\d)/, '');
+    }
+
+    $('#date').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        step: 01,
+    });
+    $('#currentdate').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        maxDate: false,
+        minDate: new Date(),
+        step: 01,
+
+    });
+
+
+    $('#time').datetimepicker({
+        step: 10,
+        datepicker: false,
+        closeOnTimeSelect: false,
+        format: 'H:i',
+        maxDate: new Date(),
+    });
+
+    $('#datentime').datetimepicker({
+        step: 10,
+        format: 'd-m-Y, H:i',
+        maxDate: false,
+        minDate: new Date(),
+    });
+
+    //Email Validation
+    function validateEmail(email) {
+        var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+        if (reg.test(email)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
+<!-- END CONTENT -->

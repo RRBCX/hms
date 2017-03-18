@@ -1,0 +1,210 @@
+<section id="content">
+    <!--start container-->
+    <div class="container">
+        <div id="breadcrumbs-wrapper">
+            <div class="row">
+                <div class="col s6 m12 l12" id="breadcrumbs">
+                    <ol class="breadcrumbs" style="margin-top: 10px;">
+                        <li><a href="#/dashboard">Home</a></li>
+                        <li><a href="#">Masters</a></li>
+                        <li class="active">Add Patient</li>
+                        <a data-ng-click="getPatientDetails()" style="float: right;cursor: pointer;">Patient Dashboard</a>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="basic-form" class="section">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="card-panel">
+                        <fieldset class="field-patient_info">
+                            <legend>Patient Information</legend>
+                            <div class="row">
+                                <div class=" col s12">
+                                    <div class="input-field col s3 required">
+                                        <input type="text" name="firstName" data-ng-model="addpatient.firstName" />
+                                        <label for="checknumberonly" class="active" id="chars">First Name</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text" name="middleName" data-ng-model="addpatient.middleName" />
+                                        <label for="lastName">Middle Name</label>
+                                    </div>
+
+                                    <div class="input-field col s3 required">
+                                        <input type="text"  data-ng-model="addpatient.lastName" />
+                                        <label for="lastName">Last Name</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" col s12">
+                                    <div class="input-field col s3 required">
+                                        <textarea  data-ng-model="addpatient.address"></textarea>
+                                        <label for="lastName">Address</label>
+                                    </div>
+
+                                    <div class="input-field col s3 required">
+                                        <input type="text"  data-ng-model="addpatient.location" />
+                                        <label for="lastName">Location</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <select class="browser-default" data-ng-model="addpatient.country" name="country">
+											<option selected="selected" value="">- Country -</option>
+											<option value="Guntur">India</option>
+									</select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" col s12">
+                                    <div class="input-field col s3 required">
+                                        <select class="browser-default" data-ng-model="addpatient.state" name="state">
+											<option value="">- State -</option>
+											<option value="Andhra Pradesh">Andhra Pradesh</option>
+										<option value="Telangana">Telangana</option>
+									</select>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <select class="browser-default" data-ng-model="addpatient.city" name="city">
+											<option value="">- City -</option>
+											<option value="Guntur">Guntur</option>
+											<option value="Hyderabad">Hyderabad</option>
+									</select>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text"  data-ng-model="addpatient.pincode" name="pincode"/>
+                                        <label for="lastName">Pin Code</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" col s12">
+                                    <div class="input-field col s3 required">
+                                        <input type="text"  data-ng-model="addpatient.mobileNumber" />
+                                        <label for="lastName">Mobile Number</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text"  data-ng-model="addpatient.phoneNumber" />
+                                        <label for="lastName">Phone Number</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text"  data-ng-model="addpatient.status" />
+                                        <label for="lastName">Status</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" col s12">
+                                    <div class="input-field col s3 required">
+                                        <input type="text" data-ng-model="addpatient.patientCode" />
+                                        <label for="lastName" class="active">Patient Code</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text"  data-ng-model="addpatient.insurenceName" />
+                                        <label for="lastName">Insurance Name</label>
+                                    </div>
+                                    <div class="input-field col s3 required">
+                                        <input type="text"  data-ng-model="addpatient.insurenceId" />
+                                        <label for="lastName">Insurance Id</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" col s12">
+                                  <div class="input-field col s3 required">
+                                        <input type="text" id="datentime" readonly="readonly" data-ng-model="addpatient.date"/> 
+                                        <label for="datentime">Date &amp; Time</label>
+                                    </div>
+                                  <div class="input-field col s1 required">
+                                    <select class="browser-default" style="width: auto;" data-ng-model="addpatient.gender" name="gender">
+										<option value="">- Gender -</option>
+										<option value="Male">Male</option>
+										<option value="Female">Female</option>
+									  </select>
+                                    </div>
+                                    <div class="input-field col s1 required">
+                                        <input type="text" style='text-transform: lowercase;margin-left: 4px;' data-ng-model="addpatient.age" />
+                                        <label for="lastName">Age</label>
+                                    </div>
+                                    <div class="input-field col s3 required" style="margin-left: 90px;">
+                                        <select class="browser-default" data-ng-model="addpatient.doctorId" name="doctorId">
+											<option value="">- Doctor -</option>
+											<option data-ng-repeat="doctorNames in doctorNames" value="{{doctorNames.doctorId}}">{{doctorNames.doctorName}}</option>
+									  </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s8">
+                                </div>
+                                <div class="col s8">
+                                    <button class="btn waves-light" data-ng-click="submitpatientDetails(addpatient)" style="float: right;">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+<!-- END CONTENT -->
+<script>
+    /* For All Names */
+    $('input[type=text]').keyup(function() {
+        $('').text($(this).val());
+    });
+
+    // textarea
+    $('input[type=text1]').keyup(function() {
+        $('').text1($(this).val());
+    });
+
+    document.getElementsByTagName('input')[0].onblur = function() {
+        this.value = this.value.replace(/^0+(?=\d)/, '');
+    }
+
+    $('#date').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        step: 01,
+    });
+    $('#currentdate').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'd-m-Y',
+        maxDate: false,
+        minDate: new Date(),
+        step: 01,
+
+    });
+
+
+    $('#time').datetimepicker({
+        step: 10,
+        datepicker: false,
+        closeOnTimeSelect: false,
+        format: 'H:i',
+        maxDate: new Date(),
+    });
+
+    $('#datentime').datetimepicker({
+        step: 10,
+        format: 'd-m-Y, H:i',
+        maxDate: false,
+        minDate: new Date(),
+    });
+
+    //Email Validation
+    function validateEmail(email) {
+        var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+        if (reg.test(email)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
+<!-- END CONTENT -->

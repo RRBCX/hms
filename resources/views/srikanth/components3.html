@@ -1,0 +1,486 @@
+<!--breadcrumbs start-->
+<div id="breadcrumbs-wrapper">
+    <!-- Search for small screen -->
+    <div class="header-search-wrapper grey hide-on-large-only">
+        <i class="mdi-action-search active"></i> <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize">
+    </div>
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <ol class="breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Srikanth</a></li>
+                <li class="active">Components 2</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<!--breadcrumbs end-->
+<section id="content">
+    <!--start container-->
+    <div class="container">
+        <div id="basic-form" class="section">
+            <div class="row">
+                <div class="col s9">
+                    <fieldset class="col s9">
+                        <legend id="color"><b>Current Month History</b></legend>
+                        <div class="col s10 " style="border-right: 1px solid #CCCCCC;">
+                            <div style="border-bottom: 1px solid #CCCCCC;">
+                                <div class="row">
+                                    <div class="col s3"><b>Day Avg.</b></div>
+                                    <div class="col s3">120</div>
+                                    <div class="col s3">Reached</div>
+                                    <div class="col s3">1500</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s3">Perf..</div>
+                                    <div class="col s3">120</div>
+                                    <div class="col s3">Avg.Login</div>
+                                    <div class="col s3">00:05</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s3">T.Days</div>
+                                    <div class="col s3">15</div>
+                                    <div class="col s3">W.Days</div>
+                                    <div class="col s3">12</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s3">V.Comp.</div>
+                                    <div class="col s3">5</div>
+                                    <div class="col s3">D.Comp.</div>
+                                    <div class="col s3">5</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s3">V.Rating</div>
+                                    <div class="col s3">
+                                        <i class="mdi-action-star-rate tiny"></i>
+                                        <i class="mdi-action-star-rate tiny"></i>
+                                        <i class="mdi-action-star-rate tiny"></i>
+                                        <i class="mdi-action-star-rate tiny"></i>
+                                        <i class="mdi-action-star-rate tiny"></i>
+                                    </div>
+                                    <div class="col s3">D.Rating</div>
+                                    <div class="col s3">
+                                        <i class="mdi-action-star-rate tiny"></i>
+                                        <i class="mdi-action-star-rate tiny"></i>
+                                        <i class="mdi-action-star-rate tiny"></i>
+                                        <i class="mdi-action-star-rate tiny"></i>
+                                        <i class="mdi-action-star-rate tiny"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="row">
+                                    <div class="col s3"><label>T.Bkngs: </label><span>39</span></div>
+                                    <div class="col s2"><label>SB: </label><span>25</span></div>
+                                    <div class="col s2"><label>RB: </label><span>5</span></div>
+                                    <div class="col s2"><label>Ro.B: </label><span>4</span></div>
+                                    <div class="col s2"><label>CB: </label><span>5</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s2" style="text-align:center;">
+                            ChartData
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s10">
+                    <fieldset class="col s11" style="margin-top: 2px;">
+                        <legend id="color"><b>Current Month History</b></legend>
+                        <div class="row">
+                            <div class="col s2">
+                                <label>LiT:</label>
+                                <span>17 -> 15:05</span>
+                            </div>
+                            <div class="col s2">
+                                <label>ELoT:</label>
+                                <span>17 -> 15</span>
+                            </div>
+                            <div class="col s2">
+                                <label>PL:</label>
+                                <span>17 -> 15:05</span>
+                            </div>
+                            <div class="col s2">
+                                <label>CL:</label>
+                                <span>17 -> 15:05</span>
+                            </div>
+                            <div class="col s2">
+                                <label>Status:</label>
+                                <span>Inactive</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s2">
+                                <label>T.Bookings:</label>
+                                <span>0</span>
+                            </div>
+                            <div class="col s2">
+                                <label>SB:</label>
+                                <span>0</span>
+                            </div>
+                            <div class="col s2">
+                                <label>RO.B:</label>
+                                <span>0</span>
+                            </div>
+                            <div class="col s2">
+                                <label>RB:</label>
+                                <span>0</span>
+                            </div>
+                            <div class="col s2">
+                                <label>CB:</label>
+                                <span>0</span>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-top:15px;">
+                            <div class="col s8">
+                                <div id="table-datatables">
+                                    <table id="example" class="display" cellspacing="0">
+                                        <thead class="c01">
+                                            <tr>
+                                                <th>B.No</th>
+                                                <th>V.T</th>
+                                                <th>D.ML</th>
+                                                <th>S.T</th>
+                                                <th>D.T</th>
+                                                <th>T.kms</th>
+                                                <th>Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="b01" style="background: white">
+                                            <tr>
+                                                <td>1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col s3">
+                                <!-- <div class="row"><label>Day Call: </label><span>0</span></div>
+                                                    <div class="row"><label>T.Login Hrs: </label><span>20:13</span></div>
+                                                    <div class="row"><label>T.Break Tm: </label><span>0</span></div>
+                                                    <div class="row"><label>Working Hrs: </label><span>20:13</span></div>
+                                                    <div class="row"><label>Performance: </label><span>0</span></div> -->
+                                <div class="row">
+                                    <div class="col s8"><label>Day Call: </label></div>
+                                    <div class="col s2"><span>0</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s8"><label>T.Login Hrs: </label></div>
+                                    <div class="col s2"><span>20:13</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s8"><label>T.Break Tm: </label></div>
+                                    <div class="col s2"><span>0</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s8"><label>Wrkng Hrs: </label></div>
+                                    <div class="col s2"><span>20:13</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s8"><label>Performance: </label></div>
+                                    <div class="col s2"><span>0</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <fieldset>
+                    <legend id="color" class="">Month Report
+                    </legend>
+                    <div class="input-field col s2">
+                        <input type="text" id="tbooking"> <label for="tbooking" class=""> Total Bookings</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input type="text" id="collection"> <label for="collection" class="">Total Collection</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input type="text" id="total"> <label for="total" class="">Total Vehicles Logged</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input type="text" id="cbooking"> <label for="cbooking" class="">Credit Bookings</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input type="text" id="abooking"> <label for="abooking" class="">Advance Bookings</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input type="text" id="cancellations"> <label for="cancellations" class="">Cancellations</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <fieldset>
+                        <legend id="color">Agents</legend>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <label class="center-align" id="color"><h6>Shift-A</h6></label>
+                            </div>
+                            <div class="input-field col s4">
+
+                                <label class="center-align" id="color"><h6>Shift-B</h6></label>
+                            </div>
+                            <div class="input-field col s4">
+                                <label class="center-align" id="color"><h6>Shift-C</h6></label>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="text" id="booking1"> <label for="booking1" class="">Bookings</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="booking2"> <label for="booking2" class="">Bookings</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="booking3"> <label for="booking3" class="">Bookings</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="text" id="Collection1"> <label for="Collection1" class="">Collection</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="Collection2"> <label for="Collection2" class="">Collection</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="Collection3"> <label for="Collection3" class="">Collection</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="text" id="Agents1"> <label for="Agents1" class="">Agents Logged In</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="Agents2"> <label for="Agents2" class="">Agents Logged In</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="Agents3"> <label for="Agents3" class="">Agents Logged In</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="text" id="bAgent1"> <label for="bAgent1" class="">Booking\ Agent</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="bAgent2"> <label for="bAgent2" class="">Booking\ Agent</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="bAgent3"> <label for="bAgent3" class="">Booking\ Agent</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="text" id="cAgent1"> <label for="cAgent1" class="">Collection\ Agent</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="cAgent2"> <label for="cAgent2" class="">Collection\ Agent</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="cAgent3"> <label for="cAgent3" class="">Collection\ Agent</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="text" id="aLeave1"> <label for="aLeave1" class="">Agents on Leave</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="aLeave2"> <label for="aLeave2" class="">Agents on Leave</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="aLeave3"> <label for="aLeave3" class="">Agents on Leave</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="text" id="weekoff1"> <label for="weekoff1" class="">Week Off</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="weekoff2"> <label for="weekoff2" class="">Week Off</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="weekoff3"> <label for="weekoff3" class="">Week Off</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="input-field col s6">
+                    <fieldset>
+                        <legend id="color">Example Div</legend>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <label class="center-align" id="color"><h6>Shift-A</h6></label>
+                            </div>
+                            <div class="input-field col s4">
+
+                                <label class="center-align" id="color"><h6>Shift-B</h6></label>
+                            </div>
+                            <div class="input-field col s4">
+                                <label class="center-align" id="color"><h6>Shift-C</h6></label>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text"> <label class="">Cancellations</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div id="card-stats">
+                    <div class="col s12 m6 l3">
+                        <div class="card">
+                            <div class="card-content  green white-text">
+                                <p class="card-stats-title"><i class="mdi-social-group-add"></i> New Clients</p>
+                                <h4 class="card-stats-number">566</h4>
+                                <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 15% <span class="green-text text-lighten-5">from yesterday</span>
+                                </p>
+                            </div>
+                            <div class="card-action  green darken-2">
+                                <div id="clients-bar" class="center-align"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <div class="card">
+                            <div class="card-content pink lighten-1 white-text">
+                                <p class="card-stats-title"><i class="mdi-editor-insert-drive-file"></i> New Invoice</p>
+                                <h4 class="card-stats-number">1806</h4>
+                                <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-down"></i> 3% <span class="deep-purple-text text-lighten-5">from last month</span>
+                                </p>
+                            </div>
+                            <div class="card-action  pink darken-2">
+                                <div id="invoice-line" class="center-align"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <div class="card">
+                            <div class="card-content blue-grey white-text">
+                                <p class="card-stats-title"><i class="mdi-action-trending-up"></i> Today Profit</p>
+                                <h4 class="card-stats-number">$806.52</h4>
+                                <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 80% <span class="blue-grey-text text-lighten-5">from yesterday</span>
+                                </p>
+                            </div>
+                            <div class="card-action blue-grey darken-2">
+                                <div id="profit-tristate" class="center-align"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <div class="card">
+                            <div class="card-content purple white-text">
+                                <p class="card-stats-title"><i class="mdi-editor-attach-money"></i>Total Sales</p>
+                                <h4 class="card-stats-number">$8990.63</h4>
+                                <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 70% <span class="purple-text text-lighten-5">last month</span>
+                                </p>
+                            </div>
+                            <div class="card-action purple darken-2">
+                                <div id="sales-compositebar" class="center-align"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Container -->
+</section>
+<!-- END CONTENT -->
+<script>
+    tabFunction();
+</script>

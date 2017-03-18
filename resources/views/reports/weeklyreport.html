@@ -1,0 +1,431 @@
+<style>
+    #color {
+        color: #4fbbda;
+    }
+</style>
+
+
+<!-- START CONTENT -->
+<section id="content">
+	<!--breadcrumbs start-->
+	<div id="breadcrumbs-wrapper">
+		<!-- Search for small screen -->
+		<div class="header-search-wrapper grey hide-on-large-only">
+			<i class="mdi-action-search active"></i> <input type="text"
+				name="Search" class="header-search-input z-depth-2"
+				placeholder="Explore Materialize">
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="input-field col s7">
+					<ol class="breadcrumbs">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Reports</a></li>
+						<li><a href="#">Bookings</a></li>
+						<li class="active">Weekly Report</li>
+					</ol>
+				</div>
+				<div class="input-field col s1">
+					<select class="browser-default">
+						<option value="" disabled="" selected="">All</option>
+						<option value="1">Xent</option>
+						<option value="2">Others</option>
+
+					</select>
+				</div>
+				<div class="input-field col s1">
+					<input id="fromdate" type="text"
+						data-ng-model="monthlyreport.fromDate" name="fromDate"> <label
+						for="fromdate" class="center-align">From Date</label>
+				</div>
+				<div class="input-field col s1">
+					<input id="todate" type="text"
+						data-ng-model="monthlyreport.toDate" name="toDate"> <label
+						for="fromdate" class="center-align">To Date</label>
+				</div>
+				<div class="input-field col s1">
+					<input id="fromtime" type="text"
+						data-ng-model="monthlyreport.fromTime" name="fromTime"> <label
+						for="fromtime" class="center-align">From Time</label>
+				</div>
+				<div class="input-field col s1">
+					<input id="totime" type="text"
+						data-ng-model="monthlyreport.toTime" name="toTime"> <label
+						for="totime" class="center-align">To Time</label>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--breadcrumbs end-->
+
+
+	<!--start container-->
+	<div class="container">
+		<div class="section">
+
+			<fieldset>
+				<legend id="color">Title</legend>
+				<div class="row">
+					<div class="input-field col s12">
+						<fieldset>
+							<legend id="color">Weekly Report</legend>
+							<div class="row margin">
+								<div class="input-field col s2">
+									<input id="totalbookings" type="text"
+										data-ng-model="monthlyreport.totalBookings"
+										name="totalBookings"> <label for="totalbookings"
+										class="center-align">Total Bookings</label>
+								</div>
+								<div class="input-field col s2">
+									<input id="totalcollection" type="text"
+										data-ng-model="monthlyreport.totalCollection"
+										name="totalCollection"> <label for="totalcollection"
+										class="center-align">Total Collection</label>
+								</div>
+								<div class="input-field col s2">
+									<input id="totalvechiclesloggedin" type="text"
+										data-ng-model="monthlyreport.totalVechiclesloggedin"
+										name="totalVechiclesloggedin"> <label
+										for="totalvechiclesloggedin" class="center-align">Total
+										Vehicles Logged In</label>
+								</div>
+								<div class="input-field col s2">
+									<input id="creditbookings" type="text"
+										data-ng-model="monthlyreport.creditBookings"
+										name="creditBookings"> <label for="creditbookings"
+										class="center-align">Credit Bookings</label>
+								</div>
+								<div class="input-field col s2">
+									<input id="advancebookings" type="text"
+										data-ng-model="monthlyreport.advanceBookings"
+										name="advanceBookings"> <label for=""
+										advancebookings""
+										class="center-align">Advance
+										Bookings</label>
+								</div>
+								<div class="input-field col s2">
+									<input id="cancellations" type="text"
+										data-ng-model="monthlyreport.cancellations"
+										name="cancellations"> <label for="cancellations"
+										class="center-align">Cancellations</label>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s6">
+						<fieldset>
+							<legend id="color">Agents</legend>
+							
+					       <div class="row margin">
+								<div class="input-field col s4">
+								<label  class="center-align" id="color"><h6>Shift-A</h6></label>
+								</div>
+								<div class="input-field col s4">
+									
+									<label  class="center-align" id="color"><h6>Shift-B</h6></label>
+								</div>
+								<div class="input-field col s4">
+								
+									<label class="center-align" id="color"><h6>Shift-C</h6></label>
+								</div>
+
+							</div>
+							
+							<br>
+							<br>
+							
+							
+							<div class="row margin">
+								<div class="input-field col s4">
+									<input id="bookings1" type="text"
+										data-ng-model="monthlyreport.bookings1" name="bookings1">
+									<label for="bookings1" class="center-align">Bookings</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="bookings2" type="text"
+										data-ng-model="monthlyreport.bookings2" name="bookings2">
+									<label for="bookings2" class="center-align">Bookings</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="bookings3" type="text"
+										data-ng-model="monthlyreport.bookings3" name="bookings3">
+									<label for="bookings3" class="center-align">Bookings</label>
+								</div>
+
+							</div>
+
+							<div class="row margin">
+								<div class="input-field col s4">
+									<input id="collection1" type="text"
+										data-ng-model="monthlyreport.collection1" name="collection1">
+									<label for="collection1" class="center-align">Collection</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="collection2" type="text"
+										data-ng-model="monthlyreport.collection2" name="collection2">
+									<label for="collection2" class="center-align">Collection</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="collection3" type="text"
+										data-ng-model="monthlyreport.collection3" name="collection3">
+									<label for="collection3" class="center-align">Collection</label>
+								</div>
+							</div>
+
+							<div class="row margin">
+								<div class="input-field col s4">
+									<input id="agentsloggedin1" type="text"
+										data-ng-model="monthlyreport.agentsLoggedIn1"
+										name="agentsLoggedIn1"> <label for="agentsloggedin1"
+										class="center-align">Agents Logged In</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="agentsloggedin2" type="text"
+										data-ng-model="monthlyreport.agentsLoggedIn2"
+										name="agentsLoggedIn2"> <label for="agentsloggedin2"
+										class="center-align">Agents Logged In</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="agentsloggedin3" type="text"
+										data-ng-model="monthlyreport.agentsLoggedIn3"
+										name="agentsLoggedIn3"> <label for="agentsloggedin3"
+										class="center-align">Agents Logged In</label>
+								</div>
+							</div>
+
+							<div class="row margin">
+								<div class="input-field col s4">
+									<input id="bookingagent1" type="text"
+										data-ng-model="monthlyreport.bookingAgent1"
+										name="bookingAgent1"> <label for="bookingagent1"
+										class="center-align">Booking\ Agent</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="bookingagent2" type="text"
+										data-ng-model="monthlyreport.bookingAgent2"
+										name="bookingAgent2"> <label for="bookingagent2"
+										class="center-align">Booking\ Agent</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="bookingagent3" type="text"
+										data-ng-model="monthlyreport.bookingAgent3"
+										name="bookingAgent3"> <label for="bookingagent3"
+										class="center-align">Booking\ Agent</label>
+								</div>
+
+							</div>
+
+							<div class="row margin">
+								<div class="input-field col s4">
+									<input id="collectionagent1" type="text"
+										data-ng-model="monthlyreport.collectionAgent1"
+										name="collectionAgent1"> <label for="collectionagent1"
+										class="center-align">Collection\ Agent</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="collectionagent2" type="text"
+										data-ng-model="monthlyreport.collectionAgent2"
+										name="collectionAgent2"> <label for="collectionagent2"
+										class="center-align">Collection\ Agent</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="collectionagent3" type="text"
+										data-ng-model="monthlyreport.collectionAgent3"
+										name="collectionAgent3"> <label for="collectionagent3"
+										class="center-align">Collection\ Agent</label>
+								</div>
+
+							</div>
+
+							<div class="row margin">
+								<div class="input-field col s4">
+									<input id="agentsonleave1" type="text"
+										data-ng-model="monthlyreport.agentsOnLeave1"
+										name="agentsOnLeave1"> <label for="agentsonleave1"
+										class="center-align">Agents on Leave</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="agentsonleave2" type="text"
+										data-ng-model="monthlyreport.agentsOnLeave2"
+										name="agentsOnLeave2"> <label for="agentsonleave2"
+										class="center-align">Agents on Leave</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="agentsonleave3" type="text"
+										data-ng-model="monthlyreport.agentsOnLeave3"
+										name="agentsOnLeave3"> <label for="agentsonleave3"
+										class="center-align">Agents on Leave</label>
+								</div>
+
+							</div>
+
+							<div class="row margin">
+								<div class="input-field col s4">
+									<input id="weakoff1" type="text"
+										data-ng-model="monthlyreport.weakOff1" name="weakoff1">
+									<label for="weakoff1" class="center-align">Week Off</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="weakoff2" type="text"
+										data-ng-model="monthlyreport.weakoff2" name="weakoff2">
+									<label for="weakoff2" class="center-align">Week Off</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="weakoff3" type="text"
+										data-ng-model="monthlyreport.weakOff3" name="weakoff3">
+									<label for="weakoff3" class="center-align">Week Off</label>
+								</div>
+
+							</div>
+
+
+						</fieldset>
+					</div>
+
+
+					<div class="input-field col s6">
+						<fieldset>
+							<legend id="color">Drivers</legend>
+							<div class="row margin">
+								<div class="input-field col s4">
+									<input id="totaldrivers" type="text"
+										data-ng-model="monthlyreport.totalDrivers" name="totalDrivers">
+									<label for="totaldrivers" class="center-align">Total
+										Drivers</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="active" type="text"
+										data-ng-model="monthlyreport.active" name="active"> <label
+										for="active" class="center-align">Active</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="inactive" type="text"
+										data-ng-model="monthlyreport.inactive" name="inactive">
+									<label for="inactive" class="center-align">Inactive</label>
+								</div>
+							</div>
+							<div class="row margin">
+								<div class="input-field col s4">
+									<input id="driversloggedin" type="text"
+										data-ng-model="monthlyreport.driversLoggedIn"
+										name="driversLoggedIn"> <label for="driversloggedin"
+										class="center-align">Drivers Logged In</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="collectiondriver" type="text"
+										data-ng-model="monthlyreport.collectionDriver"
+										name="collectionDriver"> <label for="collectiondriver"
+										class="center-align">Collection\ Driver</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="bookingsdriver" type="text"
+										data-ng-model="monthlyreport.bookingsDriver"
+										name="bookingsDriver"> <label for="bookingsdriver"
+										class="center-align">Bookings\ Driver</label>
+								</div>
+							</div>
+							<div class="row margin">
+								<div class="input-field col s4">
+									<input id="damages" type="text"
+										data-ng-model="monthlyreport.damages" name="damages">
+									<label for="damages" class="center-align">Damages</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="challanas" type="text"
+										data-ng-model="monthlyreport.challanas" name="challanas">
+									<label for="challanas" class="center-align">Challanas</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="breakdowns" type="text"
+										data-ng-model="monthlyreport.breakDowns" name="breakDowns">
+									<label for="breakdowns" class="center-align">Break Downs</label>
+								</div>
+							</div>
+							<div class="row margin">
+								<div class="input-field col s4">
+									<input id="milage" type="text"
+										data-ng-model="monthlyreport.milage" name="driversLoggedIn">
+									<label for="milage" class="center-align">Milage</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="recovery" type="text"
+										data-ng-model="monthlyreport.recovery" name="recovery">
+									<label for="recovery" class="center-align">Recovery</label>
+								</div>
+							</div>
+						</fieldset>
+
+					</div>
+
+					<div class="input-field col s6">
+						<fieldset>
+							<legend id="color">Vehicles</legend>
+							<div class="row margin">
+								<div class="input-field col s4">
+									<input id="vehiclesloggedin" type="text"
+										data-ng-model="monthlyreport.vehiclesLoggedIn"
+										name="vehiclesLoggedIn"> <label for="vehiclesloggedin"
+										class="center-align">Vehicles Logged In</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="bookingsvehicle" type="text"
+										data-ng-model="monthlyreport.bookingsVehicle"
+										name="bookingsVehicle"> <label for="bookingsvehicle"
+										class="center-align">Bookings\ Vehicle</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="collectionvehicle" type="text"
+										data-ng-model="monthlyreport.collectionVehicle"
+										name="collectionVehicle"> <label
+										for="collectionvehicle" class="center-align">Collection\
+										Vehicle</label>
+								</div>
+							</div>
+							<div class="row margin">
+								<div class="input-field col s4">
+									<input id="milagevehicle" type="text"
+										data-ng-model="monthlyreport.milageVehicle"
+										name="milageVehicle"> <label for="milagevehicle"
+										class="center-align">Milage\ Vehicle</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="assignedto" type="text"
+										data-ng-model="monthlyreport.assignedTo" name="assignedTo">
+									<label for="assignedto" class="center-align">AssignedTo</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="breakdown" type="text"
+										data-ng-model="monthlyreport.breakDown" name="breakDown">
+									<label for="breakdown" class="center-align">BreakDown</label>
+								</div>
+							</div>
+							<div class="row margin">
+
+								<div class="input-field col s4">
+									<input id="challanas_2" type="text"
+										data-ng-model="monthlyreport.challanas_2" name="challanas_2">
+									<label for="challanas_2" class="center-align">Challanas</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="breakdown2" type="text"
+										data-ng-model="monthlyreport.breakDown2" name="breakDown2">
+									<label for="breakdown2" class="center-align">BreakDown</label>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+				</div>
+			</fieldset>
+
+		</div>
+		<!-- Floating Action Button -->
+
+		<!-- Floating Action Button -->
+	</div>
+	<!--end container-->
+</section>
+<!-- END CONTENT -->

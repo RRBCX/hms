@@ -1,0 +1,1073 @@
+<style>
+    .c01 {
+        background-color: #e0e0e0;
+        line-height: 0.3
+    }
+    .b01 {
+        line-height: 0.61
+    }
+    #example_filter {
+	width: 16%;
+	display: none;
+    }
+    #example_wrapper {
+        margin-top: -43px;
+    }
+    #filterforvehicle{
+		margin-top: -41px;
+		width: 20%;
+		margin-left: 557px;
+	}
+	#search_inpage{
+		margin-left: 709px;
+	    margin-top: -40px;
+	    width: 20%;
+	}
+	#tabledatacentre{
+	    text-align: center;
+	}
+</style>
+<section id="content">
+    <!--start container-->
+    <div class="container">
+        <div id="breadcrumbs-wrapper">
+			<div class="row">
+				<div class="col s12 m12 l12" id="breadcrumbs">
+					<div class="col s8 m8 l8">
+						<ol class="breadcrumbs" style="margin-top: 10px;">
+							<li><a href="#/dashboard">Home</a></li>
+							<li><a href="#">Masters</a></li>
+							<li class="active">Patient Dashboard</li>
+						</ol>
+						<div class="input-field col s2" id="woutlookup_fromdate">
+							<input type="text" id="fromdate" /> <label for="fromdate">From Date</label>
+						</div>
+						<div class="input-field col s2" id="woutlookup_todate">
+							<input type="text" id="todate" /> <label for="todate">To Date</label>
+						</div> 
+						<div class="input-field col s2" id="filterforvehicle">
+							 <select class="browser-default">
+							 <option>Filter</option>
+							 <option>Skoda</option>
+							 <option>Hatchback</option>
+							 <option>MUV</option>
+							 </select>
+						</div>
+						<div class="input-field col s2" id="search_inpage">
+						<input type="text" id="searchone"> <label for="searchone" class="">Search</label>
+					</div>
+					</div>
+					<div class="col s4 m4 l4">
+						<div style="float: right;margin-top: 10px;">
+						 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+						<img src="resources/assets/images/aprvd/16/Setting.png" alt="Smiley face" id="dropdownfunctionalitytwo" style="cursor: pointer;">
+						 &nbsp; &nbsp; &nbsp; &nbsp;
+						<a href="javascript:void(0);" class="waves-block notification-button" data-activates="settings-mouseoverthree">
+						<img src="resources/assets/images/aprvd/16/Download.png" alt="Smiley face" style="cursor: pointer;"> </a>
+						 &nbsp; &nbsp; &nbsp; &nbsp;
+						<img src="resources/assets/images/aprvd/16/Mail.png" alt="Smiley face" data-ng-click="getmailpopup()" role="button" style="cursor: pointer;">
+						&nbsp; &nbsp; &nbsp; &nbsp;
+						<img src="resources/assets/images/aprvd/16/Print.png" alt="Smiley face">
+						 &nbsp; &nbsp;
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col s4 m4 l4" style="padding-right: 239px;">
+			<div style="float: right;">
+		        <ul id="settings-dropdowntwo" class="dropdown-content">
+                    <li class="input-field col s2">
+					    <input type="checkbox" id="test1" checked="checked" name="checkbox1"> <label for="test1">S.No</label>
+					</li>
+					 <li class="input-field col s2">
+					    <input type="checkbox" id="test2" checked="checked" name="checkbox2"> <label for="test2">Name</label>
+					</li>
+					 <li class="input-field col s2">
+					    <input type="checkbox" id="test3" checked="checked" name="checkbox3"> <label for="test3">Position</label>
+					</li>
+					 <li class="input-field col s2" >
+					    <input type="checkbox" id="test4" checked="checked" name="checkbox4"> <label for="test4">Office</label>
+					</li>
+					 <li class="input-field col s2" >
+					    <input type="checkbox" id="test5" checked="checked" name="checkbox5"> <label for="test5">Age</label>
+					</li>
+					 <li class="input-field col s2" >
+					    <input type="checkbox" id="test6" checked="checked" name="checkbox6"> <label for="test6">Date</label>
+					</li>
+					 <li class="input-field col s2">
+					   <input type="checkbox" id="test7" checked="checked" name="checkbox7"> <label for="test7">Salary</label>
+					</li>
+					 <li class="input-field col s2">
+					   <input type="checkbox" id="test8" checked="checked" name="checkbox8"> <label for="test8">Action</label>
+					</li>
+					<li class="input-field col s2">
+					   <button class="btn  waves-light btnMR2" data-ng-click="closeSettingsDropdownTwo()" type="submit" name="action" id="report-settings-select">Select</button>
+					</li>
+                 </ul> 
+                 </div>
+          </div>
+          <div class="col s4 m4 l4" style="padding-right: 242px;">
+		    <div style="float: right;">
+		        <ul id="settings-mouseoverthree" class="dropdown-content">
+		            <li class="input-field col s6">
+		                &nbsp;
+		                <img src="resources/assets/images/aprvd/16/pdf.png" alt="Smiley face">&nbsp; &nbsp;Download as PDF
+		            </li>
+		            <li class="input-field col s6">
+		                &nbsp;
+		                <img src="resources/assets/images/aprvd/16/Xslx.png" alt="Smiley face">&nbsp;&nbsp;Download as Excel
+		            </li>
+		        </ul>
+		    </div>
+		</div>
+        <div id="basic-form" class="section">
+            <div class="row">
+                <!-- Form with placeholder -->
+                <div class="col s12 m12 l12">
+                    <div class="card-panel" id="c12_tablewilook20_card_panel">
+                        <div id="table-datatables">
+                            <div class="row">
+                                <table id="example" class="display" cellspacing="0" width="100%">
+                                    <thead class="c01">
+                                        <tr>
+                                            <th class="checkbox1" style="width:1px;">S.No</th>
+                                            <th class="checkbox2">Name</th>
+                                            <th class="checkbox3">Position</th>
+                                            <th class="checkbox4">Office</th>
+                                            <th class="checkbox5" id="tabledatacentre" style="width:1px;">Age</th>
+                                            <th class="checkbox6" id="tabledatacentre" style="width:1px;">Date</th>
+                                            <th class="checkbox7" id="tabledatacentre" style="width:1px;">Salary</th>
+                                            <th class="checkbox8" id="tabledatacentre" style="width:2px;">Action</th>
+                                        </tr>
+                                    </thead>
+
+                                    <!-- <tfoot>
+				                        <tr>
+				                            <th></th>
+				                            <th></th>
+				                            <th></th>
+				                            <th></th>
+				                            <th></th>
+				                            <th></th>
+				                            <th></th>
+				                        </tr>
+				                    </tfoot> -->
+                                    <tbody class="b01">
+                                        <tr>
+                                            <td class="checkbox1" id="tabledatacentre">1</td>
+                                            <td class="checkbox2">Tiger Nixon</td>
+                                            <td class="checkbox3">System Architect</td>
+                                            <td class="checkbox4">Edinburgh</td>
+                                            <td class="checkbox5" id="tabledatacentre">61</td>
+                                            <td class="checkbox6" id="tabledatacentre">2011/04/25</td>
+                                            <td class="checkbox7" id="tabledatacentre">$320,800</td>
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkbox1" id="tabledatacentre">2</td>
+                                            <td class="checkbox2">Garrett</td>
+                                            <td class="checkbox3">Accountant</td>
+                                            <td class="checkbox4">Tokyo</td>
+                                            <td class="checkbox5" id="tabledatacentre">63</td>
+                                            <td class="checkbox6" id="tabledatacentre">2011/07/25</td>
+                                            <td class="checkbox7" id="tabledatacentre">$170,750</td>
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkbox1" id="tabledatacentre">3</td>
+                                            <td class="checkbox2">Ashton Cox</td>
+                                            <td class="checkbox3">Junior</td>
+                                            <td class="checkbox4">Francisco</td>
+                                            <td class="checkbox5" id="tabledatacentre">66</td>
+                                            <td class="checkbox6" id="tabledatacentre">2009/01/12</td>
+                                            <td class="checkbox7" id="tabledatacentre">$86,000</td>
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkbox1" id="tabledatacentre">4</td>
+                                            <td class="checkbox2">Cedric Kelly</td>
+                                            <td class="checkbox3">Senior</td>
+                                            <td class="checkbox4">Edinburgh</td>
+                                            <td class="checkbox5" id="tabledatacentre">22</td>
+                                            <td class="checkbox6" id="tabledatacentre">2012/03/29</td>
+                                            <td class="checkbox7" id="tabledatacentre">$433,060</td>
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkbox1" id="tabledatacentre">5</td>
+                                            <td class="checkbox2">Airi Satou</td>
+                                            <td class="checkbox3">Accountant</td>
+                                            <td class="checkbox4">Tokyo</td>
+                                            <td class="checkbox5" id="tabledatacentre">33</td>
+                                            <td class="checkbox6" id="tabledatacentre">2008/11/28</td>
+                                            <td class="checkbox7" id="tabledatacentre">$162,700</td>
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkbox1" id="tabledatacentre">6</td>
+                                            <td class="checkbox2">Brielle</td>
+                                            <td class="checkbox3">Integration</td>
+                                            <td class="checkbox4">New York</td>
+                                            <td class="checkbox5" id="tabledatacentre">61</td>
+                                            <td class="checkbox6" id="tabledatacentre">2012/12/02</td>
+                                            <td class="checkbox7" id="tabledatacentre">$372,000</td>
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkbox1" id="tabledatacentre">7</td>
+                                            <td class="checkbox2">Herrod</td>
+                                            <td class="checkbox3">Sales</td>
+                                            <td class="checkbox4">San</td>
+                                            <td class="checkbox5" id="tabledatacentre">59</td>
+                                            <td class="checkbox6" id="tabledatacentre">2012/08/06</td>
+                                            <td class="checkbox7" id="tabledatacentre">$137,500</td>
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkbox1" id="tabledatacentre">8</td>
+                                            <td class="checkbox2">Rhona</td>
+                                            <td class="checkbox3">Integration </td>
+                                            <td class="checkbox4">Tokyo</td>
+                                            <td class="checkbox5" id="tabledatacentre">55</td>
+                                            <td class="checkbox6" id="tabledatacentre">2010/10/14</td>
+                                            <td class="checkbox7" id="tabledatacentre">$327,900</td>
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkbox1" id="tabledatacentre">9</td>
+                                            <td class="checkbox2">Colleen</td>
+                                            <td class="checkbox3">Javascript</td>
+                                            <td class="checkbox4">San</td>
+                                            <td class="checkbox5" id="tabledatacentre">39</td>
+                                            <td class="checkbox6" id="tabledatacentre">2009/09/15</td>
+                                            <td class="checkbox7" id="tabledatacentre">$205,500</td>
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkbox1" id="tabledatacentre">10</td>
+                                            <td class="checkbox2">Sonya</td>
+                                            <td class="checkbox3">Software</td>
+                                            <td class="checkbox4">Edinburgh</td>
+                                            <td class="checkbox5" id="tabledatacentre">23</td>
+                                            <td class="checkbox6" id="tabledatacentre">2008/12/13</td>
+                                            <td class="checkbox7" id="tabledatacentre">$103,600</td>
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkbox1" id="tabledatacentre">11</td>
+                                            <td class="checkbox2">Jena</td>
+                                            <td class="checkbox3">Office</td>
+                                            <td class="checkbox4">London</td>
+                                            <td class="checkbox5" id="tabledatacentre">30</td>
+                                            <td class="checkbox6" id="tabledatacentre">2008/12/19</td>
+                                            <td class="checkbox7" id="tabledatacentre">$90,560</td>
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkbox1" id="tabledatacentre">12</td>
+                                            <td class="checkbox2">Quinn Flynn</td>
+                                            <td class="checkbox3">Support Lead</td>
+                                            <td class="checkbox4">Edinburgh</td>
+                                            <td class="checkbox5" id="tabledatacentre">22</td>
+                                            <td class="checkbox6" id="tabledatacentre">2013/03/03</td>
+                                            <td class="checkbox7" id="tabledatacentre">$342,000</td>
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkbox1" id="tabledatacentre">13</td>
+                                            <td class="checkbox2">Chard</td>
+                                            <td class="checkbox3">Regional</td>
+                                            <td class="checkbox4">San</td>
+                                            <td class="checkbox5" id="tabledatacentre">36</td>
+                                            <td class="checkbox6" id="tabledatacentre">2008/10/16</td>
+                                            <td class="checkbox7" id="tabledatacentre">$470,600</td>
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkbox1" id="tabledatacentre">14</td>
+                                            <td class="checkbox2">Haley</td>
+                                            <td class="checkbox3">Senior</td>
+                                            <td class="checkbox4">London</td>
+                                            <td class="checkbox5" id="tabledatacentre">43</td>
+                                            <td class="checkbox6" id="tabledatacentre">2012/12/18</td>
+                                            <td class="checkbox7" id="tabledatacentre">$313,500</td>
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">15</td>
+                                            <td>Tatyana</td>
+                                            <td>Regional</td>
+                                            <td>London</td>
+                                            <td id="tabledatacentre">19</td>
+                                            <td id="tabledatacentre">2010/03/17</td>
+                                            <td id="tabledatacentre">$385,750</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">16</td>
+                                            <td>Michael</td>
+                                            <td>Marketing</td>
+                                            <td>London</td>
+                                            <td id="tabledatacentre">66</td>
+                                            <td id="tabledatacentre">2012/11/27</td>
+                                            <td id="tabledatacentre">$198,500</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">17</td>
+                                            <td>Paul Byrd</td>
+                                            <td>Chief</td>
+                                            <td>New York</td>
+                                            <td id="tabledatacentre">64</td>
+                                            <td id="tabledatacentre">2010/06/09</td>
+                                            <td id="tabledatacentre">$725,000</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">18</td>
+                                            <td>Gloria </td>
+                                            <td>Systems</td>
+                                            <td>New York</td>
+                                            <td id="tabledatacentre">59</td>
+                                            <td id="tabledatacentre">2009/04/10</td>
+                                            <td id="tabledatacentre">$237,500</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">19</td>
+                                            <td>Bradley </td>
+                                            <td>Software</td>
+                                            <td>London</td>
+                                            <td id="tabledatacentre">41</td>
+                                            <td id="tabledatacentre">2012/10/13</td>
+                                            <td id="tabledatacentre">$132,000</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">20</td>
+                                            <td>Dai Rios</td>
+                                            <td>Personnel Lead</td>
+                                            <td>Edinburgh</td>
+                                            <td id="tabledatacentre">35</td>
+                                            <td id="tabledatacentre">2012/09/26</td>
+                                            <td id="tabledatacentre">$217,500</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">21</td>
+                                            <td>Jenette</td>
+                                            <td>Development</td>
+                                            <td>New York</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2011/09/03</td>
+                                            <td id="tabledatacentre">$345,000</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">22</td>
+                                            <td>Yuri Berry</td>
+                                            <td>Chief</td>
+                                            <td>New York</td>
+                                            <td id="tabledatacentre">40</td>
+                                            <td id="tabledatacentre">2009/06/25</td>
+                                            <td id="tabledatacentre">$675,000</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">23</td>
+                                            <td>Caesar Vance</td>
+                                            <td>Pre-Sales</td>
+                                            <td>New York</td>
+                                            <td id="tabledatacentre">21</td>
+                                            <td id="tabledatacentre">2011/12/12</td>
+                                            <td id="tabledatacentre">$106,450</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">24</td>
+                                            <td>Doris Wilder</td>
+                                            <td>Sales Assistant</td>
+                                            <td>Sidney</td>
+                                            <td id="tabledatacentre">23</td>
+                                            <td id="tabledatacentre">2010/09/20</td>
+                                            <td id="tabledatacentre">$85,600</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">25</td>
+                                            <td>Angelica</td>
+                                            <td>Chief</td>
+                                            <td>London</td>
+                                            <td id="tabledatacentre">47</td>
+                                            <td id="tabledatacentre">2009/10/09</td>
+                                            <td id="tabledatacentre">$1,200,000</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">26</td>
+                                            <td>Gavin Joyce</td>
+                                            <td>Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td id="tabledatacentre">42</td>
+                                            <td id="tabledatacentre">2010/12/22</td>
+                                            <td id="tabledatacentre">$92,575</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">27</td>
+                                            <td>Jennifer</td>
+                                            <td>Regional</td>
+                                            <td>Singapore</td>
+                                            <td id="tabledatacentre">28</td>
+                                            <td id="tabledatacentre">2010/11/14</td>
+                                            <td id="tabledatacentre">$357,650</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">28</td>
+                                            <td>Brenden</td>
+                                            <td>Software</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">28</td>
+                                            <td id="tabledatacentre">2011/06/07</td>
+                                            <td id="tabledatacentre">$206,850</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">29</td>
+                                            <td>Fiona Green</td>
+                                            <td>Chief</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">48</td>
+                                            <td id="tabledatacentre">2010/03/11</td>
+                                            <td id="tabledatacentre">$850,000</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">30</td>
+                                            <td>Shou Itou</td>
+                                            <td>Regional</td>
+                                            <td>Tokyo</td>
+                                            <td id="tabledatacentre">20</td>
+                                            <td id="tabledatacentre">2011/08/14</td>
+                                            <td id="tabledatacentre">$163,000</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">31</td>
+                                            <td>Michelle House</td>
+                                            <td>Integration</td>
+                                            <td>Sidney</td>
+                                            <td id="tabledatacentre">37</td>
+                                            <td id="tabledatacentre">2011/06/02</td>
+                                            <td id="tabledatacentre">$95,400</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">32</td>
+                                            <td>Suki Burks</td>
+                                            <td>Developer</td>
+                                            <td>London</td>
+                                            <td id="tabledatacentre">53</td>
+                                            <td id="tabledatacentre">2009/10/22</td>
+                                            <td id="tabledatacentre">$114,500</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">33</td>
+                                            <td>Prescott</td>
+                                            <td>Technical</td>
+                                            <td>London</td>
+                                            <td id="tabledatacentre">27</td>
+                                            <td id="tabledatacentre">2011/05/07</td>
+                                            <td id="tabledatacentre">$145,000</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">34</td>
+                                            <td>Gavin Cortez</td>
+                                            <td>Team Leader</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">22</td>
+                                            <td id="tabledatacentre">2008/10/26</td>
+                                            <td id="tabledatacentre">$235,500</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">35</td>
+                                            <td>Martena Mccray</td>
+                                            <td>Post-Sales support</td>
+                                            <td>Edinburgh</td>
+                                            <td id="tabledatacentre">46</td>
+                                            <td id="tabledatacentre">2011/03/09</td>
+                                            <td id="tabledatacentre">$324,050</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">36</td>
+                                            <td>Unity Butler</td>
+                                            <td>Marketing </td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">47</td>
+                                            <td id="tabledatacentre">2009/12/09</td>
+                                            <td id="tabledatacentre">$85,675</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">37</td>
+                                            <td>Howard Hatfield</td>
+                                            <td>Office Manager</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">51</td>
+                                            <td id="tabledatacentre">2008/12/16</td>
+                                            <td id="tabledatacentre">$164,500</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">38</td>
+                                            <td>Hope Fuentes</td>
+                                            <td>Secretary</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">41</td>
+                                            <td id="tabledatacentre">2010/02/12</td>
+                                            <td id="tabledatacentre">$109,850</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">39</td>
+                                            <td>Vivian Harrell</td>
+                                            <td>Financial Controller</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">62</td>
+                                            <td id="tabledatacentre">2009/02/14</td>
+                                            <td id="tabledatacentre">$452,500</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">40</td>
+                                            <td>Timothy Mooney</td>
+                                            <td>Office Manager</td>
+                                            <td>London</td>
+                                            <td id="tabledatacentre">37</td>
+                                            <td id="tabledatacentre">2008/12/11</td>
+                                            <td id="tabledatacentre">$136,200</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">41</td>
+                                            <td>Jackson Bradshaw</td>
+                                            <td>Director</td>
+                                            <td>New York</td>
+                                            <td id="tabledatacentre">65</td>
+                                            <td id="tabledatacentre">2008/09/26</td>
+                                            <td id="tabledatacentre">$645,750</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">42</td>
+                                            <td>Olivia Liang</td>
+                                            <td>Support Engineer</td>
+                                            <td>Singapore</td>
+                                            <td id="tabledatacentre">64</td>
+                                            <td id="tabledatacentre">2011/02/03</td>
+                                            <td id="tabledatacentre">$234,500</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">43</td>
+                                            <td>Bruno Nash</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td id="tabledatacentre">38</td>
+                                            <td id="tabledatacentre">2011/05/03</td>
+                                            <td id="tabledatacentre">$163,500</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">44</td>
+                                            <td>Sakura Yamamoto</td>
+                                            <td>Support Engineer</td>
+                                            <td>Tokyo</td>
+                                            <td id="tabledatacentre">37</td>
+                                            <td id="tabledatacentre">2009/08/19</td>
+                                            <td id="tabledatacentre">$139,575</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">45</td>
+                                            <td>Thor Walton</td>
+                                            <td>Developer</td>
+                                            <td>New York</td>
+                                            <td id="tabledatacentre">61</td>
+                                            <td id="tabledatacentre">2013/08/11</td>
+                                            <td id="tabledatacentre">$98,540</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">46</td>
+                                            <td>Finn Camacho</td>
+                                            <td>Support Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">47</td>
+                                            <td id="tabledatacentre">2009/07/07</td>
+                                            <td id="tabledatacentre">$87,500</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">47</td>
+                                            <td>Serge Baldwin</td>
+                                            <td>Data Coordinator</td>
+                                            <td>Singapore</td>
+                                            <td id="tabledatacentre">64</td>
+                                            <td id="tabledatacentre">2012/04/09</td>
+                                            <td id="tabledatacentre">$138,575</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">48</td>
+                                            <td>Zenaida Frank</td>
+                                            <td>Software Engineer</td>
+                                            <td>New York</td>
+                                            <td id="tabledatacentre">63</td>
+                                            <td id="tabledatacentre">2010/01/04</td>
+                                            <td id="tabledatacentre">$125,250</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">49</td>
+                                            <td>Zorita Serrano</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">56</td>
+                                            <td id="tabledatacentre">2012/06/01</td>
+                                            <td id="tabledatacentre">$115,000</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">50</td>
+                                            <td>Jennifer Acosta</td>
+                                            <td>Junior</td>
+                                            <td>Edinburgh</td>
+                                            <td id="tabledatacentre">43</td>
+                                            <td id="tabledatacentre">2013/02/01</td>
+                                            <td id="tabledatacentre">$75,650</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">51</td>
+                                            <td>Cara Stevens</td>
+                                            <td>Sales Assistant</td>
+                                            <td>New York</td>
+                                            <td id="tabledatacentre">46</td>
+                                            <td id="tabledatacentre">2011/12/06</td>
+                                            <td id="tabledatacentre">$145,600</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">52</td>
+                                            <td>Hermione Butler</td>
+                                            <td>Regional Director</td>
+                                            <td>London</td>
+                                            <td id="tabledatacentre">47</td>
+                                            <td id="tabledatacentre">2011/03/21</td>
+                                            <td id="tabledatacentre">$356,250</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">53</td>
+                                            <td>Lael Greer</td>
+                                            <td>Systems</td>
+                                            <td>London</td>
+                                            <td id="tabledatacentre">21</td>
+                                            <td id="tabledatacentre">2009/02/27</td>
+                                            <td id="tabledatacentre">$103,500</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">54</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td id="tabledatacentre">30</td>
+                                            <td id="tabledatacentre">2010/07/14</td>
+                                            <td id="tabledatacentre">$86,500</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">55</td>
+                                            <td>Shad Decker</td>
+                                            <td>Regional Director</td>
+                                            <td>Edinburgh</td>
+                                            <td id="tabledatacentre">51</td>
+                                            <td id="tabledatacentre">2008/11/13</td>
+                                            <td id="tabledatacentre">$183,000</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">56</td>
+                                            <td>Michael Bruce</td>
+                                            <td>Javascript</td>
+                                            <td>Singapore</td>
+                                            <td id="tabledatacentre">29</td>
+                                            <td id="tabledatacentre">2011/06/27</td>
+                                            <td id="tabledatacentre">$183,000</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tabledatacentre">57</td>
+                                            <td>Donna Snider</td>
+                                            <td>Customer Support</td>
+                                            <td>New York</td>
+                                            <td id="tabledatacentre">27</td>
+                                            <td id="tabledatacentre">2011/01/25</td>
+                                            <td id="tabledatacentre">$112,000</td>
+                                            <td>
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                 <div class="row" id="tablePagination">
+                                  <div class="col s6 m12 l6" id="tableRowCount">
+							            <h8>Total Rows: 57<h8>&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;<h9>Total Columns: 10<h9>
+							       </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+<!-- END CONTENT -->
+<div id="mailpopup" class="modal ng-scope" style="z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height:35%;">
+    <div class="modal-content">
+    <div class="col-md-offset-6">
+        <i class="mdi-content-clear" data-ng-click="cancelmailpopup()" style="margin-left: 666px;cursor: pointer;"></i>
+     </div>
+    </div>
+</div>
+<script>
+$(document).ready(function() {
+    // DataTable
+    var table = $('#example').DataTable({
+    	/* "scrollX": true, */
+    	/* "responsive": true,
+    	"bAutoWidth": false,
+        "liveDrag": true, */
+        "lengthMenu": [
+            [15, 50, -1],
+            [15, 50, "All"]
+        ]
+    
+    });
+    $('#searchone').keyup(function() {
+        table.search($(this).val()).draw();
+    })
+
+});
+    
+    $('#fromdate').datetimepicker({
+        timepicker: true,
+        closeOnTimeSelect: false,
+        format:	'd-m-Y,  h : 00',
+        step: 60,
+    });
+
+    $('#todate').datetimepicker({
+        timepicker: true,
+        closeOnTimeSelect: false,
+        format:	'd-m-Y,  h : 00',
+        step: 60,
+    });
+    $('#dropdownfunctionalitytwo').click( function(event){
+        event.stopPropagation();
+        $('#settings-dropdowntwo').toggle();
+    });
+</script>

@@ -1,0 +1,586 @@
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+  border-radius: 4px;
+  background-color: #d9edf7;
+}
+.field-personal_info {
+   min-height: 20vh;
+   margin-left: -11px;
+   margin-top: -18px;
+   background-color: #d9edf7;
+   width: 100%; 
+}
+
+#fieldset-links {
+	margin-top: 5px;
+    background-color: black;
+    width: 97%;
+    margin-left: 12px;
+    height: 28px;
+    padding-top: 4px;
+}
+
+#span-fieldset {
+/* border-right: 1px solid white; */
+color:white;
+padding-top: 4px;
+
+}
+
+.field-contact_info {
+   min-height: 20vh;
+   margin-left: -24px;
+   margin-top: -18px;
+   background-color: #f3f3f3;
+   width: 110%;
+}
+.field-present_add {
+   min-height: 16vh;
+   margin-left: -13px;
+   background-color: #f3f3f3;
+   margin-top: 4px;
+   width: 103%;
+}
+.field-permenent_add {
+   min-height: 16vh;
+   margin-left: -13px;
+   background-color: #f3f3f3;
+   margin-top: 4px;
+   width: 103%;
+}
+.field-referral_info {
+   min-height: 16vh;
+   margin-left: -13px;
+   background-color: #f3f3f3;
+   margin-top: 4px;
+   width: 103%;
+}
+.field-prrofs {
+    min-height: 16vh;
+    margin-left: -13px;
+    background-color: #f3f3f3;
+    margin-top: 4px;
+    width: 108%;
+}
+.field-patient_info {
+	min-height: 14vh;
+	margin-left: -13px;
+	margin-top: -18px;
+	background-color: #d9edf7;
+}
+.field-docotor_info {
+	min-height: 23vh;
+	margin-left: -13px;
+	margin-top: -18px;
+	background-color: #d9edf7;
+}
+.field-hospital_itemmaster_info {
+	min-height: 23vh;
+	margin-left: -13px;
+	margin-top: -18px;
+	background-color: #d9edf7;
+}
+.field-lab_itemaster_info {
+	min-height: 23vh;
+	margin-left: -13px;
+	margin-top: -18px;
+	background-color: #d9edf7;
+}
+.field-office_use {
+min-height: 13vh;
+margin-left: -13px;
+width: 103%;
+margin-top: 4px;
+background-color: #d9edf7;
+}
+
+.field-rti_info {
+min-height: 36vh;
+margin-left: -13px;
+width: 103%;
+margin-top: 4px;
+background-color: #d9edf7;
+}
+.callta_hr_seperator{
+	margin: 14rem -302px -41px -29px;
+		
+	/* margin: 16rem -249px -41px -29px;
+    border: 1px solid #00bcd4; */
+}
+.callta_hr_seperator_one {
+	margin: 26rem -19px 0px -20px;
+    border: 1px solid #00bcd4;
+}
+.callta_hr_seperator_two {
+	margin: 1.5rem -19px 0px -20px;
+    border: 1px solid #00bcd4;
+}
+.calltrack_table {
+	/* margin: 2px 0 0px -31px; */
+ 	 margin: 5px 12px 13px -11px;
+    width: 103%;
+    min-height: 18vh;
+}
+.dispatcher_table {
+	/* margin: 2px 0 0px -31px; */
+ 	 margin: -3px 12px 13px -11px;
+    width: 103%;
+    height: 12vh;
+    font-size: 12px;
+    overflow: auto;
+}
+#fieldset-breadcrumbs {
+	border-bottom: 1px solid #00bcd4;
+    width: 99.4%;
+    margin-left: 2px;
+    height: 18px;
+}
+#calltack_firsthalf {
+	border-right: 1px solid #00bcd4;
+    height: 270px;
+    margin-top: 2px;
+    border-top: 1px solid #00bcd4;
+    border-bottom: 1px solid #00bcd4;
+    margin-left: -17px;
+    padding-left: 9px;
+    width: 106%;
+}
+#dispatcher_firsthalf {
+	border-right: 1px solid #00bcd4;
+    height: 270px;
+    margin-top: 2px;
+    border-top: 1px solid #00bcd4;
+    border-bottom: 1px solid #00bcd4;
+    margin-left: -17px;
+    padding-left: 9px;
+    width: 106%;
+}
+#calltrck_buttons {
+ 	margin-top: 1px;
+    background: #366736;
+    height: 31px;
+    text-transform: capitalize;
+    margin-left: 15px;
+    /* width: 28px; */
+    width: 21%;
+    padding-top: 1px;
+    margin-top: 21px;
+}
+#dispatcher_buttons {
+ 	margin-top: 1px;
+    background: #366736;
+    height: 31px;
+    text-transform: capitalize;
+    margin-left: 15px;
+    /* width: 28px; */
+    width: 21%;
+    padding-top: 1px;
+    margin-top: 21px;
+}
+#calltrack_calls:hover{
+	text-decoration: underline;
+	color: #00bcd4;
+}
+#dispatcher_calls:hover{
+	text-decoration: underline;
+	color: #00bcd4;
+}
+#box-fieldset {
+	width: 100%;
+    height: 25px;
+    background: #99bbe8;
+    border: 1px solid #99bbe8;
+    margin-top: -6px;
+}
+
+#button-box {
+	width: 100%;
+    height: 27px;
+    background: white;
+    /* border: 1px solid #99bbe8; */
+   /*  margin-top: -6px; */
+}
+#calltaker-time {
+	margin-top: -38px;
+    float: right;
+    margin-right: -30px
+}
+#calltaker-breadcrumb {
+	margin-top: -40px;
+    width: 7rem;
+    float: right;
+    margin-right: 75px;
+}
+#dispatcher-breadcrumb {
+	margin-top: -40px;
+    width: 7rem;
+    float: right; 
+    margin-right: 75px;
+}
+#dispatcher-time {
+	margin-top: -38px;
+    float: right;
+    margin-right: -30px
+}
+#sysdate {
+	border: none;
+    color: black;
+    background-color: #d9edf7;
+}
+#calltrSysdate {
+	border: none;
+    color: black;
+    background: #d9edf7;
+}
+#dispatchSysdate {
+	border: none;
+    color: black;
+    background: #d9edf7;
+}
+#calltrck_transfer {
+	margin-top: 38px;
+    margin-left: 30px;
+     width: 90%;
+    background: #5cb85c;
+}
+#dispatcher_transfer {
+	margin-top: 38px;
+	float:right;
+    width: 90%;
+    background: #5cb85c;
+}
+#calltrck_endcall {
+	margin-top: 29px;
+    margin-left: 30px;
+     width: 90%;
+    background: #e45353;
+}
+#dispatcher_endcall {
+	margin-top: 29px;
+    float:right;
+     width: 90%;
+    background: #e45353;
+} 
+  
+#calltrck_holdcall {
+	margin-top: 28px;
+    margin-left: 30px;
+     width: 90%;
+     background: #c79841;
+}
+#dispatcher_holdcall {
+	margin-top: 28px;
+     width: 90%;
+     background: #c79841;
+     float: right;
+}
+#calltrck_followup {
+	margin-top: 28px;
+    margin-left: 30px;	
+    width: 90%;
+    background: #c79841;
+}
+#dispatcher_followup {
+	margin-top: 28px;
+    float:right;
+    width: 90%;
+    background: #c79841;
+}
+#reportwithlookup_icons {
+	font-size: 1.4rem;
+    margin-top: -44px;
+    cursor: pointer;
+}
+#reportwithlookup_icons_set {
+	float: right;
+    margin-right: -49px;
+}
+#reportwoutlookup_icons {
+	font-size: 1.4rem;
+    margin-top: -44px;
+}
+#reportwoutlookup_icons_set {
+	float: right;
+    margin-right: -49px;
+}
+.iconbox {
+     width: 20px;
+     height: 23px;
+     border: 1px solid #389bb9;
+     border-radius: 6px;
+} 
+#c12_card_panel {
+    transition: box-shadow .25s;
+    width: 431.2%;
+    padding: 20px;
+    overflow: auto;
+    height: 43rem;
+    margin-top: 9px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+#calltrack_calls {
+    color: white;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    margin-left: 13px;
+}
+#dispatcher_calls {
+    color: white;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    margin-left: 13px;
+}
+#viewall:hover {
+  text-decoration: underline;
+  cursor: pointer;	
+}
+h9:hover {
+  text-decoration: underline;
+  cursor: pointer; 
+}
+#calltrTableWidth {
+	 width: 1%;
+}
+#tablePagination {
+	margin-top: -33px;
+    height: 45px;
+    background-color: #ddd;
+    border-bottom: 1px solid;
+    width: 101.5%;
+    margin-left: -8px;
+}
+#tableRowCount {
+  margin-top: 8px;
+}
+#tableColumnCount {
+  margin-top: 8px;
+}
+
+/* satya */
+
+#dispatcher_firsthalf {
+	border-right: 1px solid #00bcd4;
+    height: 270px;
+    margin-top: 2px;
+    border-top: 1px solid #00bcd4;
+    border-bottom: 1px solid #00bcd4;
+    margin-left: -17px;
+    padding-left: 9px;
+    width: 106%;
+}
+
+#satya_dispatcher_firsthalf {
+	border-right: 1px solid #00bcd4;
+    height: 270px;
+    margin-top: 2px;
+    /* border-top: 1px solid #00bcd4; */
+    border-bottom: 1px solid #00bcd4;
+    margin-left: -17px;
+    padding-left: 9px;
+    width: 106%;
+}
+#calltrck_buttons {
+ 	margin-top: 1px;
+    background: #366736;
+    height: 31px;
+    text-transform: capitalize;
+    margin-left: 15px;
+    /* width: 28px; */
+    width: 21%;
+    padding-top: 1px;
+    margin-top: 21px;
+}
+#dispatcher_buttons {
+ 	background: #366736;
+    height: 31px;
+    text-transform: capitalize;
+    margin-left: 15px;
+    /* width: 28px; */
+    width: 21%;
+    padding-top: 1px;
+    margin-top: 21px;
+    float: right;
+}
+#dispatch-dropdown {
+	width: 22%;
+    margin-left: 154px;
+    margin-top: -25px;
+    float: right;
+}
+#dispatch-space {
+	    margin-top: 12px;
+}
+
+#h9_styles {
+	 margin-left: 8px;
+    font-weight: bold;
+     color: #99bbe8;
+}
+
+#dispatch-select {
+	width: 30%;
+    margin-left: 59px;
+}
+
+#dispatcher_buttons_satya {
+    margin-top: 1px;
+    background: #366736;
+    height: 31px;
+    text-transform: capitalize;
+    margin-left: 15px;
+    /* width: 28px; */
+    width: 21%;
+    padding-top: 1px;
+    margin-top: 21px; 
+}
+#dispatch-popup {
+	float: right;
+    background-color: #366736;
+    color: white;
+    text-transform: capitalize;	
+}
+#veh_dropdown1 {
+	margin-top: 23px;
+	margin-left: 16px;
+	width: 90%;
+}
+#veh_dropdown2 {
+	margin-top: 23px;
+	margin-left: 16px;
+	width: 90%;
+}
+#tableLookWrapper {
+  margin-top: -26px;
+  margin-left: -8px;
+  margin-right: -9px;
+}
+#mms_calltack2_firsthalf {
+	border-right: 1px solid #00bcd4;
+    height: 270px;
+    margin-top: -21px;
+    border-top: 1px solid #00bcd4;
+    border-bottom: 1px solid #00bcd4;
+    margin-left: -33px;
+    padding-left: 9px;
+    width: 158%;
+}
+#mms_calltaker_subpanel {
+	
+       border-right: 1px solid #00bcd4;
+    height: 270px;
+    margin-top: -20px;
+    /* border-top: 1px solid #00bcd4; */
+    border-bottom: 1px solid #00bcd4;
+    margin-left: -33px;
+    padding-left: 9px;
+    width: 130%;
+  
+} 
+#mms-input{
+	 margin: 0px 0 4px 0;
+}
+#calltrck_buttons_mms {
+ 	background: #366736;
+    height: 31px;
+    text-transform: capitalize;
+    margin-left: 100px;
+    /* width: 28px; */
+    width: 73%;
+    padding-top: 1px;
+    margin-top: 21px;
+}
+#calltrck2_buttons_mms {
+ 	background: #366736;
+    height: 31px;
+    text-transform: capitalize;
+    margin-left: 27px;
+    /* width: 28px; */
+    width: 19%;
+    padding-top: 1px;
+    margin-top: 1px;
+}
+#mms_calltrck2_transfer {
+	margin-top: 4px;
+    font-size: 12px;
+    float: right;
+    width: 16.3%;
+    background: #5cb85c;
+}
+#mms_calltrck2_endcall {
+	margin-top: -193px;
+    font-size: 12px;
+    float: right;
+    width: 16.3%;
+    background: #c79841;
+}
+#mms_calltrck2_holdcall {
+	margin-top: -139px;
+    min-width: -16%;
+    font-size: 12px;
+    float: right;
+    width: 16.3%;
+    background: #c79841;
+}
+#mms_calltrck2_followup {
+	margin-top: -84px;
+    min-width: -16%;
+    font-size: 12px;
+    width: 16.3%;
+    float: right;
+    background: #e45353;
+}
+#mms_calltack2_firsthalf {
+	border-right: 1px solid #00bcd4;
+    height: 270px;
+    margin-top: -20px;
+    /* border-top: 1px solid #00bcd4; */
+    border-bottom: 1px solid #00bcd4;
+    margin-left: -33px;
+    padding-left: 9px;
+    width: 176%;
+}
+#dispatchertrTableWidth {
+	 width: 1%;
+}
+
+#calltrck2-hr-cnf-button-save {
+	margin-top: -2px;
+    height: 31px;
+    width: 15%;
+    margin-left: 71px;
+    background-color: #366736;
+    text-transform: capitalize;
+}
+#calltrck2-hr-cnf-button-disposition {
+	margin-top: -1px;
+    height: 31px;
+    width: 18%;
+    background-color: #366736;
+    text-transform: capitalize;
+    margin-left: 20px;
+    padding: 4px;
+}
+#calltrck2-hr-cnf-button-feedback {
+	margin-top: -1px;
+    height: 31px;
+    width: 18%;
+    background-color: #366736;
+    text-transform: capitalize;
+    margin-left: 20px;
+    padding: 0px;
+}
+#calltrck2-hr-cnf-button-back {
+	margin-top: -2px;
+    height: 31px;
+    width: 19%;
+    background-color: #366736;
+    text-transform: capitalize;
+    margin-left: 20px;
+}

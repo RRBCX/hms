@@ -1,0 +1,233 @@
+<style>
+    .c01 {
+        background-color: #e0e0e0;
+        line-height: 0.3
+    }
+    .b01 {
+        line-height: 0.61
+    }
+    #example_filter {
+	width: 16%;
+	display: none;
+    }
+    #example_wrapper {
+        margin-top: -43px;
+    }
+    #filterforvehicle{
+		margin-top: -41px;
+		width: 20%;
+		margin-left: 557px;
+	}
+	#search_inpage{
+		margin-left: 709px;
+	    margin-top: -40px;
+	    width: 20%;
+	}
+	#tabledatacentre{
+	    text-align: center;
+	}
+</style>
+<section id="content">
+    <!--start container-->
+    <div class="container">
+        <div id="breadcrumbs-wrapper">
+			<div class="row">
+				<div class="col s12 m12 l12" id="breadcrumbs">
+					<div class="col s8 m8 l8">
+						<ol class="breadcrumbs" style="margin-top: 10px;">
+							<li><a href="#/dashboard">Home</a></li>
+							<li><a href="#">Masters</a></li>
+							<li class="active">Patient Dashboard</li>
+						</ol>
+						<div class="input-field col s2" id="woutlookup_fromdate">
+							<input type="text" id="fromdate" /> <label for="fromdate">From Date</label>
+						</div>
+						<div class="input-field col s2" id="woutlookup_todate">
+							<input type="text" id="todate" /> <label for="todate">To Date</label>
+						</div> 
+						<div class="input-field col s2" id="filterforvehicle">
+							 <select class="browser-default">
+							 <option>Filter</option>
+							 <option>Skoda</option>
+							 <option>Hatchback</option>
+							 <option>MUV</option>
+							 </select>
+						</div>
+						<div class="input-field col s2" id="search_inpage">
+						<input type="text" id="searchone"> <label for="searchone" class="">Search</label>
+					</div>
+					</div>
+					<div class="col s4 m4 l4">
+						<div style="float: right;margin-top: 10px;">
+						 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+						<img src="resources/assets/images/aprvd/16/Setting.png" alt="Smiley face" id="dropdownfunctionalitytwo" style="cursor: pointer;">
+						 &nbsp; &nbsp; &nbsp; &nbsp;
+						<a href="javascript:void(0);" class="waves-block notification-button" data-activates="settings-mouseoverthree">
+						<img src="resources/assets/images/aprvd/16/Download.png" alt="Smiley face" style="cursor: pointer;"> </a>
+						 &nbsp; &nbsp; &nbsp; &nbsp;
+						<img src="resources/assets/images/aprvd/16/Mail.png" alt="Smiley face" data-ng-click="getmailpopup()" role="button" style="cursor: pointer;">
+						&nbsp; &nbsp; &nbsp; &nbsp;
+						<img src="resources/assets/images/aprvd/16/Print.png" alt="Smiley face">
+						 &nbsp; &nbsp;
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col s4 m4 l4" style="padding-right: 239px;">
+			<div style="float: right;">
+		        <ul id="settings-dropdowntwo" class="dropdown-content">
+                    <li class="input-field col s2">
+					    <input type="checkbox" id="test1" checked="checked" name="checkbox1"> <label for="test1">S.No</label>
+					</li>
+					 <li class="input-field col s2">
+					    <input type="checkbox" id="test2" checked="checked" name="checkbox2"> <label for="test2">Name</label>
+					</li>
+					 <li class="input-field col s2">
+					    <input type="checkbox" id="test3" checked="checked" name="checkbox3"> <label for="test3">Position</label>
+					</li>
+					 <li class="input-field col s2" >
+					    <input type="checkbox" id="test4" checked="checked" name="checkbox4"> <label for="test4">Office</label>
+					</li>
+					 <li class="input-field col s2" >
+					    <input type="checkbox" id="test5" checked="checked" name="checkbox5"> <label for="test5">Age</label>
+					</li>
+					 <li class="input-field col s2" >
+					    <input type="checkbox" id="test6" checked="checked" name="checkbox6"> <label for="test6">Date</label>
+					</li>
+					 <li class="input-field col s2">
+					   <input type="checkbox" id="test7" checked="checked" name="checkbox7"> <label for="test7">Salary</label>
+					</li>
+					 <li class="input-field col s2">
+					   <input type="checkbox" id="test8" checked="checked" name="checkbox8"> <label for="test8">Action</label>
+					</li>
+					<li class="input-field col s2">
+					   <button class="btn  waves-light btnMR2" data-ng-click="closeSettingsDropdownTwo()" type="submit" name="action" id="report-settings-select">Select</button>
+					</li>
+                 </ul> 
+                 </div>
+          </div>
+          <div class="col s4 m4 l4" style="padding-right: 242px;">
+		    <div style="float: right;">
+		        <ul id="settings-mouseoverthree" class="dropdown-content">
+		            <li class="input-field col s6">
+		                &nbsp;
+		                <img src="resources/assets/images/aprvd/16/pdf.png" alt="Smiley face">&nbsp; &nbsp;Download as PDF
+		            </li>
+		            <li class="input-field col s6">
+		                &nbsp;
+		                <img src="resources/assets/images/aprvd/16/Xslx.png" alt="Smiley face">&nbsp;&nbsp;Download as Excel
+		            </li>
+		        </ul>
+		    </div>
+		</div>
+        <div id="basic-form" class="section">
+            <div class="row">
+                <!-- Form with placeholder -->
+                <div class="col s12 m12 l12">
+                    <div class="card-panel" id="c12_tablewilook20_card_panel">
+                        <div id="table-datatables">
+                            <div class="row">
+                                <table id="example" class="display" cellspacing="0" width="100%">
+                                    <thead class="c01">
+                                        <tr>
+                                            <th class="checkbox1" style="width:1px;">S.No</th>
+                                            <th class="checkbox2" style="width: 80px;">Patient Code</th>
+                                            <th class="checkbox3">Patient Name</th>
+                                            <th class="checkbox4">Mobile Number</th>
+                                            <th class="checkbox5" id="tabledatacentre" style="width:1px;">Age</th>
+                                            <th class="checkbox6" id="tabledatacentre" style="width:1px;">Date</th>
+                                            <th class="checkbox7" id="tabledatacentre" style="width:240px;">Insurance Name</th>
+                                            <th class="checkbox8" id="tabledatacentre" style="width:2px;">Action</th>
+                                        </tr>
+                                    </thead>
+
+                                    <!-- <tfoot>
+				                        <tr>
+				                            <th></th>
+				                            <th></th>
+				                            <th></th>
+				                            <th></th>
+				                            <th></th>
+				                            <th></th>
+				                            <th></th>
+				                        </tr>
+				                    </tfoot> -->
+                                    <tbody class="b01">
+                                        <tr data-ng-repeat="p in patientDetails">
+                                            <td class="checkbox1" id="tabledatacentre">1</td>
+                                            <td class="checkbox2">{{p.patientCode}}</td>
+                                            <td class="checkbox3">{{p.patientName}}</td>
+                                            <td class="checkbox4">{{p.mobileNumber}}</td>
+                                            <td class="checkbox5" id="tabledatacentre">{{p.age}}</td>
+                                            <td class="checkbox6" id="tabledatacentre" style="width: 160px">{{p.date}}</td>
+                                            <td class="checkbox7" id="tabledatacentre">{{p.insuranceName}}</td>
+                                            <td class="checkbox8">
+                                                <div class="icon-preview col m4"><i class="mdi-editor-border-color"></i>
+                                                </div>
+                                                <div class="icon-preview col s4"><i class="mdi-action-delete"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                 <div class="row" id="tablePagination">
+                                  <div class="col s6 m12 l6" id="tableRowCount">
+							            <h8>Total Rows: {{patientDetails.length}}<h8>&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;<h9>Total Columns: 10<h9>
+							       </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+<!-- END CONTENT -->
+<div id="mailpopup" class="modal ng-scope" style="z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height:35%;">
+    <div class="modal-content">
+    <div class="col-md-offset-6">
+        <i class="mdi-content-clear" data-ng-click="cancelmailpopup()" style="margin-left: 666px;cursor: pointer;"></i>
+     </div>
+    </div>
+</div>
+<script>
+$(document).ready(function() {
+    // DataTable
+    var table = $('#example').DataTable({
+    	/* "scrollX": true, */
+    	/* "responsive": true,
+    	"bAutoWidth": false,
+        "liveDrag": true, */
+        "lengthMenu": [
+            [15, 50, -1],
+            [15, 50, "All"]
+        ]
+    
+    });
+    $('#searchone').keyup(function() {
+        table.search($(this).val()).draw();
+    })
+
+});
+    
+    $('#fromdate').datetimepicker({
+        timepicker: true,
+        closeOnTimeSelect: false,
+        format:	'd-m-Y,  h : 00',
+        step: 60,
+    });
+
+    $('#todate').datetimepicker({
+        timepicker: true,
+        closeOnTimeSelect: false,
+        format:	'd-m-Y,  h : 00',
+        step: 60,
+    });
+    $('#dropdownfunctionalitytwo').click( function(event){
+        event.stopPropagation();
+        $('#settings-dropdowntwo').toggle();
+    });
+</script>

@@ -1,0 +1,327 @@
+<style>
+    #color {
+        color: #4fbbda;
+    }
+    /* fieldset.scheduler-border {
+	border: 1px groove #ddd !important;
+	padding: 0 1.4em -0.6em 1.4em !important;
+	margin: -8px 0 1.5em 0 !important;
+	-webkit-box-shadow: 0px 0px 0px 0px #000;
+	box-shadow: 0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+	font-size: 1.2em !important;
+	font-weight: bold !important;
+	text-align: left !important;
+	padding-left: 20px;
+	padding-right: 10px;
+	border: none;
+	width: 170px;
+} */
+</style>
+
+
+<!--breadcrumbs start-->
+<div id="breadcrumbs-wrapper">
+    <!-- Search for small screen -->
+    <div class="header-search-wrapper grey hide-on-large-only">
+        <i class="mdi-action-search active"></i>
+        <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="input-field col s8">
+                <ol class="breadcrumbs">
+                    <li><a href="#/fleetdashboard">Home</a>
+                    </li>
+                    <li><a href="#/fleetdashboard">Fleet</a>
+                    </li>
+                    <li class="active"><a href="#/">VehicleManagement</a></li>
+                    <li class="active"><a href="#/">VehicleCreation1</a></li>
+                </ol>
+            </div>
+            <div class="input-field col s2">
+                <ul class="pagination">
+                    <li class="paginate_button page-item previous" id="example1_previous"><a href="#/fleet/fleetvehiclecreation1" aria-controls="example1" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li>
+                    <li class="paginate_button page-item next disabled" id="example1_next"><a href="" aria-controls="example1" data-dt-idx="8" tabindex="0" class="page-link">Next</a></li>
+                </ul>
+            </div>
+            <div class="input-field col s2">
+                <button type="submit" class="btn btn-primary" style="margin-left: -52px; margin-top: 10px;">Save</button>
+                <button type="button" class="btn btn-default" style="margin-top: 10px;">Cancel</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--breadcrumbs end-->
+
+<!-- START CONTENT -->
+<section id="content">
+
+    <!--start container-->
+    <div class="container">
+        <div class="section">
+
+            <fieldset>
+            <div class="row">
+                <!-- <legend>Title</legend> -->
+                    <div class="input-field col s6">
+                        <fieldset class="scheduler-border">
+                            <legend id="color" class="scheduler-border" style="padding-right: 0px;">Current Status</legend>
+                            <div class="input-field col s7">
+                                <div class="row">
+                                    <div class="input-field col s4">
+                                        <input type="text" class="form-control" id="vehcol">
+                                        <label for="vehcol" class="center-align">Vehicle Color</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <input type="text" class="form-control" id="kmreading">
+                                        <label for="kmreading" class="center-align">Km Reading</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <select class="browser-default">
+											<option value="" disabled="" selected="">Vehicle Class</option>
+												<option value="1">Good</option>
+												<option value="2">Average</option>
+												<option value="2">Poor</option>
+												<option value="2">No</option>
+											</select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s4">
+                                        <select class="browser-default">
+											<option value="" disabled="" selected="">Vehicle Name</option>
+												<option value="1">Good</option>
+												<option value="2">Average</option>
+												<option value="2">Poor</option>
+												<option value="2">No</option>
+											</select>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <select class="browser-default">
+											<option value="" disabled="" selected="">Vehicle Cont.Type</option>
+												<option value="1">Lease</option>
+												<option value="2">Attach</option>
+												</select>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <select class="browser-default">
+											<option value="" disabled="" selected="">Vehicle Sub Cont.Type</option>
+												<option value="1">Investor</option>
+												<option value="2">Company</option>
+												</select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="input-field col s4">
+                                        <input type="text" class="form-control" id="explogin">
+                                        <label for="explogin" class="center-align">Exp.Login Form</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <input type="text" class="form-control" id="explogout">
+                                        <label for="explogout" class="center-align">Exp.Logout Form</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <select class="browser-default">
+											<option value="" disabled="" selected="">Home Location</option>
+												<option value="1">Lease</option>
+												<option value="2">Attach</option>
+												</select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s4">
+                                        <select class="browser-default">
+											<option value="" disabled="" selected="">Login Location</option>
+												<option value="1">Investor</option>
+												<option value="2">Company</option>
+												</select>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <select class="browser-default">
+											<option value="" disabled="" selected="">Vehicle Status</option>
+												<option value="1">Good</option>
+												<option value="2">Average</option>
+												<option value="2">Poor</option>
+												<option value="2">No</option>
+												</select>
+                                    </div>
+                                    <div class="input-field col s4" id="input-date-picker" class="section">
+                                        <input type="text" class="datepicker"> <label class="center-align">Date of Reg.</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field col s1">
+                            </div>
+                            <div class="input-field col s4">
+                                <div class="row">
+                                    <input type="file" id="color" accept="image/*" onchange="loadFile(event)">
+                                    <img style="width: 143px; height: 145px; color: white;" value="" id="output" />
+                                </div>
+                            </div>
+                    </fieldset>
+                </div>
+
+                <div class="input-field col s6">
+                    <fieldset class="scheduler-border">
+                        <legend id="color" class="scheduler-border" style="padding-right: 0px;">Accessories</legend>
+                        <div class="row margin">
+                            <div class="input-field col s4">
+                                <select class="browser-default">
+											<option value="" disabled="" selected="">Vehicle Condition</option>
+												<option value="1">Good</option>
+												<option value="2">Average</option>
+												<option value="2">Poor</option>
+												<option value="2">No</option>
+												</select>
+                            </div>
+                            <div class="input-field col s4">
+                                <select class="browser-default">
+											<option value="" disabled="" selected="">Outlook</option>
+												<option value="1">Good</option>
+												<option value="2">Average</option>
+												<option value="2">Poor</option>
+												<option value="2">No</option>
+												</select>
+                            </div>
+                            <div class="input-field col s4">
+                                <select class="browser-default">
+											<option value="" disabled="" selected="">Interior</option>
+												<option value="1">Good</option>
+												<option value="2">Average</option>
+												<option value="2">Poor</option>
+												<option value="2">No</option>
+												</select>
+                            </div>
+                        </div>
+
+                        <div class="row margin">
+                            <div class="input-field col s4">
+                                <select class="browser-default">
+											<option value="" disabled="" selected="">AC Condition</option>
+												<option value="1">Good</option>
+												<option value="2">Average</option>
+												<option value="2">Poor</option>
+												<option value="2">No</option>
+												</select>
+                            </div>
+                            <div class="input-field col s4">
+                                <select class="browser-default">
+											<option value="" disabled="" selected="">Stepney</option>
+												<option value="1">Good</option>
+												<option value="2">Average</option>
+												<option value="2">Poor</option>
+												<option value="2">No</option>
+												</select>
+                            </div>
+                            <div class="input-field col s4">
+                                <select class="browser-default">
+											<option value="" disabled="" selected="">Tool Kit</option>
+												<option value="1">Good</option>
+												<option value="2">Average</option>
+												<option value="2">Poor</option>
+												<option value="2">No</option>
+												</select>
+                            </div>
+                        </div>
+                        <div class="row margin">
+                            <div class="input-field col s4">
+                                <select class="browser-default">
+											<option value="" disabled="" selected="">Carrier</option>
+												<option value="1">Good</option>
+												<option value="2">Average</option>
+												<option value="2">Poor</option>
+												<option value="2">No</option>
+												</select>
+                            </div>
+                            <div class="input-field col s4">
+                                <select class="browser-default">
+											<option value="" disabled="" selected="">Music Player</option>
+												<option value="1">Good</option>
+												<option value="2">Average</option>
+												<option value="2">Poor</option>
+												<option value="2">No</option>
+												</select>
+                            </div>
+                            <div class="input-field col s4">
+                                <select class="browser-default">
+											<option value="" disabled="" selected="">Battery</option>
+												<option value="1">Good</option>
+												<option value="2">Average</option>
+												<option value="2">Poor</option>
+												<option value="2">No</option>
+												</select>
+                            </div>
+                        </div>
+                        <div class="row margin">
+                            <div class="input-field col s4">
+                                <select class="browser-default">
+											<option value="" disabled="" selected="">Tyres</option>
+												<option value="1">Good</option>
+												<option value="2">Average</option>
+												<option value="2">Poor</option>
+												<option value="2">No</option>
+												</select>
+                            </div>
+                            <div class="input-field col s4">
+                                <select class="browser-default">
+											<option value="" disabled="" selected="">Side Mirrors</option>
+												<option value="1">Good</option>
+												<option value="2">Average</option>
+												<option value="2">Poor</option>
+												<option value="2">No</option>
+												</select>
+                            </div>
+                            <div class="input-field col s4">
+                                <select class="browser-default">
+											<option value="" disabled="" selected="">Head Lights</option>
+												<option value="1">Good</option>
+												<option value="2">Average</option>
+												<option value="2">Poor</option>
+												<option value="2">No</option>
+												</select>
+                            </div>
+                        </div>
+                        <div class="row margin">
+                            <div class="input-field col s4">
+                                <select class="browser-default">
+											<option value="" disabled="" selected="">GPS</option>
+												<option value="1">Good</option>
+												<option value="2">Average</option>
+												<option value="2">Poor</option>
+												<option value="2">No</option>
+												</select>
+                            </div>
+                            <div class="input-field col s4">
+                                <select class="browser-default">
+											<option value="" disabled="" selected="">First Aid Box</option>
+												<option value="1">Good</option>
+												<option value="2">Average</option>
+												<option value="2">Poor</option>
+												<option value="2">No</option>
+												</select>
+                            </div>
+
+                        </div>
+                    </fieldset>
+                </div>
+
+			</div>
+        </fieldset>
+
+    </div>
+    <!-- Floating Action Button -->
+
+    <!-- Floating Action Button -->
+    </div>
+    <!--end container-->
+
+
+
+
+
+</section>

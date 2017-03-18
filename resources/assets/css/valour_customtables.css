@@ -1,0 +1,61 @@
+#lookup20-search{
+    margin-top: -41px;
+    margin-left: 19.5rem;
+    width: 9%;
+}
+#lookup20-bookings{
+    margin-top: -35px !important;
+    font-size: 12px !important;
+    margin-left: 27.5rem;
+}
+#lookup20-active-veh{
+    margin-top: -35px !important;
+    font-size: 12px !important;
+    margin-left: 34rem;
+}
+#lookup20-shed-veh{
+    margin-top: -35px !important;
+    font-size: 12px !important;
+    margin-left: 53em !important;
+}
+#lookup20-collection{
+    margin-top: -35px !important;
+    font-size: 12px !important;
+    margin-left: 63em !important;
+}
+#lookup24-search{
+    margin-top: -41px;
+    margin-left: 19.5rem;
+    width: 9%;
+}
+#withoutlookup24-search {
+    margin-top: -41px;
+    margin-left: 20.5rem;
+    width: 9%;
+}
+#lookup24-bookings{
+    margin-top: -35px !important;
+    font-size: 12px !important;
+    margin-left: 27.5rem;
+}
+#lookup24-active-veh{
+    margin-top: -35px !important;
+    font-size: 12px !important;
+    margin-left: 34rem;
+}
+#lookup24-shed-veh{
+    margin-top: -35px !important;
+    font-size: 12px !important;
+    margin-left: 53em !important;
+}
+#lookup24-collection{
+    margin-top: -35px !important;
+    font-size: 12px !important;
+    margin-left: 63em !important;
+}
+#report-settings-select {
+     margin-left: 38px;
+}
+#tblookup-fixed-columns {
+  width: 8px !important;
+}

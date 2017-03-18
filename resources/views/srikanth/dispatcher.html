@@ -1,0 +1,443 @@
+<style>
+  .verticalLine {
+    border-left: thick solid #ff0000;
+  }
+  
+  .c01 {
+	background-color: rgba(32, 139, 129, 0.69);
+	line-height: 0.5
+}
+.b01
+{
+  line-height: 0.5
+}
+
+ tr:nth-child(odd) {
+  background-color: #dfe7f2;
+  color: #000000;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+  /* color: blue; */
+}
+th {
+	background: #99bbe8;
+}
+
+</style>
+<section id="content">
+    <!--start container-->
+    <div class="container">
+        <div id="breadcrumbs-wrapper">
+            <div class="row">
+                <div class="col s6 m12 l12" id="breadcrumbs">
+                    <ol class="breadcrumbs" style="margin-top: 10px;">
+                        <li><a href="#/dashboard">Home</a>
+                        </li>
+                        <li><a href="#">Srikanth</a>
+                        </li>
+                        <li class="active">Dispatcher</li>
+                    </ol>
+                    <div class="input-field col s1" id="dispatcher-breadcrumb">
+					<input type="text" id="dispatchSysdate" name="sysdate"
+						required="required" readonly="readonly" />
+					</div>
+					<div class="input-field col s1" id="dispatcher-time">
+							<div id="times"></div>
+						</div>
+					</div>
+                </div>
+            </div>
+        <div id="basic-form" class="section">
+            <div class="row">
+                <div class="col s12 m12 l3">
+                    <div class="card-panel" id="dispatcher_c3_card_panel">
+                    </div>
+                </div>
+                <div class="col s12 m12 l9">
+                    <div class="card-panel">
+                        <div class="row">
+                            <form class="col s12 ng-pristine ng-valid">
+                                   <div class="col s12 m12 l9">
+					                    <div class="card-panel" id="dispatcher_firsthalf">
+					                    <div class="row">
+					                    	<button class="btn" type="submit" name="action" id="dispatcher_buttons" style="float: right;">Search</button>
+					                    </div>
+					                    <div class="row">
+					                    	<button class="btn" type="submit" name="action" id="dispatcher_buttons" style="float: right;">New&nbsp;Booking</button>
+					                    </div>
+					                    <div class="row">
+					                    	<button class="btn" type="submit" name="action" id="dispatcher_buttons" style="float: right;">Spl. Request</button>
+					                    </div>
+					                    <div class="row">
+					                    	<button class="btn" type="submit" name="action" id="dispatcher_buttons" style="float: right;">Block Caller</button>
+					                    </div>
+					                        <!-- <hr class="callta_hr_seperator"> -->
+					                    </div>
+					                </div>
+					                <div class="col s12 m12 l3">
+					                   <button class="btn" type="submit" name="action" id="dispatcher_transfer" data-ng-click="gettransfer()">Transfer Call</button>
+					                    <button class="btn" type="submit" name="action" id="dispatcher_endcall" data-ng-click="getholdcall()">Hold Call</button>
+					                    <button class="btn" type="submit" name="action" id="dispatcher_holdcall" data-ng-click="getfollwup()">Set Follow Up</button>
+					                    <button class="btn" type="submit" name="action" id="dispatcher_followup" data-ng-click="getendcall()">End Call</button>
+					                </div>
+					                <div class="row">
+                                    <div class="col s12">
+                                        <fieldset class="field-empty-set">
+                                            <legend>Empty FieldSet</legend>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <fieldset class="field-booking-set">
+                                            <legend>Booking History</legend>
+                                            <div id="box-fieldset">
+							                	<div class="col s6 m12 l2">
+							                	</div>
+							                	<div class="col s6 m12 l2">
+							                		<h9>Grade:</h9>
+							                	</div>
+							                	<div class="col s6 m12 l2">
+							                		<h9>Category:</h9>
+							                	</div>
+							                	<div class="col s6 m12 l2">
+							                		<h9>Discount:</h9>
+							                	</div>
+							                	<div class="col s6 m12 l2">
+							                		<h9>Trip Count:</h9>
+							                	</div>
+							                	<div class="col s6 m12 l2" style="float: right">
+							                		<h9 style="color:blue">View History</h9>
+							                	</div>
+							                </div>
+                                            
+                                            <div class="row" >
+		                                       <div class="col s12 m12 l12" id="fieldset-links">
+								                  <a href="" id="dispatcher_calls" data-ng-click="getrecentcalldata()">Recent Calls : </a><span id="span-fieldset"> 05 </span>
+			                                      <a href="" id="dispatcher_calls" data-ng-click="getpendingdata(id)">&nbsp;Pending Bkgs : </a><span id="span-fieldset"> 05 </span>
+			                                      <a href="" id="dispatcher_calls" data-ng-click="getcompletedata(id)">&nbsp;Completed Bkgs : </a><span id="span-fieldset"> 05 </span>
+			                                      <a href="" id="dispatcher_calls" data-ng-click="getcanceldata(id)">&nbsp;Cancel Bkgs : </a><span id="span-fieldset"> 05 </span>
+			                                      <a href="" id="viewall" style="float: right">View All </a>
+								                </div>
+		                                    </div>
+		                                    <div data-ng-if="recent">
+						                    <div class="col s12 m8 l12" >
+                                            <table class="dispatcher_table" id="example">
+                                                <thead class="c01">
+                                                    <tr>
+                                                        <th data-field="id" id="calltrTableWidth">S.No</th>
+                                                        <th data-field="name">V.Name</th>
+                                                        <th data-field="price">Package</th>
+                                                        <th data-field="price">Amount</th>
+                                                        <th data-field="price">Grace Time</th>
+                                                        <th id="calltrTableWidth">View</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody class="b01" id="table-color">
+                                                    <tr>
+                                                        <td>Alvin</td>
+                                                        <td>Medium</td>
+                                                        <td>100</td>
+                                                        <td>Lap</td>
+                                                        <td>10 min</td>
+                                                        <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Alan</td>
+                                                        <td>100</td>
+                                                        <td>$3.76</td>
+                                                        <td>Mobile</td>
+                                                        <td>10 min</td>
+                                                        <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                         <td>Tab</td>
+                                                         <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                         <td>Tab</td>
+                                                         <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                        <td>Cars</td>
+                                                        <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        </div>
+                                        <div data-ng-if="pending">
+						                    <div class="col s12 m8 l12" >
+                                            <table class="dispatcher_table" id="example">
+                                                <thead class="c01">
+                                                    <tr>
+                                                        <th data-field="id">S.No</th>
+                                                        <th data-field="name">Vehicle</th>
+                                                        <th data-field="price">Data</th>
+                                                        <th data-field="price">Amount</th>
+                                                        <th data-field="price">Grace Time</th>
+                                                        <th>View</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody class="b01" id="t01">
+                                                    <tr>
+                                                        <td>Alvin</td>
+                                                        <td>Medium</td>
+                                                        <td>100</td>
+                                                        <td>Lap</td>
+                                                        <td>10 min</td>
+                                                        <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Alan</td>
+                                                        <td>100</td>
+                                                        <td>$3.76</td>
+                                                        <td>Mobile</td>
+                                                        <td>10 min</td>
+                                                        <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                         <td>Tab</td>
+                                                         <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                         <td>Tab</td>
+                                                         <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                        <td>Cars</td>
+                                                        <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        </div>
+                                        <div data-ng-if="complete">
+						                    <div class="col s12 m8 l12" >
+                                            <table class="dispatcher_table" id="example">
+                                                <thead class="c01">
+                                                    <tr>
+                                                        <th data-field="id">Order</th>
+                                                        <th data-field="name">Name</th>
+                                                        <th data-field="price">Packages</th>
+                                                        <th data-field="price">Toatl</th>
+                                                        <th data-field="price">Grace Time</th>
+                                                        <th>View</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody class="b01">
+                                                    <tr>
+                                                        <td>Alvin</td>
+                                                        <td>Medium</td>
+                                                        <td>100</td>
+                                                        <td>Lap</td>
+                                                        <td>10 min</td>
+                                                        <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Alan</td>
+                                                        <td>100</td>
+                                                        <td>$3.76</td>
+                                                        <td>Mobile</td>
+                                                        <td>10 min</td>
+                                                        <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                         <td>Tab</td>
+                                                         <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                         <td>Tab</td>
+                                                         <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                        <td>Cars</td>
+                                                        <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        </div>
+                                        <div data-ng-if="cancel">
+						                    <div class="col s12 m8 l12" >
+                                            <table class="dispatcher_table" id="example">
+                                                <thead class="c01">
+                                                    <tr>
+                                                        <th data-field="id">S.No</th>
+                                                        <th data-field="name">Vehicle</th>
+                                                        <th data-field="price">Package</th>
+                                                        <th data-field="price">Total</th>
+                                                        <th data-field="price">Time</th>
+                                                        <th>View</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody class="b01">
+                                                    <tr>
+                                                        <td>Alvin</td>
+                                                        <td>Medium</td>
+                                                        <td>100</td>
+                                                        <td>Lap</td>
+                                                        <td>10 min</td>
+                                                        <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Alan</td>
+                                                        <td>100</td>
+                                                        <td>$3.76</td>
+                                                        <td>Mobile</td>
+                                                        <td>10 min</td>
+                                                        <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                         <td>Tab</td>
+                                                         <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                         <td>Tab</td>
+                                                         <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonathan</td>
+                                                        <td>100</td>
+                                                        <td>$7.00</td>
+                                                        <td>Cars</td>
+                                                        <td>10 min</td>
+                                                         <td><i class="mdi-action-visibility"></i></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+<div id="transfer" class="modal ng-scope" style="z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height:40%;">
+    <div class="modal-content">
+        <div class="col-md-offset-6">
+            <i class="mdi-content-clear" data-ng-click="canceltransfer()" style="margin-left: 666px;cursor: pointer;"></i>
+        </div>
+        <div class="row">
+        	<div class="col s12 m12 l12">
+        		<button class="btn"  name="action">Submit</button>
+        	</div>
+        </div>
+    </div>
+</div>
+<div id="endcall" class="modal ng-scope" style="z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height:40%;">
+    <div class="modal-content">
+        <div class="col-md-offset-6">
+            <i class="mdi-content-clear" data-ng-click="cancelendcall()" style="margin-left: 666px;cursor: pointer;"></i>
+        </div>
+        <div class="row">
+        	<div class="col s12 m12 l12">
+        		<button class="btn"  name="action">Submit</button>
+        	</div>
+        </div>
+    </div>
+</div>
+<div id="holdcall" class="modal ng-scope" style="z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height:40%;">
+    <div class="modal-content">
+        <div class="col-md-offset-6">
+            <i class="mdi-content-clear" data-ng-click="cancelholdcall()" style="margin-left: 666px;cursor: pointer;"></i>
+        </div>
+        <div class="row">
+        	<div class="col s12 m12 l12">
+        		<button class="btn"  name="action">Submit</button>
+        	</div>
+        </div>
+    </div>
+</div>
+<div id="followup" class="modal ng-scope" style="z-index: 1003; opacity: 1; transform: scaleX(1); top: 20%; height:40%;">
+    <div class="modal-content">
+        <div class="col-md-offset-6">
+            <i class="mdi-content-clear" data-ng-click="cancelfollowup()" style="margin-left: 666px;cursor: pointer;"></i>
+        </div>
+        <div class="row">
+        	<div class="col s12 m12 l12">
+        		<button class="btn"  name="action">Submit</button>
+        	</div>
+        </div>
+    </div>
+</div>
+<!-- END CONTENT -->
+<script>
+    tabFunction();
+    $('#fromdate').datetimepicker({
+		timepicker : false,
+		closeOnTimeSelect : false,
+		format : 'd-m-Y',
+		step : 01,
+	});
+    window.onload = function() {
+		date()
+	}, setInterval(function() {
+		date()
+	}, 1000);
+
+	function date() {
+		var now = new Date(), now = now.getHours() + ':' + now.getMinutes()
+				+ ':' + now.getSeconds();
+		$('#times').html(now);
+	}
+	document.getElementById('dispatchSysdate').value = (new Date().toLocaleDateString());
+</script>
+

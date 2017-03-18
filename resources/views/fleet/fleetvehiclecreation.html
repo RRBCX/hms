@@ -1,0 +1,397 @@
+<style>
+    #color {
+        color: #4fbbda;
+    }
+    /* fieldset.scheduler-border {
+	border: 1px groove #ddd !important;
+	padding: 0 1.4em -0.6em 1.4em !important;
+	margin: -8px 0 1.5em 0 !important;
+	-webkit-box-shadow: 0px 0px 0px 0px #000;
+	box-shadow: 0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+	font-size: 1.2em !important;
+	font-weight: bold !important;
+	text-align: left !important;
+	padding-left: 20px;
+	padding-right: 10px;
+	border: none;
+	width: 170px;
+} */
+</style>
+
+<!--breadcrumbs start-->
+        <div id="breadcrumbs-wrapper">
+            <!-- Search for small screen -->
+            <div class="header-search-wrapper grey hide-on-large-only">
+                <i class="mdi-action-search active"></i>
+                <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize">
+            </div>
+          <div class="container">
+            <div class="row">
+              <div class="input-field col s10">
+                <ol class="breadcrumbs">
+                  <li><a href="#/fleetdashboard">Home</a>
+                  </li>
+                  <li><a href="#/fleetdashboard">Fleet</a>
+                  </li>
+                  <li class="active"><a href="#/">VehicleManagement</a></li>
+                  <li class="active"><a href="#/">VehicleCreation1</a></li>
+                </ol>
+                </div>
+                <div class="input-field col s2">
+                <ul class="pagination">
+                    <li class="paginate_button page-item previous disabled" id="example1_previous"><a href="" aria-controls="example1" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li>
+                    <li class="paginate_button page-item next" id="example1_next"><a href="#/fleet/fleetvehiclecreation2" aria-controls="example1" data-dt-idx="8" tabindex="0" class="page-link">Next</a></li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <!--breadcrumbs end-->
+
+<div class="container-fluid">
+    <div class="animated fadeIn">
+        <div class="row" style="margin-top: -18px;">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                    </div>
+                    <form class="form-horizontal">
+                        <div class="card-block">
+                            <div class="form-group col-sm-12">
+                                <!-- style="margin-left: 8px;"> -->
+                                <fieldset class="scheduler-border">
+                                    <!-- <legend id="color" class="scheduler-border">Vehicle Details
+                                    </legend> -->
+                                    <br>
+                                    <div class="row">
+                                        <div class="input-field col s8">
+                                            <!-- style="margin-left: 15px; margin-top: 40px; -->
+                                            <fieldset class="scheduler-border">
+                                                <legend id="color" class="scheduler-border" style="padding-right: 0px;">Vehicle Info</legend>
+
+                                                <div class="row">
+                                                    <div class="input-field col s3">
+                                                        <select class="browser-default">
+															<option value="" disabled="" selected="">Registration</option>
+															<option value="1">Reg.No.</option>
+															<option value="2">TR.No.</option>
+														</select>
+                                                    </div>
+
+                                                    <div class="input-field col s3">
+                                                        <select class="browser-default">
+															<option value="" disabled="" selected="">Fuel Type</option>
+															<option value="1">Fuel1</option>
+															<option value="2">Fuel2</option>
+														</select>
+                                                    </div>
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="validate" id="name">
+                                                        <label for="name">Vehicle Colour</label>
+                                                    </div>
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="make">
+                                                        <label for="make" class="center-align">Maker's Name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="input-field col s3">
+                                                        <select class="browser-default">
+															<option value="" disabled="" selected="">Maker's Class</option>
+															<option value="1">Attach</option>
+															<option value="2">Company</option>
+															<option value="2">Lease</option>
+														</select>
+                                                    </div>
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="name">
+                                                        <label class="center-align">Mfg.Year</label>
+                                                    </div>
+                                                    <div class="input-field col s3" class="section" id="dob">
+                                                        <input type="text" class="datepicker"> <label for="dob">Date of Reg.</label>
+                                                    </div>
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="eng">
+                                                        <label for="eng" class="center-align">Engine No.</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="chas">
+                                                        <label id="chas" class="center-align">Chassis No.</label>
+                                                    </div>
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="fin">
+                                                        <label for="fin" class="center-align">Financer</label>
+                                                    </div>
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="prev">
+                                                        <label id="prev" class="center-align">Prev Reg.No.</label>
+                                                    </div>
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="reg">
+                                                        <label for="reg" class="center-align">Reg.Authority</label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+
+                                        <div class="input-field col s4">
+                                            <!-- style="margin-left: 15px; margin-top: 40px; -->
+                                            <fieldset class="scheduler-border">
+                                                <legend id="color" class="scheduler-border" style="padding-right: 0px;">Company Details</legend>
+
+                                                <div class="row">
+                                                    <div class="input-field col s4">
+                                                        <input type="text" class="form-control" id="vehid">
+                                                        <label for="vehid" class="center-align">Vehicle ID</label>
+                                                    </div>
+
+                                                    <div class="input-field col s4">
+                                                        <select class="browser-default">
+															<option value="" disabled="" selected="">Vehicle Group</option>
+															<option value="1">Sigma</option>
+															<option value="2">Valour</option>
+														</select>
+                                                    </div>
+                                                    <div class="input-field col s4">
+                                                        <select class="browser-default">
+															<option value="" disabled="" selected="">Vehicle Category</option>
+															<option value="1">Company</option>
+															<option value="2">Attach</option>
+															<option value="2">Others</option>
+														</select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                	<div class="input-field col s4">
+                                                        <select class="browser-default">
+															<option value="" disabled="" selected="">Vehicle Sub Category</option>
+															<option value="1">Hatch Back</option>
+															<option value="2">sedan</option>
+															<option value="2">Muv</option>
+														</select>
+                                                    </div>
+                                                    <div class="input-field col s4">
+                                                        <select class="browser-default">
+															<option value="" disabled="" selected="">Contract</option>
+															<option value="1">Attach</option>
+															<option value="2">Company</option>
+															<option value="2">Lease</option>
+														</select>
+                                                    </div>
+                                                    <div class="input-field col s4" id="dob" class="section">
+                                                        <input type="text" class="datepicker"> <label for="dob">Agreement Dates</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="input-field col s4">
+                                                        <input type="text" class="form-control" id="dur">
+                                                        <label for="dur" class="center-align">Duration</label>
+                                                    </div>
+                                                    <div class="input-field col s4">
+                                                        <input type="text" class="form-control" id="lock">
+                                                        <label for="lock" class="center-align">Lock-in period</label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="input-field col s8">
+                                            <!-- style="margin-left: 15px; margin-top: 40px; -->
+                                            <fieldset class="scheduler-border">
+                                                <legend id="color" class="scheduler-border" style="padding-right: 0px;">Document Validity</legend>
+
+                                                <div class="row">
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="fit">
+                                                        <label for="fit" class="center-align">Fitness NO.</label>
+                                                    </div>
+                                                    <div class="input-field col s3" id="input-date-picker" class="section">
+                                                        <input type="text" class="datepicker"> <label for="input-date-picker" class="center-align">Expiry Date</label>
+                                                    </div>
+
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="scan6">
+                                                        <label for="scan6" class="center-align">Scan Copy</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="permit">
+                                                        <label for="permit" class="center-align">Permit NO.</label>
+                                                    </div>
+                                                    <div class="input-field col s3" id="input-date-picker" class="section">
+                                                        <input type="text" class="datepicker"> <label for="input-date-picker" class="center-align">Expiry Date</label>
+                                                    </div>
+
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="scan5">
+                                                        <label id="scan5" class="center-align">Scan Copy</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="tax">
+                                                        <label id="tax" class="center-align">Tax NO.</label>
+                                                    </div>
+                                                    <div class="input-field col s3" id="input-date-picker" class="section">
+                                                        <input type="text" class="datepicker"> <label for="input-date-picker" class="center-align">Expiry Date</label>
+                                                    </div>
+
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="scan4">
+                                                        <label for="scan4" class="center-align">Scan Copy</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="pollu">
+                                                        <label for="pollu" class="center-align">Pollution NO.</label>
+                                                    </div>
+                                                    <div class="input-field col s3" id="input-date-picker" class="section">
+                                                        <input type="text" class="datepicker"> <label for="input-date-picker" class="center-align">Expiry Date</label>
+                                                    </div>
+
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="scan3">
+                                                        <label for="scan3" class="center-align">Scan Copy</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="insu">
+                                                        <label for="insu" class="center-align">Insurance Company Name</label>
+                                                    </div>
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="ins">
+                                                        <label for="ins" class="center-align">Insurance No.</label>
+                                                    </div>
+                                                    <div class="input-field col s3" id="dob" class="section">
+                                                        <input type="text" class="datepicker"> <label class="center-align" for="dob">Expiry Date</label>
+                                                    </div>
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="scan2">
+                                                        <label for="scan2" class="center-align">Scan Copy</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="plo">
+                                                        <label for="plo" class="center-align">Police Permission No.</label>
+                                                    </div>
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="cha">
+                                                        <label for="cha" class="center-align">Challana Pending</label>
+                                                    </div>
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="screen">
+                                                        <label for="screen" class="center-align">Screen Short</label>
+                                                    </div>
+                                                    <div class="input-field col s3">
+                                                        <input type="text" class="form-control" id="sc1">
+                                                        <label for="sc1" class="center-align">Scan Copy</label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+
+                                        <div class="input-field col s4">
+                                        <div class="row">
+                                            <!-- style="margin-left: 15px; margin-top: 40px; -->
+                                            <fieldset class="scheduler-border">
+                                                <legend id="color" class="scheduler-border" style="padding-right: 0px;">Office Purpose</legend>
+
+                                                <div class="row">
+                                                    <div class="input-field col s6" id="input-date-picker" class="section">
+                                                        <input type="text" class="datepicker"> <label class="center-align">Date of Walkin</label>
+                                                    </div>
+
+                                                    <div class="input-field col s6">
+                                                        <select class="browser-default">
+															<option value="" disabled="" selected="">Conselling Person</option>
+															<option value="1">Ram</option>
+															<option value="2">Suresh</option>
+															<option value="2">Kalam</option>
+														</select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="input-field col s6">
+                                                        <input type="text" class="form-control" id="ver">
+                                                        <label for="ver" class="center-align">Verified By</label>
+                                                    </div>
+
+                                                    <div class="input-field col s6">
+                                                        <input type="text" class="form-control" id="aut">
+                                                        <label for="aut" class="center-align">Authorized By</label>
+                                                    </div>
+                                                </div>
+
+                                            </fieldset>
+                                            </div>
+                                            <div class="row">
+                                            <div class="input-field col s8">
+	                                            <button type="button" data-ng-click="getuploads()" id="color" style="margin-left: 50px;">Uploads</button>
+	                                        </div>
+							              </div>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 	</div></div> -->
+<div data-ng-include="'resources/views/fleet/uploads.html'"></div>
+
+<script>
+    var loadFile = function(event) {
+        var output = document.getElementById('output');
+        output.src = URL.createObjectURL(event.target.files[0]);
+    };
+
+      $('#dob').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'Y-m-d',
+        step: 01,
+    });  
+</script>
+
+
+ <!-- ================================================
+    Scripts
+    ================================================ -->
+    
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>    
+    <!--materialize js-->
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <!--prism-->
+    <script type="text/javascript" src="js/plugins/prism/prism.js"></script>
+    <!--scrollbar-->
+    <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <!-- chartist -->
+    <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>   
+    
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <!--custom-script.js - Add your own theme custom JS-->
+    <script type="text/javascript" src="js/custom-script.js"></script>

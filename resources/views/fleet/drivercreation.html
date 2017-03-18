@@ -1,0 +1,343 @@
+<style>
+#color {
+	color: #4fbbda;
+}
+</style>
+
+
+<!-- START CONTENT -->
+<section id="content">
+	<!--breadcrumbs start-->
+	<div id="breadcrumbs-wrapper">
+		<!-- Search for small screen -->
+		<div class="header-search-wrapper grey hide-on-large-only">
+			<i class="mdi-action-search active"></i> <input type="text"
+				name="Search" class="header-search-input z-depth-2"
+				placeholder="Explore Materialize">
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m12 l12">				
+					<ol class="breadcrumbs">
+						<li><a href="index.html">Dashboard</a></li>
+						<li><a href="#">Fleet</a></li>
+						<li class="active">Driver Info</li>
+						<li><a  href="#/fleet/user/drivercreationtwo" style=" margin-left: 900px;" >Next</a></li>
+					</ol>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--breadcrumbs end-->
+
+
+	<!--start container-->
+	<div class="container">
+		<div class="section">
+
+			<!-- <fieldset>
+				<legend>Driver Information</legend> -->
+		<div class="row">
+		<div class="input-field col s2">
+		<select class="browser-default">
+		<option >Group</option>
+		<option>Valour</option>
+		<option>Sigma</option>
+        </select>
+		</div>
+		<div class="input-field col s2">
+		<select class="browser-default">
+		<option >Driver type</option>
+		<option>Company Driver</option>
+		<option>Guest Driver</option>
+		<option>Attach Driver</option>
+        </select>
+		</div>
+		<div class="input-field col s2">
+		</div>
+		<div class="input-field col s2">
+		</div>
+		<div class="input-field col s2">
+		<input id="title" type="text" data-ng-model="login.userName"
+			name="Title"> <label for="Title"
+			class="center-align">ID</label>
+		</div>
+		<div class="input-field col s2">
+		<button type="button" data-ng-click="getuploads()" id="color">Uploads</button>
+		</div>
+		</div>		
+		
+		
+	<!-- First Row -->	
+			
+				<div class="row">
+					<div class="input-field col s6">
+						<fieldset>
+							<legend id="color" >Personal Info</legend>
+							<div class="row margin">
+								<div class="input-field col s3">
+									<input id="title" type="text" data-ng-model="login.userName"
+										name="Title"> <label for="title"
+										class="center-align">Title</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="firstName" type="text" data-ng-model="login.userName"
+										name="firstName"> <label for="firstName"
+										class="center-align">First Name</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="lastname" type="text" data-ng-model="login.userName"
+										name="lastname"> <label for="lastname"
+										class="center-align">Last Name</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="sex" type="text" data-ng-model="login.userName"
+										name="sex"> <label for="sex"
+										class="center-align">Sex</label>
+								</div>
+							</div>
+							<div class="row margin">
+								<div class="input-field col s3">
+									<input id="fathername" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="fathername"
+										class="center-align">Father Name</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="dob" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="dob"
+										class="center-align">DOB</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="mobilenumber" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="mobilenumber"
+										class="center-align">Mobile Number</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="watsapp" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="watsapp"
+										class="center-align">Watsapp Number</label>
+								</div>
+							</div>
+							 <div class="row margin">
+								<div class="input-field col s3">
+									<input id="Qualification" type="text" data-ng-model="login.userName"
+										name="Qualification"> <label for="Qualification"
+										class="center-align">Qualification</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="blood" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="blood"
+										class="center-align">Blood Group</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="religion" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="religion"
+										class="center-align">Religion</label>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+					<div class="input-field col s6">
+						<fieldset>
+							<legend id="color" >Licence Info</legend>
+							<div class="row margin">
+								<div class="input-field col s4">
+									<input id="licencenumber" type="text" data-ng-model="login.userName"
+										name="licencenumber"> <label for="licencenumber"
+										class="center-align">Licence Number</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="issued" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="issued"
+										class="center-align">Issud Date</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="expiry" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="expiry"
+										class="center-align">Expiry Date</label>
+								</div>
+								
+							</div>
+							<div class="row margin">
+							<div class="input-field col s4">
+									<input id="issuedat" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="issuedat"
+										class="center-align">Issued At</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="licence" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="licence"
+										class="center-align">Licence Type</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="badge" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="badge"
+										class="center-align">Badge Number</label>
+								</div>
+							</div>
+							 <div class="row margin">
+								<div class="input-field col s4">
+									<input id="badgeex" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="badgeex"
+										class="center-align">Badge Expiry Date</label>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+					</div>
+					
+	<!-- Second Row -->
+					
+					<div class="row">
+					<div class="input-field col s6">
+						<fieldset>
+							<legend id="color" >Present Address</legend>
+							<div class="row margin">
+								<div class="input-field col s3">
+									<input id="doorno" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="doorno"
+										class="center-align">Door No</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="building" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="building"
+										class="center-align">Building Number</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="area" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="area"
+										class="center-align">Area</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="landmark" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="landmark"
+										class="center-align">Landmark</label>
+								</div>
+							</div>
+							<div class="row margin">
+								<div class="input-field col s3">
+									<input id="city" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="city"
+										class="center-align">City</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="distict" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="distict"
+										class="center-align">Distict</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="state" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="state"
+										class="center-align">State</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="pincode" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="pincode"
+										class="center-align">Pincode</label>
+								</div>
+							</div>
+						
+						</fieldset>
+					</div>
+					
+					<div class="input-field col s6">
+						<fieldset>
+							<legend id="color" >Perminent Address</legend>
+							<div class="row margin">
+								<div class="input-field col s3">
+									<input id="doorno2" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="doorno2"
+										class="center-align">Door No</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="building2" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="building2"
+										class="center-align">Building Number</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="area2" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="area2"
+										class="center-align">Area</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="landmark2" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="landmark2"
+										class="center-align">Landmark</label>
+								</div>
+							</div>
+							<div class="row margin">
+								<div class="input-field col s3">
+									<input id="city2" type="text" data-ng-model="login.userName"
+										name="userName2"> <label for="city2"
+										class="center-align">City</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="distict2" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="distict2"
+										class="center-align">Distict</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="state2" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="state2"
+										class="center-align">State</label>
+								</div>
+								<div class="input-field col s3">
+									<input id="pincode2" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="pincode2"
+										class="center-align">Pincode</label>
+								</div>
+							</div>
+						
+						</fieldset>
+					</div>
+					
+					<!-- <div class="input-field col s4">
+						<fieldset>
+							<legend id="color" >Reference Info</legend>
+							<div class="row margin">
+								<div class="input-field col s6">
+									<input id="username" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="username"
+										class="center-align">Refered By</label>
+								</div>
+								<div class="input-field col s6">
+									<input id="username" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="username"
+										class="center-align">Refered Mobile Number</label>
+								</div>
+								</div>
+								<div class="row margin">
+								<div class="input-field col s6">
+									<input id="username" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="username"
+										class="center-align">Amount</label>
+								</div>
+								<div class="input-field col s6">
+									<input id="username" type="text" data-ng-model="login.userName"
+										name="userName"> <label for="username"
+										class="center-align">Proffision</label>
+								</div>
+							</div>
+							
+							 
+							
+						</fieldset>
+					</div> -->
+					</div>
+
+					
+				</div>
+
+		<!-- 	</fieldset> -->
+
+		</div>
+		<!-- Floating Action Button -->
+
+		<!-- Floating Action Button -->
+	
+	<!--end container-->
+</section>
+<!-- END CONTENT -->
+
+<div data-ng-include="'resources/views/fleet/uploads.html'"></div>

@@ -1,0 +1,81 @@
+<style>
+ .btn, .btn-success {
+   float: right;
+   margin-left: 2px;
+ }
+</style>
+<section id="content">
+    <!--start container-->
+    <div class="container">
+        <div id="breadcrumbs-wrapper">
+            <div class="row">
+                <div class="col s6 m12 l12" id="breadcrumbs">
+                    <ol class="breadcrumbs" style="margin-top:10px;">
+                        <li><a href="#/dashboard">Home</a>
+                        </li>
+                        <li><a href="#">Srikanth</a>
+                        </li>
+                        <li class="active">Vehicle Creation</li>
+                    </ol>
+                </div>
+                <div class="col s5 m8 l7" id="breadcrumb_buttons">
+                     <!-- <button class="btn-success" type="submit" name="action">Save</button> -->
+                    <button class="btn primary" type="submit" name="action">Cancel</button>
+                    <button class="btn" type="submit" name="action">Continue</button>
+                </div>
+            </div>
+        </div>
+        <div id="basic-form" class="section">
+            <div class="row">
+                <div class="col s12 m12 l3">
+                    <div class="card-panel" id="c3_card_panel">
+                    </div>
+                </div>
+                <!-- Form with placeholder -->
+                <div class="col s12 m12 l9">
+                    <div class="tabs">
+                        <div class="tab-box">
+                            <div class="col s3">
+                                <a href="javascript:;" class="tabLink activeLink" id="cont-1">Basic Info</a>
+                            </div>
+                            <div class="col s3">
+                                <a href="javascript:;" class="tabLink " id="cont-2">Tab 2</a>
+                            </div>
+                            <div class="col s3">
+                                <a href="javascript:;" class="tabLink " id="cont-2">Tab 3</a>
+                            </div>
+                            <div class="col s3">
+                                <a href="javascript:;" class="tabLink " id="cont-2">Final View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-panel" id="c9_card_panel">
+                        <div class="row">
+                            <form class="col s12 ng-pristine ng-valid">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <fieldset class="field-vehicle_info">
+                                            <legend>Vehicle Info</legend>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <fieldset class="field-rti_info">
+                                            <legend>RTI Info</legend>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+<!-- END CONTENT -->
+<script>
+    tabFunction();
+</script>

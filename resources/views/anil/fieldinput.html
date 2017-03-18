@@ -1,0 +1,320 @@
+<style>
+input[type=text] {
+	text-transform: capitalize;
+}
+</style>
+
+<section id="content">
+
+    <!--start container-->
+    <div class="container">
+        <div id="breadcrumbs-wrapper">
+            <div class="row">
+                <div class="col s6 m12 l12" id="breadcrumbs">
+                    <ol class="breadcrumbs" style="margin-top: 10px;">
+                        <li><a href="#/dashboard">Home</a>
+                        </li>
+                        <li><a href="#">Admin</a>
+                        </li>
+                        <li class="active">Admin Dashboard</li>
+                    </ol>
+                </div>
+                <div class="col s5 m8 l7" id="breadcrumb_buttons">
+                    <button class="btn-success" type="submit" name="action">Save</button>
+                    <button class="btn" type="submit" name="action">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <div id="basic-form" class="section">
+            <div class="row">
+                <!-- Form with placeholder -->
+                <div class="col s12 m12 l12">
+                        <div class="row">
+                            <form class="col s12">
+
+                                <fieldset>
+                                    <legend id="color" class="">Month Report
+                                    </legend>
+                                    <div class="input-field col s2">
+                                        <input type="text" id="tbooking"> <label for="tbooking" class=""> Total Bookings</label>
+                                    </div>
+                                    <div class="input-field col s2">
+                                        <input type="text" id="collection"> <label for="collection" class="">Total Collection</label>
+                                    </div>
+                                    <div class="input-field col s2">
+                                        <input type="text" id="total"> <label for="total" class="">Total Vehicles Logged</label>
+                                    </div>
+                                    <div class="input-field col s2">
+                                        <input type="text" id="cbooking"> <label for="cbooking" class="">Credit Bookings</label>
+                                    </div>
+                                    <div class="input-field col s2">
+                                        <input type="text" id="abooking"> <label for="abooking" class="">Advance Bookings</label>
+                                    </div>
+                                    <div class="input-field col s2">
+                                        <input type="text" id="cancellations"> <label for="cancellations" class="">Cancellations</label>
+                                    </div>
+                                </fieldset>
+
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <fieldset>
+                                            <legend id="color">Agents</legend>
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <label class="center-align" id="color"><h6>Shift-A</h6></label>
+                                                </div>
+                                                <div class="input-field col s4">
+
+                                                    <label class="center-align" id="color"><h6>Shift-B</h6></label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <label class="center-align" id="color"><h6>Shift-C</h6></label>
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="booking1"> <label for="booking1" class="">Bookings</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="booking2"> <label for="booking2" class="">Bookings</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="booking3"> <label for="booking3" class="">Bookings</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="Collection1"> <label for="Collection1" class="">Collection</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="Collection2"> <label for="Collection2" class="">Collection</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="Collection3"> <label for="Collection3" class="">Collection</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="Agents1"> <label for="Agents1" class="">Agents Logged In</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="Agents2"> <label for="Agents2" class="">Agents Logged In</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="Agents3"> <label for="Agents3" class="">Agents Logged In</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="bAgent1"> <label for="bAgent1" class="">Booking\ Agent</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="bAgent2"> <label for="bAgent2" class="">Booking\ Agent</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="bAgent3"> <label for="bAgent3" class="">Booking\ Agent</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="cAgent1"> <label for="cAgent1" class="">Collection\ Agent</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="cAgent2"> <label for="cAgent2" class="">Collection\ Agent</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="cAgent3"> <label for="cAgent3" class="">Collection\ Agent</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="aLeave1"> <label for="aLeave1" class="">Agents on Leave</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="aLeave2"> <label for="aLeave2" class="">Agents on Leave</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="aLeave3"> <label for="aLeave3" class="">Agents on Leave</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="weekoff1"> <label for="weekoff1" class="">Week Off</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="weekoff2"> <label for="weekoff2" class="">Week Off</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text" id="weekoff3"> <label for="weekoff3" class="">Week Off</label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="input-field col s6">
+                                        <fieldset>
+                                            <legend id="color">Example Div</legend>
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <label class="center-align" id="color"><h6>Shift-A</h6></label>
+                                                </div>
+                                                <div class="input-field col s4">
+
+                                                    <label class="center-align" id="color"><h6>Shift-B</h6></label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <label class="center-align" id="color"><h6>Shift-C</h6></label>
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input type="text"> <label class="">Cancellations</label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+<!-- END CONTENT -->
+<script>
+    tabFunction();
+
+    $(".phnum").keydown(function(e) {
+        var oldvalue = $(this).val();
+        var field = this;
+        setTimeout(function() {
+            if (field.value.indexOf('+91 ') !== 0) {
+                $(field).val(oldvalue);
+            }
+
+        }, 1);
+
+    });
+
+    $('input[type=text]').keyup(function() {
+        $('').text($(this).val());
+    });
+
+    $('#date').datetimepicker({
+        timepicker: false,
+        closeOnTimeSelect: false,
+        format: 'Y-m-d',
+        step: 01,
+    });
+
+    $('#time').datetimepicker({
+        step: 01,
+        datepicker: false,
+        closeOnTimeSelect: false,
+        format: 'H:i:s',
+        maxDate: new Date(),
+    });
+
+    $('#datentime').datetimepicker({
+        step: 01,
+        maxDate: false,
+        minDate: new Date(),
+    });
+    
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+    }   
+    
+    
+</script>

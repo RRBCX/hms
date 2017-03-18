@@ -1,0 +1,123 @@
+<div id="upload" class="modal ng-scope" style="z-index: 1003; opacity: 1; transform: scaleX(1); top: 10%; height: 676px;">
+    <div class="modal-content" id="model1">
+    <br>
+    	<i class="mdi-content-clear" style="margin-left: 728px;cursor: pointer;" data-ng-click="cancel()"></i>
+    	<br>
+		<div class="row" style="margin-left: 13px;">
+			<h6><b style="color:#4BA2C7">Submitted Proofs</b></h6>
+		</div>
+		<br/>
+			<div class="row">
+                <div class="col-md-1">
+                    <input type="checkbox" id="test" data-ng-click="checkvalidity(checkbox.checkbox1, 1)" data-ng-model="checkbox.checkbox1">
+                	<label for="test">Licence</label>
+                </div>
+                <div data-ng-if="licence">
+                <div class="col-md-1" id="cbox">
+                	<button type="button" class="btn btn active" style="margin-left: 616px;">Scan Documents</button>
+                </div>
+                <div class="col-md-1">
+                    <input type="file" accept="image/*" onchange="loadFile(event)">
+            	</div>
+            	</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                	<input type="checkbox" id="test1" data-ng-click="checkvalidity(checkbox.checkbox2, 2)" data-ng-model="checkbox.checkbox2">
+                      <label for="test1">Aadhar</label>
+                </div>
+                <div data-ng-if="aadhar">
+                <div class="col-md-1" id="cbox">
+                	<button type="button" class="btn btn active" style="margin-left: 616px;">Scan Documents</button>
+                </div>
+               <div class="col-md-1">
+                    <input type="file" accept="image/*" onchange="loadFile(event)" style="margin-left: 318px;">
+            	</div>
+            	</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <input type="checkbox" id="test2" data-ng-click="checkvalidity(checkbox.checkbox3, 3)" data-ng-model="checkbox.checkbox3">
+                	<label for="test2">VoterId</label>
+                </div>
+                <div data-ng-if="voter">
+                <div class="col-md-1" id="cbox">
+                	<button type="button" class="btn btn active" style="margin-left: 616px;">Scan Documents</button>
+                </div>
+               <div class="col-md-1">
+                    <input type="file" accept="image/*" onchange="loadFile(event)" style="margin-left: 318px;">
+            	</div>
+            	</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <input type="checkbox" id="test3" data-ng-click="checkvalidity(checkbox.checkbox4, 4)" data-ng-model="checkbox.checkbox4">
+                	<label for="test3">PAN</label>
+                </div>
+                <div data-ng-if="pan">
+                <div class="col-md-1" id="cbox">
+                	<button type="button" class="btn btn active" style="margin-left: 616px;">Scan Documents</button>
+                </div>
+                <div class="col-md-1">
+                    <input type="file" accept="image/*" onchange="loadFile(event)" style="margin-left: 318px;">
+            	</div>
+            	</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <input type="checkbox" id="test4" data-ng-click="checkvalidity(checkbox.checkbox5, 5)" data-ng-model="checkbox.checkbox5">
+                	<label for="test4">RationCard</label>
+                </div>
+                <div data-ng-if="ration">
+                <div class="col-md-1" id="cbox">
+                	<button type="button" class="btn btn active" style="margin-left: 616px;">Scan Documents</button>
+                </div>
+               <div class="col-md-1">
+                    <input type="file" accept="image/*" onchange="loadFile(event)" style="margin-left: 318px;">
+            	</div>
+            	</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <input type="checkbox" id="test5" data-ng-click="checkvalidity(checkbox.checkbox6, 6)" data-ng-model="checkbox.checkbox6">
+                	<label for="test5">Passport</label>
+                </div>
+                <div data-ng-if="passport">
+                <div class="col-md-1" id="cbox">
+                	<button type="button" class="btn btn active" style="margin-left: 616px;">Scan Documents</button>
+                </div>
+                <div class="col-md-1">
+                    <input type="file" accept="image/*" onchange="loadFile(event)" style="margin-left: 318px;">
+            	</div>
+            	</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <input type="checkbox" id="test6" data-ng-click="checkvalidity(checkbox.checkbox7, 7)" data-ng-model="checkbox.checkbox7">
+               		<label for="test6">Photo</label>
+                </div>
+                <div data-ng-if="photo">
+                <div class="col-md-1" id="cbox">
+                	<button type="button" class="btn btn active" style="margin-left: 616px;">Scan Documents</button>
+                </div>
+                <div class="col-md-1">
+                    <input type="file" accept="image/*" onchange="loadFile(event)" style="margin-left: 318px;">
+            	</div>
+            	</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <input type="checkbox" id="test7" data-ng-click="checkvalidity(checkbox.checkbox8, 8)" data-ng-model="checkbox.checkbox8">
+                	<label for="test7">Thumb</label>
+                </div>
+                <div data-ng-if="thumb">
+                <div class="col-md-1" id="cbox">
+                	<button type="button" class="btn btn active" style="margin-left: 616px;">Scan Documents</button>
+                </div>
+               <div class="col-md-1">
+                    <input type="file" accept="image/*" onchange="loadFile(event)" style="margin-left: 318px;">
+            	</div>
+            	</div>
+            </div>
+	</div>
+</div>
